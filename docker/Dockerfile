@@ -33,6 +33,9 @@ ARG ANDROID_TOOLS_SHA256=2d2d50857e4eb553af5a6dc3ad507a17adf43d115264b1afc116f95
 ENV ANDROID_HOME=/opt/android-sdk
 RUN apt-get update && apt-get install -y --no-install-recommends unzip && rm -rf /var/lib/apt/lists/*     && curl -fsSL -o /tmp/tools.zip "https://dl.google.com/android/repository/${ANDROID_TOOLS}"     && echo "${ANDROID_TOOLS_SHA256}  /tmp/tools.zip" | sha256sum -c -     && mkdir -p "${ANDROID_HOME}/cmdline-tools"     && unzip -q /tmp/tools.zip -d "${ANDROID_HOME}/cmdline-tools"     && mv "${ANDROID_HOME}/cmdline-tools/cmdline-tools" "${ANDROID_HOME}/cmdline-tools/latest"     && rm /tmp/tools.zip     && yes | JAVA_HOME=/usr/lib/jvm/temurin-21 "${ANDROID_HOME}/cmdline-tools/latest/bin/sdkmanager" --licenses >/dev/null
 
-RUN useradd --create-home corpus && chown -R corpus "${ANDROID_HOME}"
+# Bumped whenever a tool above changes, since a stored reference was built with these tools.
+ENV CORPUS_REFERENCE_ENV=1
+
+RUN useradd --create-home corpus && chown -R corpus "${ANDROID_HOME}"     && mkdir /cache && chown corpus /cache
 USER corpus
 WORKDIR /home/corpus

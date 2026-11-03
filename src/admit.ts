@@ -1,4 +1,4 @@
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 
 import { backlogOf } from "./backlog.ts";
@@ -25,11 +25,14 @@ interface Admission {
  * with its reason, so "too big to build" stays visible. --only names ecosystems here.
  */
 async function main(): Promise<void> {
-  const { settings, results, corpus, only } = invocationFrom(process.argv.slice(2), "candidates.json");
+  const { settings, results, corpus, only, resume } = invocationFrom(process.argv.slice(2), "candidates.json");
   const candidates = JSON.parse(readFileSync(corpus, "utf8")) as Candidate[];
   const ecosystems = [...new Set(candidates.map((candidate) => candidate.ecosystem))]
     .filter((ecosystem) => only === undefined || only.includes(ecosystem));
   const admission: Admission = { admitted: [], rejected: [], shortBands: [] };
+  const earlier = resume !== undefined && existsSync(resume)
+    ? (JSON.parse(readFileSync(resume, "utf8")) as Admission).rejected
+    : [];
   const finished: EntryResult[] = [];
 
   for (const ecosystem of ecosystems) {
@@ -40,6 +43,12 @@ async function main(): Promise<void> {
       for (const candidate of pool) {
         if (admitted === PER_BAND || tried === MAX_TRIES_PER_BAND) break;
         tried++;
+        const rejectedBefore = earlier.find((rejection) => rejection.id === candidate.id);
+        if (rejectedBefore !== undefined) {
+          admission.rejected.push(rejectedBefore);
+          console.log(`${candidate.id}: rejected earlier (${rejectedBefore.reason})`);
+          continue;
+        }
         console.log(`${candidate.id} (${band}): running`);
         const result = await runEntry(candidate, settings);
         recordEntry(result, settings, results);

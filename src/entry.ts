@@ -7,6 +7,7 @@ import type { EcosystemName } from "./ecosystems.ts";
 import { availableJdks, failedOnJdk } from "./jdk.ts";
 import { migratedCounterparts, type MigrateReport } from "./migrated.ts";
 import { capture, run, stopJvmsUnder, type Finished } from "./process.ts";
+import { loadReference, saveReference, type Reference } from "./reference.ts";
 
 export interface Entry {
   id: string;
@@ -21,6 +22,8 @@ export interface Settings {
   work: string;
   daukleCache: string;
   timeoutMs: number;
+  /** Where each entry's reference is kept between runs. */
+  references: string;
 }
 
 export type Outcome =
@@ -48,7 +51,8 @@ export interface EntryResult {
   blockers: MigrateReport["blockers"];
   proofFailure?: string;
   /** The JDK the original build ran on, when the harness chose one. */
-  jdk?: string;
+  jdk?: string;  /** Whether the original build came from the store rather than from this run. */
+  referenceReused?: boolean;
 }
 
 /** Three checkouts at three different paths, so whatever a build writes from its own path differs between the controls. */
@@ -72,7 +76,7 @@ function git(args: string[], cwd: string): void {
  * @implNote blobless first; GitHub has answered a blobless checkout's blob fetch with HTTP 400 on a
  * large repository, so a failure falls back to a full clone.
  */
-function checkout(entry: Entry, entryWork: string): void {
+function checkout(entry: Entry, entryWork: string, sides: string[]): void {
   const source = join(entryWork, "source");
   try {
     git(["clone", "--filter=blob:none", "--no-checkout", entry.url, source], entryWork);
@@ -82,7 +86,7 @@ function checkout(entry: Entry, entryWork: string): void {
     git(["clone", "--no-checkout", entry.url, source], entryWork);
     git(["checkout", "--detach", entry.commit], source);
   }
-  for (const name of Object.values(SIDES)) {
+  for (const name of sides) {
     git(["clone", "--no-checkout", source, name], entryWork);
     git(["checkout", "--detach", entry.commit], join(entryWork, name));
   }
@@ -208,38 +212,53 @@ export function entryWorkOf(id: string, settings: Settings): string {
   return join(settings.work, id.replaceAll("/", "_"));
 }
 
+/**
+ * The stored reference for this commit, or a fresh one from two builds of the project's own tool,
+ * stored before it is returned. A string is why the entry was not admitted.
+ */
+async function referenceOf(entry: Entry, entryWork: string, settings: Settings, seconds: Record<string, number>):
+    Promise<Reference | { outcome: Outcome; reason: string }> {
+  const builder = REFERENCE_BUILDS[entry.ecosystem];
+  const a = sideOf(entryWork, SIDES.controlA, settings);
+  const b = sideOf(entryWork, SIDES.controlB, settings);
+  const controls = await buildControls(builder, a, b, seconds);
+  if (typeof controls === "string") return { outcome: "not-admitted", reason: controls };
+  const shipped = builder.shipped(a);
+  if (shipped.length === 0) {
+    return { outcome: "not-admitted", reason: "the original build shipped nothing the corpus recognises" };
+  }
+  const unstable = unstableMembers(settings, shipped, builder.shipped(b));
+  if (typeof unstable === "string") return { outcome: "unreproducible", reason: unstable };
+  return saveReference(settings.references, entry.id, entry.commit, { jdk: controls.jdk, shipped, unstable }, seconds);
+}
+
 export async function runEntry(entry: Entry, settings: Settings): Promise<EntryResult> {
   const entryWork = entryWorkOf(entry.id, settings);
   rmSync(entryWork, { recursive: true, force: true });
   mkdirSync(entryWork, { recursive: true });
   const seconds: Record<string, number> = {};
+  const stored = loadReference(settings.references, entry.id, entry.commit);
   try {
-    checkout(entry, entryWork);
+    checkout(entry, entryWork, stored === null ? Object.values(SIDES) : [SIDES.migrated]);
   } catch (error) {
     return failed(entry, "error", (error as Error).message, seconds);
   }
-
-  const builder = REFERENCE_BUILDS[entry.ecosystem];
-  const a = sideOf(entryWork, SIDES.controlA, settings);
-  const b = sideOf(entryWork, SIDES.controlB, settings);
-  const controls = await buildControls(builder, a, b, seconds);
-  if (typeof controls === "string") return failed(entry, "not-admitted", controls, seconds);
-  const reference = builder.shipped(a);
-  if (reference.length === 0) return failed(entry, "not-admitted", "the original build shipped nothing the corpus recognises", seconds);
-  const unstable = unstableMembers(settings, reference, builder.shipped(b));
-  if (typeof unstable === "string") return failed(entry, "unreproducible", unstable, seconds);
+  const built = stored ?? await referenceOf(entry, entryWork, settings, seconds);
+  if ("outcome" in built) return failed(entry, built.outcome, built.reason, seconds);
+  const { shipped: reference, unstable } = built;
 
   const migrated = await migrate(entry, entryWork, settings, seconds);
   if ("failure" in migrated) return failed(entry, "error", migrated.failure, seconds);
   const { report } = migrated;
   const result: EntryResult = {
     ...pick(entry), outcome: REPORT_OUTCOMES[report.outcome], seconds, blockers: report.blockers,
+    referenceReused: stored !== null,
     shipped: reference.map((file) => ({
       key: file.key, unstable: unstable.get(file.key)?.size ?? 0,
       unstableSample: sampleOf(unstable.get(file.key) ?? new Set<string>()), counterpart: null, differing: [],
     })),
   };
-  if (controls.jdk !== undefined) result.jdk = controls.jdk;
+  if (built.jdk !== undefined) result.jdk = built.jdk;
   if (report.error !== undefined) result.reason = report.error;
   if (report.proof.failure !== undefined) result.proofFailure = report.proof.failure;
   if (report.outcome !== "migrated") return result;

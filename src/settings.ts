@@ -12,10 +12,13 @@ export interface Invocation {
   results: string;
   corpus: string;
   only: string[] | undefined;
+  /** An earlier admission.json whose rejections stand without being run again. */
+  resume: string | undefined;
 }
 
 const USAGE = "usage: node src/<command>.ts --daukle <binary> --work <directory> [--results <directory>] "
-  + "[--catalog <url>] [--corpus <file>] [--only <id>]... [--timeout-minutes <n>]";
+  + "[--catalog <url>] [--corpus <file>] [--only <id>]... [--timeout-minutes <n>] "
+  + "[--references <directory>] [--daukle-cache <directory>] [--resume <admission.json>]";
 
 export function invocationFrom(argv: string[], defaultCorpus: string): Invocation {
   const { values } = parseArgs({
@@ -28,6 +31,9 @@ export function invocationFrom(argv: string[], defaultCorpus: string): Invocatio
       corpus: { type: "string", default: defaultCorpus },
       only: { type: "string", multiple: true },
       "timeout-minutes": { type: "string", default: String(DEFAULT_TIMEOUT_MINUTES) },
+      references: { type: "string" },
+      "daukle-cache": { type: "string" },
+      resume: { type: "string" },
     },
   });
   if (values.daukle === undefined || values.work === undefined) throw new Error(USAGE);
@@ -37,11 +43,13 @@ export function invocationFrom(argv: string[], defaultCorpus: string): Invocatio
       daukle: resolve(values.daukle),
       catalog: values.catalog,
       work,
-      daukleCache: join(work, "daukle-cache"),
+      daukleCache: resolve(values["daukle-cache"] ?? join(work, "daukle-cache")),
+      references: resolve(values.references ?? join(work, "references")),
       timeoutMs: Number(values["timeout-minutes"]) * 60_000,
     },
     results: resolve(values.results),
     corpus: values.corpus,
     only: values.only,
+    resume: values.resume,
   };
 }
