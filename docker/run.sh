@@ -1,15 +1,9 @@
 #!/bin/sh
-# Runs inside the container: the corpus is mounted read-only at /corpus and results leave through /out.
+# Runs inside the container: the corpus is mounted read-only at /corpus and every result is written
+# straight to /out as it exists. The first argument names the command: run or admit.
 set -eu
+command="$1"
+shift
 cp -r /corpus "$HOME/corpus"
 cd "$HOME/corpus"
-status=0
-node src/run.ts --daukle /usr/local/bin/daukle --work "$HOME/work" "$@" || status=$?
-cp -r results/. /out/
-for log in "$HOME"/work/*/*.log "$HOME"/work/*/report.json; do
-  [ -f "$log" ] || continue
-  entry=$(basename "$(dirname "$log")")
-  mkdir -p "/out/logs/$entry"
-  cp "$log" "/out/logs/$entry/"
-done
-exit "$status"
+exec node "src/$command.ts" --daukle /usr/local/bin/daukle --work "$HOME/work" --results /out "$@"

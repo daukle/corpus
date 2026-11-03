@@ -5,7 +5,7 @@ FROM eclipse-temurin:21-jdk AS jdk21
 FROM node:24-bookworm
 
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends git openjdk-17-jdk-headless ca-certificates curl \
+    && apt-get install -y --no-install-recommends git openjdk-17-jdk-headless ca-certificates curl maven cmake build-essential ninja-build pkg-config \
     && rm -rf /var/lib/apt/lists/*
 
 # Gradle finds a toolchain in /usr/lib/jvm by itself, and popular builds ask for 8, 11 and 21 beside 17.

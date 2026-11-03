@@ -143,8 +143,12 @@ async function migrate(entry: Entry, entryWork: string, settings: Settings, seco
   return { report: JSON.parse(text) as MigrateReport };
 }
 
+export function entryWorkOf(id: string, settings: Settings): string {
+  return join(settings.work, id.replaceAll("/", "_"));
+}
+
 export async function runEntry(entry: Entry, settings: Settings): Promise<EntryResult> {
-  const entryWork = join(settings.work, entry.id.replaceAll("/", "_"));
+  const entryWork = entryWorkOf(entry.id, settings);
   rmSync(entryWork, { recursive: true, force: true });
   mkdirSync(entryWork, { recursive: true });
   const seconds: Record<string, number> = {};
