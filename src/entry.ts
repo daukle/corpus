@@ -131,7 +131,8 @@ async function migrate(entry: Entry, entryWork: string, settings: Settings, seco
   const side = sideOf(entryWork, SIDES.migrated, settings);
   const reportPath = join(entryWork, "report.json");
   const finished = await run(settings.daukle, ["migrate", "--catalog", settings.catalog, "--report", reportPath], {
-    ...side, env: { ...process.env, DAUKLE_CACHE_DIR: settings.daukleCache },
+    cwd: side.dir, log: side.log, timeoutMs: side.timeoutMs,
+    env: { ...process.env, DAUKLE_CACHE_DIR: settings.daukleCache },
   });
   seconds.migrate = finished.seconds;
   stopJvmsUnder(settings.daukleCache);
@@ -157,8 +158,9 @@ export async function runEntry(entry: Entry, settings: Settings): Promise<EntryR
   const a = sideOf(entryWork, SIDES.controlA, settings);
   const b = sideOf(entryWork, SIDES.controlB, settings);
   for (const [name, side] of [["controlA", a], ["controlB", b]] as const) {
+    const started = Date.now();
     const finished = await builder.build(side);
-    if (typeof finished !== "string") seconds[name] = finished.seconds;
+    seconds[name] = Math.round((Date.now() - started) / 1000);
     if (typeof finished === "string" || finished.code !== 0) {
       return failed(entry, "not-admitted", `the original build ${describeFailure(finished, side.log)}`, seconds);
     }

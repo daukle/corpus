@@ -2,7 +2,7 @@ import { existsSync, mkdirSync, readdirSync } from "node:fs";
 import { join, relative } from "node:path";
 
 import type { EcosystemName } from "./ecosystems.ts";
-import { run, type Finished } from "./process.ts";
+import { run, type Finished, type RunOptions } from "./process.ts";
 
 /** One file the original build ships, under a key both sides of a comparison agree on. */
 export interface Shipped {
@@ -17,6 +17,10 @@ export interface Side {
   outside: string;
   log: string;
   timeoutMs: number;
+}
+
+function inSide(side: Side): RunOptions {
+  return { cwd: side.dir, log: side.log, timeoutMs: side.timeoutMs };
 }
 
 export interface ReferenceBuild {
@@ -57,7 +61,7 @@ const gradle: ReferenceBuild = {
     const wrapper = IS_WINDOWS ? "gradlew.bat" : "gradlew";
     if (!existsSync(join(side.dir, wrapper))) return `the project carries no ${wrapper}`;
     const command = IS_WINDOWS ? join(side.dir, wrapper) : "./gradlew";
-    return run(command, ["assemble", "--no-daemon", "--console=plain"], side);
+    return run(command, ["assemble", "--no-daemon", "--console=plain"], inSide(side));
   },
   shipped: (side) => shippedUnder(side.dir, /(^|\/)build\/libs\/[^/]+\.jar$/),
 };
@@ -66,7 +70,7 @@ const maven: ReferenceBuild = {
   async build(side) {
     const wrapper = IS_WINDOWS ? "mvnw.cmd" : "mvnw";
     const command = existsSync(join(side.dir, wrapper)) ? join(side.dir, wrapper) : "mvn";
-    return run(command, ["-B", "-DskipTests", "package"], side);
+    return run(command, ["-B", "-DskipTests", "package"], inSide(side));
   },
   shipped: (side) => shippedUnder(side.dir, /(^|\/)target\/[^/]+\.jar$/),
 };
@@ -74,10 +78,10 @@ const maven: ReferenceBuild = {
 const npm: ReferenceBuild = {
   async build(side) {
     const install = existsSync(join(side.dir, "package-lock.json")) ? "ci" : "install";
-    const installed = await run("npm", [install], side);
+    const installed = await run("npm", [install], inSide(side));
     if (installed.code !== 0) return installed;
     mkdirSync(side.outside, { recursive: true });
-    return run("npm", ["pack", "--pack-destination", side.outside], side);
+    return run("npm", ["pack", "--pack-destination", side.outside], inSide(side));
   },
   shipped: (side) =>
     shippedUnder(side.outside, /^[^/]+\.tgz$/).map((file) => ({ key: "package.tgz", path: file.path })),
@@ -87,11 +91,11 @@ const cmake: ReferenceBuild = {
   async build(side) {
     const tree = join(side.outside, "build");
     const prefix = join(side.outside, "install");
-    const configured = await run("cmake", ["-S", ".", "-B", tree, "-DCMAKE_BUILD_TYPE=Release"], side);
+    const configured = await run("cmake", ["-S", ".", "-B", tree, "-DCMAKE_BUILD_TYPE=Release"], inSide(side));
     if (configured.code !== 0) return configured;
-    const built = await run("cmake", ["--build", tree, "--config", "Release"], side);
+    const built = await run("cmake", ["--build", tree, "--config", "Release"], inSide(side));
     if (built.code !== 0) return built;
-    return run("cmake", ["--install", tree, "--config", "Release", "--prefix", prefix], side);
+    return run("cmake", ["--install", tree, "--config", "Release", "--prefix", prefix], inSide(side));
   },
   shipped: (side) => shippedUnder(join(side.outside, "install"), /./),
 };

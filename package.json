@@ -2,9 +2,16 @@
   "name": "daukle-corpus",
   "private": true,
   "type": "module",
-  "engines": { "node": ">=23.6" },
+  "engines": {
+    "node": ">=23.6"
+  },
   "scripts": {
     "select": "node src/select.ts",
-    "run": "node src/run.ts"
+    "run": "node src/run.ts",
+    "check": "tsc -p ."
+  },
+  "devDependencies": {
+    "@types/node": "22.15.3",
+    "typescript": "5.8.3"
   }
 }
