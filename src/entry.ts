@@ -30,6 +30,8 @@ export type Outcome =
 export interface ShippedResult {
   key: string;
   unstable: number;
+  /** The first few members that differed between the two original builds. */
+  unstableSample: string[];
   counterpart: string | null;
   differing: string[];
 }
@@ -115,13 +117,21 @@ function unstableMembers(settings: Settings, a: Shipped[], b: Shipped[]): Map<st
   return unstable;
 }
 
+const UNSTABLE_SAMPLE = 10;
+
+function sampleOf(members: Set<string>): string[] {
+  return [...members].slice(0, UNSTABLE_SAMPLE);
+}
+
 function compareShipped(
   settings: Settings, reference: Shipped[], counterparts: Map<string, string>, unstable: Map<string, Set<string>>,
 ): ShippedResult[] {
   return reference.map((file) => {
     const counterpart = counterparts.get(file.key) ?? null;
     const ignored = unstable.get(file.key) ?? new Set<string>();
-    const result: ShippedResult = { key: file.key, unstable: ignored.size, counterpart, differing: [] };
+    const result: ShippedResult = {
+      key: file.key, unstable: ignored.size, unstableSample: sampleOf(ignored), counterpart, differing: [],
+    };
     if (counterpart === null) return result;
     const comparison = compareFiles(settings.daukle, file.path, counterpart, comparisonKindOf(file.key));
     result.differing = comparison.readable
@@ -225,7 +235,8 @@ export async function runEntry(entry: Entry, settings: Settings): Promise<EntryR
   const result: EntryResult = {
     ...pick(entry), outcome: REPORT_OUTCOMES[report.outcome], seconds, blockers: report.blockers,
     shipped: reference.map((file) => ({
-      key: file.key, unstable: unstable.get(file.key)?.size ?? 0, counterpart: null, differing: [],
+      key: file.key, unstable: unstable.get(file.key)?.size ?? 0,
+      unstableSample: sampleOf(unstable.get(file.key) ?? new Set<string>()), counterpart: null, differing: [],
     })),
   };
   if (controls.jdk !== undefined) result.jdk = controls.jdk;
