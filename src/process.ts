@@ -68,7 +68,15 @@ export function capture(command: string, args: string[], cwd: string): { code: n
   return { code: result.status, stdout: result.stdout ?? "", stderr: result.stderr ?? "" };
 }
 
-/** Ends every JVM whose executable lives under directory: the Gradle daemons a daukle cache provisioned. */
+function escapedForRegex(text: string): string {
+  return text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+/**
+ * Ends every JVM whose executable lives under directory: the Gradle daemons a daukle cache provisioned.
+ * @implNote anchored on the executable, because the harness's own command line names the directory
+ * too, and a bare `pkill -f <directory>` killed the harness the first time a migration finished.
+ */
 export function stopJvmsUnder(directory: string): void {
   if (IS_WINDOWS) {
     const windowsPath = directory.replaceAll("/", "\\").replaceAll("'", "''");
@@ -77,6 +85,6 @@ export function stopJvmsUnder(directory: string): void {
       + `ForEach-Object { Stop-Process -Id $_.ProcessId -Force }`;
     spawnSync("powershell", ["-NoProfile", "-NonInteractive", "-Command", script], { stdio: "ignore" });
   } else {
-    spawnSync("pkill", ["-f", directory], { stdio: "ignore" });
+    spawnSync("pkill", ["-f", `^${escapedForRegex(directory)}/.*/bin/java`], { stdio: "ignore" });
   }
 }
