@@ -1,0 +1,4202 @@
+[
+  {
+    "id": "gradle/nationalsecurityagency-ghidra",
+    "ecosystem": "gradle",
+    "url": "https://github.com/NationalSecurityAgency/ghidra",
+    "stars": 97260,
+    "sizeKb": 416362,
+    "band": "large",
+    "tag": "Ghidra_12.2_build",
+    "commit": "8ca9077040cc43cd790babcfccf19475622a3e9a"
+  },
+  {
+    "id": "gradle/spring-projects-spring-boot",
+    "ecosystem": "gradle",
+    "url": "https://github.com/spring-projects/spring-boot",
+    "stars": 81733,
+    "sizeKb": 226394,
+    "band": "large",
+    "tag": "v4.1.2",
+    "commit": "634e6fd6bc2e475d745c0bdceb8e775864f7f2ec"
+  },
+  {
+    "id": "gradle/elastic-elasticsearch",
+    "ecosystem": "gradle",
+    "url": "https://github.com/elastic/elasticsearch",
+    "stars": 78472,
+    "sizeKb": 1839408,
+    "band": "large",
+    "tag": "v9.5.6",
+    "commit": "fd1e8011342a0988e432b999cea4bf884ca120ed"
+  },
+  {
+    "id": "gradle/termux-termux-app",
+    "ecosystem": "gradle",
+    "url": "https://github.com/termux/termux-app",
+    "stars": 63981,
+    "sizeKb": 5271,
+    "band": "small",
+    "tag": "v0.118.3",
+    "commit": "5b657c6adf4304e5198951ce815fe0205dcac29c"
+  },
+  {
+    "id": "gradle/spring-projects-spring-framework",
+    "ecosystem": "gradle",
+    "url": "https://github.com/spring-projects/spring-framework",
+    "stars": 60312,
+    "sizeKb": 246756,
+    "band": "large",
+    "tag": "v7.0.10",
+    "commit": "33a85b0bec67adb759aa898e3b80d603786be082"
+  },
+  {
+    "id": "gradle/jetbrains-kotlin",
+    "ecosystem": "gradle",
+    "url": "https://github.com/JetBrains/kotlin",
+    "stars": 53536,
+    "sizeKb": 4390065,
+    "band": "large",
+    "tag": "v2.4.21",
+    "commit": "9180ce6a7a7d3627f88b424717583f28ddca052d"
+  },
+  {
+    "id": "gradle/skylot-jadx",
+    "ecosystem": "gradle",
+    "url": "https://github.com/skylot/jadx",
+    "stars": 51510,
+    "sizeKb": 26340,
+    "band": "small",
+    "tag": "v1.5.6",
+    "commit": "28ff15e4ae69950aebea110a13e5ab895d234dfc"
+  },
+  {
+    "id": "gradle/team-spotube-spotube",
+    "ecosystem": "gradle",
+    "url": "https://github.com/team-spotube/spotube",
+    "stars": 50563,
+    "sizeKb": 164703,
+    "band": "large",
+    "tag": "v6.0.0-beta.0",
+    "commit": "08f8f65a2a7fcfb94c69882333fe0a9f7e56d0ec"
+  },
+  {
+    "id": "gradle/reactivex-rxjava",
+    "ecosystem": "gradle",
+    "url": "https://github.com/ReactiveX/RxJava",
+    "stars": 48158,
+    "sizeKb": 180160,
+    "band": "large",
+    "tag": "v4.0.0-alpha-21",
+    "commit": "f2cb677f0b2d6c7ad49537e397b56a27a2ac5461"
+  },
+  {
+    "id": "gradle/lysine-dev-okhttp",
+    "ecosystem": "gradle",
+    "url": "https://github.com/lysine-dev/okhttp",
+    "stars": 47106,
+    "sizeKb": 68304,
+    "band": "medium",
+    "tag": null,
+    "commit": "16fb6aef3aee1c4645fc8d24af01f8a4dc128ebf"
+  },
+  {
+    "id": "gradle/android-architecture-samples",
+    "ecosystem": "gradle",
+    "url": "https://github.com/android/architecture-samples",
+    "stars": 45889,
+    "sizeKb": 13365,
+    "band": "small",
+    "tag": null,
+    "commit": "ee66e1526b84c026615df032c705842b7d2a521f"
+  },
+  {
+    "id": "gradle/lysine-dev-retrofit",
+    "ecosystem": "gradle",
+    "url": "https://github.com/lysine-dev/retrofit",
+    "stars": 43939,
+    "sizeKb": 11816,
+    "band": "small",
+    "tag": "3.0.0",
+    "commit": "3ab0f1a2c18666adb79ebf4eacef6fbc40d3e801"
+  },
+  {
+    "id": "gradle/gkd-kit-gkd",
+    "ecosystem": "gradle",
+    "url": "https://github.com/gkd-kit/gkd",
+    "stars": 43915,
+    "sizeKb": 8890,
+    "band": "small",
+    "tag": "v1.12.1",
+    "commit": "5a00f844989471458e4cf4601acb3f4710438f9a"
+  },
+  {
+    "id": "gradle/teamnewpipe-newpipe",
+    "ecosystem": "gradle",
+    "url": "https://github.com/TeamNewPipe/NewPipe",
+    "stars": 40407,
+    "sizeKb": 91987,
+    "band": "medium",
+    "tag": "v0.29.1",
+    "commit": "00acf2f318b0af7ffacbd687bba011b642cc01d0"
+  },
+  {
+    "id": "gradle/halo-dev-halo",
+    "ecosystem": "gradle",
+    "url": "https://github.com/halo-dev/halo",
+    "stars": 40106,
+    "sizeKb": 89938,
+    "band": "medium",
+    "tag": "v2.27.2",
+    "commit": "4f9f661976bb2f989317035e05d217854108dcc5"
+  },
+  {
+    "id": "gradle/philjay-mpandroidchart",
+    "ecosystem": "gradle",
+    "url": "https://github.com/PhilJay/MPAndroidChart",
+    "stars": 38189,
+    "sizeKb": 24458,
+    "band": "small",
+    "tag": "v4.0.1",
+    "commit": "5e97310da3d50a55b922bf3c07c998aeaa18fa20"
+  },
+  {
+    "id": "gradle/shadowsocks-shadowsocks-android",
+    "ecosystem": "gradle",
+    "url": "https://github.com/shadowsocks/shadowsocks-android",
+    "stars": 36840,
+    "sizeKb": 53845,
+    "band": "medium",
+    "tag": "v5.3.5-nightly",
+    "commit": "ae28fd91931fe4d2d5aab044de9ceaf9ed07ad56"
+  },
+  {
+    "id": "gradle/yuliskov-smarttube",
+    "ecosystem": "gradle",
+    "url": "https://github.com/yuliskov/SmartTube",
+    "stars": 35864,
+    "sizeKb": 112298,
+    "band": "medium",
+    "tag": "32.68s",
+    "commit": "94553dd7151e8a911926ef2c9e3ef30fca007b48"
+  },
+  {
+    "id": "gradle/airbnb-lottie-android",
+    "ecosystem": "gradle",
+    "url": "https://github.com/airbnb/lottie-android",
+    "stars": 35763,
+    "sizeKb": 137398,
+    "band": "medium",
+    "tag": "v6.7.1",
+    "commit": "c8addcb776f6cd940abaf55ae6b471e55b626eb9"
+  },
+  {
+    "id": "gradle/bumptech-glide",
+    "ecosystem": "gradle",
+    "url": "https://github.com/bumptech/glide",
+    "stars": 35008,
+    "sizeKb": 98548,
+    "band": "medium",
+    "tag": "v5.0.9",
+    "commit": "b5b428b185c50c554a67983db514feffcd8d353c"
+  },
+  {
+    "id": "gradle/apache-kafka",
+    "ecosystem": "gradle",
+    "url": "https://github.com/apache/kafka",
+    "stars": 34118,
+    "sizeKb": 323205,
+    "band": "large",
+    "tag": null,
+    "commit": "13d7638174efc305bf85aae900eb875ab459f876"
+  },
+  {
+    "id": "gradle/blankj-androidutilcode",
+    "ecosystem": "gradle",
+    "url": "https://github.com/Blankj/AndroidUtilCode",
+    "stars": 33612,
+    "sizeKb": 47329,
+    "band": "medium",
+    "tag": "1.31.1",
+    "commit": "a255ebcb67bce98a19cf16848ff6c7b9a7877bbe"
+  },
+  {
+    "id": "gradle/rikkaapps-shizuku",
+    "ecosystem": "gradle",
+    "url": "https://github.com/RikkaApps/Shizuku",
+    "stars": 32683,
+    "sizeKb": 39013,
+    "band": "medium",
+    "tag": "v13.6.0",
+    "commit": "2650830c5b099ae0dd34fedf614d4f592ca05d65"
+  },
+  {
+    "id": "gradle/conductor-oss-conductor",
+    "ecosystem": "gradle",
+    "url": "https://github.com/conductor-oss/conductor",
+    "stars": 32405,
+    "sizeKb": 63159,
+    "band": "medium",
+    "tag": "v3.33.0",
+    "commit": "1488804170d159021c7e62dce61514b8f31ef9ff"
+  },
+  {
+    "id": "gradle/junkfood02-seal",
+    "ecosystem": "gradle",
+    "url": "https://github.com/JunkFood02/Seal",
+    "stars": 30294,
+    "sizeKb": 11554,
+    "band": "small",
+    "tag": "v1.13.1",
+    "commit": "a2d7e5d5819d0aa8b4f5dbb906731da283a28ed1"
+  },
+  {
+    "id": "gradle/drklo-telegram",
+    "ecosystem": "gradle",
+    "url": "https://github.com/DrKLO/Telegram",
+    "stars": 30210,
+    "sizeKb": 794073,
+    "band": "large",
+    "tag": "release-11.4.2-5469",
+    "commit": "fb2e545101f41303f1e2712de2e7611a9335f1c3"
+  },
+  {
+    "id": "gradle/kestra-io-kestra",
+    "ecosystem": "gradle",
+    "url": "https://github.com/kestra-io/kestra",
+    "stars": 30128,
+    "sizeKb": 153400,
+    "band": "large",
+    "tag": "v2.0.7",
+    "commit": "49b62a2c820d37e98a1c7b63aa35fd83f960d4ec"
+  },
+  {
+    "id": "gradle/revanced-revanced-manager",
+    "ecosystem": "gradle",
+    "url": "https://github.com/ReVanced/revanced-manager",
+    "stars": 30053,
+    "sizeKb": 41136,
+    "band": "medium",
+    "tag": "v2.6.0",
+    "commit": "aed92b22d3efa91bf46ec6b9d7a8d470b22abeee"
+  },
+  {
+    "id": "gradle/square-leakcanary",
+    "ecosystem": "gradle",
+    "url": "https://github.com/square/leakcanary",
+    "stars": 30005,
+    "sizeKb": 158735,
+    "band": "large",
+    "tag": "v3.0-alpha-9",
+    "commit": "bac94a74fa87ed807c31a42b4d495bbfdcede33a"
+  },
+  {
+    "id": "gradle/anuken-mindustry",
+    "ecosystem": "gradle",
+    "url": "https://github.com/Anuken/Mindustry",
+    "stars": 29578,
+    "sizeKb": 2013773,
+    "band": "large",
+    "tag": "v160.7",
+    "commit": "17012d61d9e4c3cbd9820d87e81c24495486ac53"
+  },
+  {
+    "id": "gradle/signalapp-signal-android",
+    "ecosystem": "gradle",
+    "url": "https://github.com/signalapp/Signal-Android",
+    "stars": 29567,
+    "sizeKb": 2686444,
+    "band": "large",
+    "tag": "v8.33.2",
+    "commit": "6e9dddc01f1b26e608ac683807c51e139c141ed2"
+  },
+  {
+    "id": "gradle/pppscn-smsforwarder",
+    "ecosystem": "gradle",
+    "url": "https://github.com/pppscn/SmsForwarder",
+    "stars": 28708,
+    "sizeKb": 469975,
+    "band": "large",
+    "tag": "v3.5.0",
+    "commit": "f93f5889d92b50f6550e92c07bb07a5584eec650"
+  },
+  {
+    "id": "gradle/ibotpeaches-apktool",
+    "ecosystem": "gradle",
+    "url": "https://github.com/iBotPeaches/Apktool",
+    "stars": 26952,
+    "sizeKb": 361566,
+    "band": "large",
+    "tag": "v3.0.3",
+    "commit": "18b5e99cb56ff9451e8aa55b065dcf5bbd616975"
+  },
+  {
+    "id": "gradle/libgdx-libgdx",
+    "ecosystem": "gradle",
+    "url": "https://github.com/libgdx/libgdx",
+    "stars": 25506,
+    "sizeKb": 1107301,
+    "band": "large",
+    "tag": "1.14.2",
+    "commit": "6b164672625ff2f009d3628e592e032b9269f112"
+  },
+  {
+    "id": "gradle/jakewharton-butterknife",
+    "ecosystem": "gradle",
+    "url": "https://github.com/JakeWharton/butterknife",
+    "stars": 25316,
+    "sizeKb": 3909,
+    "band": "small",
+    "tag": null,
+    "commit": "fcdebedf3276096db2f51bf6372b849b5a9c75ed"
+  },
+  {
+    "id": "gradle/lsposed-lsposed",
+    "ecosystem": "gradle",
+    "url": "https://github.com/LSPosed/LSPosed",
+    "stars": 25309,
+    "sizeKb": 21655,
+    "band": "small",
+    "tag": "v1.9.2",
+    "commit": "f8927757e8704d96611e1f3d75f702e3f0ce061f"
+  },
+  {
+    "id": "gradle/scwang90-smartrefreshlayout",
+    "ecosystem": "gradle",
+    "url": "https://github.com/scwang90/SmartRefreshLayout",
+    "stars": 25096,
+    "sizeKb": 274026,
+    "band": "large",
+    "tag": "V3.0.0-alpha",
+    "commit": "61cc34a1aedf2a20efb4b166f89a60a480e7241b"
+  },
+  {
+    "id": "gradle/mihonapp-mihon",
+    "ecosystem": "gradle",
+    "url": "https://github.com/mihonapp/mihon",
+    "stars": 24989,
+    "sizeKb": 82529,
+    "band": "medium",
+    "tag": "v0.21.3",
+    "commit": "feadad5e1e2bf638be6e2ca317d11657b09d4596"
+  },
+  {
+    "id": "gradle/greenrobot-eventbus",
+    "ecosystem": "gradle",
+    "url": "https://github.com/greenrobot/EventBus",
+    "stars": 24682,
+    "sizeKb": 1742,
+    "band": "small",
+    "tag": "V3.3.1",
+    "commit": "c7993322e531653789777360cc4821dd2183c4d7"
+  },
+  {
+    "id": "gradle/cymchad-baserecyclerviewadapterhelper",
+    "ecosystem": "gradle",
+    "url": "https://github.com/CymChad/BaseRecyclerViewAdapterHelper",
+    "stars": 24563,
+    "sizeKb": 72168,
+    "band": "medium",
+    "tag": "4.4.2",
+    "commit": "40997b531652019b10ed2fdd2712da5709dd90d3"
+  },
+  {
+    "id": "gradle/netflix-hystrix",
+    "ecosystem": "gradle",
+    "url": "https://github.com/Netflix/Hystrix",
+    "stars": 24481,
+    "sizeKb": 9828,
+    "band": "small",
+    "tag": "v1.5.18",
+    "commit": "809104c8751be0065a8269df3677965f3092e6b9"
+  },
+  {
+    "id": "gradle/enterprisequalitycoding-fizzbuzzenterpriseedition",
+    "ecosystem": "gradle",
+    "url": "https://github.com/EnterpriseQualityCoding/FizzBuzzEnterpriseEdition",
+    "stars": 23932,
+    "sizeKb": 340,
+    "band": "small",
+    "tag": null,
+    "commit": "4922c077c07a3744ae67ee8a932786f15bf57411"
+  },
+  {
+    "id": "gradle/matsuridayo-nekoboxforandroid",
+    "ecosystem": "gradle",
+    "url": "https://github.com/MatsuriDayo/NekoBoxForAndroid",
+    "stars": 23375,
+    "sizeKb": 5073,
+    "band": "small",
+    "tag": "1.4.2",
+    "commit": "5768494d8ae3c74a057bb6d46c0f8dc071b0d821"
+  },
+  {
+    "id": "gradle/android-nowinandroid",
+    "ecosystem": "gradle",
+    "url": "https://github.com/android/nowinandroid",
+    "stars": 21996,
+    "sizeKb": 139923,
+    "band": "medium",
+    "tag": "0.1.1",
+    "commit": "7f62b725a6e3cb0a607af62d06ea6583b463912b"
+  },
+  {
+    "id": "gradle/google-exoplayer",
+    "ecosystem": "gradle",
+    "url": "https://github.com/google/ExoPlayer",
+    "stars": 21936,
+    "sizeKb": 483311,
+    "band": "large",
+    "tag": "r2.19.1",
+    "commit": "c31197048c10a9f021637ca1b7ba828ac0fd962d"
+  },
+  {
+    "id": "gradle/carguo-gsyvideoplayer",
+    "ecosystem": "gradle",
+    "url": "https://github.com/CarGuo/GSYVideoPlayer",
+    "stars": 21527,
+    "sizeKb": 522774,
+    "band": "large",
+    "tag": "v14.0.0",
+    "commit": "4a7abf9caecbf7def7e2279e7fe2e246ef8e583a"
+  },
+  {
+    "id": "gradle/open-ani-animeko",
+    "ecosystem": "gradle",
+    "url": "https://github.com/open-ani/animeko",
+    "stars": 21445,
+    "sizeKb": 360864,
+    "band": "large",
+    "tag": "v6.4.0",
+    "commit": "38eb8f2d20c0037deb0d097b6fe8f3e89b1b7f99"
+  },
+  {
+    "id": "gradle/komi-store-komi-store",
+    "ecosystem": "gradle",
+    "url": "https://github.com/komi-store/komi-store",
+    "stars": 20267,
+    "sizeKb": 105187,
+    "band": "medium",
+    "tag": "v1.9.4",
+    "commit": "fc65863bd0b3583b288d3d72a755a22f9c8059f9"
+  },
+  {
+    "id": "gradle/reactivex-rxandroid",
+    "ecosystem": "gradle",
+    "url": "https://github.com/ReactiveX/RxAndroid",
+    "stars": 19897,
+    "sizeKb": 1070,
+    "band": "small",
+    "tag": "3.0.2",
+    "commit": "65c6bbe712733d6a96f89e2d9b189895d0ff3c25"
+  },
+  {
+    "id": "gradle/amir1376-ab-download-manager",
+    "ecosystem": "gradle",
+    "url": "https://github.com/amir1376/ab-download-manager",
+    "stars": 18939,
+    "sizeKb": 8167,
+    "band": "small",
+    "tag": "v1.11.4",
+    "commit": "b1d067c9b3c2f069c3b75fae631da9bd1793191e"
+  },
+  {
+    "id": "gradle/baseflow-photoview",
+    "ecosystem": "gradle",
+    "url": "https://github.com/Baseflow/PhotoView",
+    "stars": 18793,
+    "sizeKb": 16896,
+    "band": "small",
+    "tag": "2.0.0",
+    "commit": "c97afb5c36f551d82ca205b099104b513ff5c632"
+  },
+  {
+    "id": "gradle/square-picasso",
+    "ecosystem": "gradle",
+    "url": "https://github.com/square/picasso",
+    "stars": 18763,
+    "sizeKb": 5747,
+    "band": "small",
+    "tag": "2.8",
+    "commit": "9accffe107fcc84918d1de106880eb267cc03aa3"
+  },
+  {
+    "id": "gradle/lmax-exchange-disruptor",
+    "ecosystem": "gradle",
+    "url": "https://github.com/LMAX-Exchange/disruptor",
+    "stars": 18492,
+    "sizeKb": 10129,
+    "band": "small",
+    "tag": "4.0.0",
+    "commit": "95c705f60c1833b07f1fed6e08a08d7bee7f0971"
+  },
+  {
+    "id": "gradle/droid-deck-droiddeck",
+    "ecosystem": "gradle",
+    "url": "https://github.com/Droid-Deck/DroidDeck",
+    "stars": 17497,
+    "sizeKb": 359761,
+    "band": "large",
+    "tag": "0.6.9",
+    "commit": "0a07926ef3477c90db911d169904137cfc5e2505"
+  },
+  {
+    "id": "gradle/meta-fresco",
+    "ecosystem": "gradle",
+    "url": "https://github.com/meta/fresco",
+    "stars": 17159,
+    "sizeKb": 81290,
+    "band": "medium",
+    "tag": "v3.9.0",
+    "commit": "71ed3295fbb732d6038436d6d63e61c2c9a953af"
+  },
+  {
+    "id": "gradle/iamgio-quarkdown",
+    "ecosystem": "gradle",
+    "url": "https://github.com/iamgio/quarkdown",
+    "stars": 16348,
+    "sizeKb": 36278,
+    "band": "small",
+    "tag": "v2.7.0",
+    "commit": "46db7191f074e77cc106d637d95fee5fbdcdacaa"
+  },
+  {
+    "id": "gradle/mobile-dev-inc-maestro",
+    "ecosystem": "gradle",
+    "url": "https://github.com/mobile-dev-inc/Maestro",
+    "stars": 16293,
+    "sizeKb": 1059275,
+    "band": "large",
+    "tag": "cli-2.12.1",
+    "commit": "67d8a677029261fa424a45a10d08eacd6aa0deed"
+  },
+  {
+    "id": "gradle/nickbutcher-plaid",
+    "ecosystem": "gradle",
+    "url": "https://github.com/nickbutcher/plaid",
+    "stars": 16162,
+    "sizeKb": 33949,
+    "band": "small",
+    "tag": null,
+    "commit": "15958cc287f4a8efb2c39b65ca57cd41c7aad518"
+  },
+  {
+    "id": "gradle/t8rin-imagetoolbox",
+    "ecosystem": "gradle",
+    "url": "https://github.com/T8RIN/ImageToolbox",
+    "stars": 15300,
+    "sizeKb": 511668,
+    "band": "large",
+    "tag": "4.2.0",
+    "commit": "4e0c2133e44fb298323fe6b21c723b3fff1c7505"
+  },
+  {
+    "id": "gradle/mamoe-mirai",
+    "ecosystem": "gradle",
+    "url": "https://github.com/mamoe/mirai",
+    "stars": 14796,
+    "sizeKb": 96914,
+    "band": "medium",
+    "tag": "v2.16.0",
+    "commit": "0b9bf54b8eb109e4ad2c04cf0f35c023695ed806"
+  },
+  {
+    "id": "gradle/ktorio-ktor",
+    "ecosystem": "gradle",
+    "url": "https://github.com/ktorio/ktor",
+    "stars": 14562,
+    "sizeKb": 153672,
+    "band": "large",
+    "tag": "3.6.1",
+    "commit": "26cc0037c9f671bbd090633aa2880badb7045855"
+  },
+  {
+    "id": "gradle/thunderbird-thunderbird-android",
+    "ecosystem": "gradle",
+    "url": "https://github.com/thunderbird/thunderbird-android",
+    "stars": 14176,
+    "sizeKb": 206104,
+    "band": "large",
+    "tag": "K9MAIL_24_0",
+    "commit": "73dd96a435d2c416e0f390fdf970b2654c50e231"
+  },
+  {
+    "id": "gradle/metrolistgroup-metrolist",
+    "ecosystem": "gradle",
+    "url": "https://github.com/MetrolistGroup/Metrolist",
+    "stars": 13970,
+    "sizeKb": 128643,
+    "band": "medium",
+    "tag": "v13.7.0",
+    "commit": "7c5ba3ad22cb562d337897f82163a2b7fce665f3"
+  },
+  {
+    "id": "gradle/orhanobut-logger",
+    "ecosystem": "gradle",
+    "url": "https://github.com/orhanobut/logger",
+    "stars": 13829,
+    "sizeKb": 1952,
+    "band": "small",
+    "tag": "2.2.0",
+    "commit": "1e9ea42c5834b6bc759b73a6e5d1743d857de72d"
+  },
+  {
+    "id": "gradle/kotlin-kotlinx.coroutines",
+    "ecosystem": "gradle",
+    "url": "https://github.com/Kotlin/kotlinx.coroutines",
+    "stars": 13823,
+    "sizeKb": 44171,
+    "band": "medium",
+    "tag": "1.11.0",
+    "commit": "8564f65764d3d05893cec026c6e94250e2b23874"
+  },
+  {
+    "id": "gradle/shihabal3amri-diplay",
+    "ecosystem": "gradle",
+    "url": "https://github.com/shihabal3amri/DiPlay",
+    "stars": 13129,
+    "sizeKb": 16246,
+    "band": "small",
+    "tag": null,
+    "commit": "615b32ce0b40cd0b99ce94ba23a512001553684f"
+  },
+  {
+    "id": "gradle/jingmatrix-vector",
+    "ecosystem": "gradle",
+    "url": "https://github.com/JingMatrix/Vector",
+    "stars": 13016,
+    "sizeKb": 26295,
+    "band": "small",
+    "tag": "v2.2",
+    "commit": "88f8e1faa8b4e7ce20aefabe9c295cd746ea038e"
+  },
+  {
+    "id": "gradle/libre-tube-libretube",
+    "ecosystem": "gradle",
+    "url": "https://github.com/libre-tube/LibreTube",
+    "stars": 12937,
+    "sizeKb": 105819,
+    "band": "medium",
+    "tag": "v32.1",
+    "commit": "6a861f4282c3de73b840793365d8ac7114b5a80f"
+  },
+  {
+    "id": "gradle/maxrave-dev-simpmusic",
+    "ecosystem": "gradle",
+    "url": "https://github.com/maxrave-dev/SimpMusic",
+    "stars": 12679,
+    "sizeKb": 245759,
+    "band": "large",
+    "tag": "v2.5.0",
+    "commit": "b5cff20a32f8b8bfaa720a83a81320b4c988dba3"
+  },
+  {
+    "id": "gradle/tamsiree-rxtool",
+    "ecosystem": "gradle",
+    "url": "https://github.com/Tamsiree/RxTool",
+    "stars": 12289,
+    "sizeKb": 108432,
+    "band": "medium",
+    "tag": "v2.6.3",
+    "commit": "f074a6574b399a790b328c8bf76f08deebd58484"
+  },
+  {
+    "id": "gradle/ankidroid-anki-android",
+    "ecosystem": "gradle",
+    "url": "https://github.com/ankidroid/Anki-Android",
+    "stars": 12152,
+    "sizeKb": 349755,
+    "band": "large",
+    "tag": "v2.25.3",
+    "commit": "d9bf072f814a0c37d30a694192593b31ff2df875"
+  },
+  {
+    "id": "gradle/coil-kt-coil",
+    "ecosystem": "gradle",
+    "url": "https://github.com/coil-kt/coil",
+    "stars": 11956,
+    "sizeKb": 129639,
+    "band": "medium",
+    "tag": "3.6.3",
+    "commit": "29cae3b4212ebea927b15da5bf2ad79fbb6f5c99"
+  },
+  {
+    "id": "gradle/breezy-weather-breezy-weather",
+    "ecosystem": "gradle",
+    "url": "https://github.com/breezy-weather/breezy-weather",
+    "stars": 11872,
+    "sizeKb": 1060927,
+    "band": "large",
+    "tag": "v6.2.2",
+    "commit": "17fd71dd00e0668368c9c7844433f79f09ad9e93"
+  },
+  {
+    "id": "gradle/yiiguxing-translationplugin",
+    "ecosystem": "gradle",
+    "url": "https://github.com/YiiGuxing/TranslationPlugin",
+    "stars": 11870,
+    "sizeKb": 25348,
+    "band": "small",
+    "tag": "v3.9.3",
+    "commit": "b68bd4300a5a3251576e047e231f495e0b35d81d"
+  },
+  {
+    "id": "gradle/utkarshdalal-gamenative",
+    "ecosystem": "gradle",
+    "url": "https://github.com/utkarshdalal/GameNative",
+    "stars": 11701,
+    "sizeKb": 1558760,
+    "band": "large",
+    "tag": "v1.3.0",
+    "commit": "0be4545b34a814dc7227125b3f112ced90706d4b"
+  },
+  {
+    "id": "gradle/mikepenz-materialdrawer",
+    "ecosystem": "gradle",
+    "url": "https://github.com/mikepenz/MaterialDrawer",
+    "stars": 11637,
+    "sizeKb": 23266,
+    "band": "small",
+    "tag": "v9.0.2",
+    "commit": "c558b0cc6e0323a489c7737e5ea75187fac6e506"
+  },
+  {
+    "id": "gradle/wasabeef-recyclerview-animators",
+    "ecosystem": "gradle",
+    "url": "https://github.com/wasabeef/recyclerview-animators",
+    "stars": 11530,
+    "sizeKb": 67775,
+    "band": "medium",
+    "tag": null,
+    "commit": "6c5c7748e86f43d3d03f7b3122f473e1fd807681"
+  },
+  {
+    "id": "gradle/yairm210-unciv",
+    "ecosystem": "gradle",
+    "url": "https://github.com/yairm210/Unciv",
+    "stars": 11520,
+    "sizeKb": 1408531,
+    "band": "large",
+    "tag": "4.22.16",
+    "commit": "c7e797b8499828bf0fa800668e11901417efc183"
+  },
+  {
+    "id": "gradle/heapy-awesome-kotlin",
+    "ecosystem": "gradle",
+    "url": "https://github.com/Heapy/awesome-kotlin",
+    "stars": 11407,
+    "sizeKb": 452910,
+    "band": "large",
+    "tag": null,
+    "commit": "6b2866de98062e84d15d75c8274f0c5681236739"
+  },
+  {
+    "id": "gradle/shabinder-spotiflyer",
+    "ecosystem": "gradle",
+    "url": "https://github.com/Shabinder/SpotiFlyer",
+    "stars": 11310,
+    "sizeKb": 65684,
+    "band": "medium",
+    "tag": "v3.6.4",
+    "commit": "e418d2ee2ca3d2838470407d748994d72008c312"
+  },
+  {
+    "id": "gradle/recloudstream-cloudstream",
+    "ecosystem": "gradle",
+    "url": "https://github.com/recloudstream/cloudstream",
+    "stars": 11142,
+    "sizeKb": 54638,
+    "band": "medium",
+    "tag": "v4.8.0",
+    "commit": "3796406e636356f556c16e04e1da4e37d6a19038"
+  },
+  {
+    "id": "gradle/deniscerri-ytdlnis",
+    "ecosystem": "gradle",
+    "url": "https://github.com/deniscerri/ytdlnis",
+    "stars": 10942,
+    "sizeKb": 136336,
+    "band": "medium",
+    "tag": "v1.9.1.1",
+    "commit": "2bec7edf34801c4a633223023a229c2ad591776d"
+  },
+  {
+    "id": "gradle/jakewharton-timber",
+    "ecosystem": "gradle",
+    "url": "https://github.com/JakeWharton/timber",
+    "stars": 10851,
+    "sizeKb": 2931,
+    "band": "small",
+    "tag": "5.0.1",
+    "commit": "70aaa745e5cc9b8ff6a8363ab895258762b53682"
+  },
+  {
+    "id": "gradle/appintro-appintro",
+    "ecosystem": "gradle",
+    "url": "https://github.com/AppIntro/AppIntro",
+    "stars": 10567,
+    "sizeKb": 104478,
+    "band": "medium",
+    "tag": "6.3.1",
+    "commit": "47da57d2231bb8bac61e2650358167ddee3b58b8"
+  },
+  {
+    "id": "gradle/isoron-uhabits",
+    "ecosystem": "gradle",
+    "url": "https://github.com/iSoron/uhabits",
+    "stars": 10385,
+    "sizeKb": 40759,
+    "band": "medium",
+    "tag": "v2.3.2",
+    "commit": "7afc799cfb6959f8a9d892417d6427a262bfb13a"
+  },
+  {
+    "id": "gradle/jetbrains-ideavim",
+    "ecosystem": "gradle",
+    "url": "https://github.com/JetBrains/ideavim",
+    "stars": 10285,
+    "sizeKb": 125521,
+    "band": "medium",
+    "tag": null,
+    "commit": "0c7bfca612312d13a9fc0513518bb9a80940b085"
+  },
+  {
+    "id": "gradle/square-moshi",
+    "ecosystem": "gradle",
+    "url": "https://github.com/square/moshi",
+    "stars": 10169,
+    "sizeKb": 5716,
+    "band": "small",
+    "tag": null,
+    "commit": "889013ec2edb8d8034902662a1dc8c4f3b3f8111"
+  },
+  {
+    "id": "gradle/morpheapp-morphe-manager",
+    "ecosystem": "gradle",
+    "url": "https://github.com/MorpheApp/morphe-manager",
+    "stars": 9894,
+    "sizeKb": 169142,
+    "band": "large",
+    "tag": "v2.3.0",
+    "commit": "4f70bf114525514cbf89fd1c4fdc8b235504efdd"
+  },
+  {
+    "id": "gradle/ethereum-lists-chains",
+    "ecosystem": "gradle",
+    "url": "https://github.com/ethereum-lists/chains",
+    "stars": 9835,
+    "sizeKb": 531859,
+    "band": "large",
+    "tag": null,
+    "commit": "79228a06a9c1415a6b777d965296e6745e9789fe"
+  },
+  {
+    "id": "gradle/bitwarden-android",
+    "ecosystem": "gradle",
+    "url": "https://github.com/bitwarden/android",
+    "stars": 9577,
+    "sizeKb": 264967,
+    "band": "large",
+    "tag": "v2026.10.1-bwpm",
+    "commit": "1470154cf3d3d0511cdbe5bfc6493971b6478edf"
+  },
+  {
+    "id": "gradle/ackites-nrfr",
+    "ecosystem": "gradle",
+    "url": "https://github.com/Ackites/Nrfr",
+    "stars": 9449,
+    "sizeKb": 433,
+    "band": "small",
+    "tag": "v1.0.3",
+    "commit": "836eac27a957305985a55eab990c2a226d53d479"
+  },
+  {
+    "id": "gradle/zhanghai-materialfiles",
+    "ecosystem": "gradle",
+    "url": "https://github.com/zhanghai/MaterialFiles",
+    "stars": 9382,
+    "sizeKb": 16175,
+    "band": "small",
+    "tag": "v1.7.5",
+    "commit": "7254ab32c3a84f53f3569f9845bbb8e4b0b16f56"
+  },
+  {
+    "id": "gradle/firebase-quickstart-android",
+    "ecosystem": "gradle",
+    "url": "https://github.com/firebase/quickstart-android",
+    "stars": 9343,
+    "sizeKb": 34520,
+    "band": "small",
+    "tag": null,
+    "commit": "0f76ce2548184f83f461c002978045d57ec9218d"
+  },
+  {
+    "id": "gradle/jetbrains-exposed",
+    "ecosystem": "gradle",
+    "url": "https://github.com/JetBrains/Exposed",
+    "stars": 9303,
+    "sizeKb": 73323,
+    "band": "medium",
+    "tag": "1.6.0",
+    "commit": "ba50abcc256d85af9b0142f4d7474cebdf87c16b"
+  },
+  {
+    "id": "gradle/aaswordman-operit",
+    "ecosystem": "gradle",
+    "url": "https://github.com/AAswordman/Operit",
+    "stars": 9195,
+    "sizeKb": 592871,
+    "band": "large",
+    "tag": "v1.12.2",
+    "commit": "dbf71916fae9750cfdc9f9a774f5a0fee56633fb"
+  },
+  {
+    "id": "gradle/pengchujin-aerial-tv",
+    "ecosystem": "gradle",
+    "url": "https://github.com/pengchujin/aerial-tv",
+    "stars": 9093,
+    "sizeKb": 11284,
+    "band": "small",
+    "tag": "v1.81",
+    "commit": "2693200e9ddb803c6ba280ec8f95fc0e40a865cb"
+  },
+  {
+    "id": "gradle/lysine-dev-okio",
+    "ecosystem": "gradle",
+    "url": "https://github.com/lysine-dev/okio",
+    "stars": 9055,
+    "sizeKb": 10516,
+    "band": "small",
+    "tag": null,
+    "commit": "61d53efb0a3cdabd90332cf3226f3e0f44525b0f"
+  },
+  {
+    "id": "gradle/florisboard-florisboard",
+    "ecosystem": "gradle",
+    "url": "https://github.com/florisboard/florisboard",
+    "stars": 8744,
+    "sizeKb": 127127,
+    "band": "medium",
+    "tag": "v0.5.2",
+    "commit": "2e82060251897226c0739b9f52d1d051b02305fb"
+  },
+  {
+    "id": "gradle/rikkahub-rikkahub",
+    "ecosystem": "gradle",
+    "url": "https://github.com/rikkahub/rikkahub",
+    "stars": 8610,
+    "sizeKb": 79425,
+    "band": "medium",
+    "tag": "3.1.1",
+    "commit": "ad2c4430d50ba52392b2941367f98ef59614cb73"
+  },
+  {
+    "id": "gradle/skydoves-pokedex",
+    "ecosystem": "gradle",
+    "url": "https://github.com/skydoves/Pokedex",
+    "stars": 8376,
+    "sizeKb": 17507,
+    "band": "small",
+    "tag": "1.2.0",
+    "commit": "5c90ba61484c98a52ee9af2276281252557d840e"
+  },
+  {
+    "id": "gradle/ceuilisa-pixiv-shaft",
+    "ecosystem": "gradle",
+    "url": "https://github.com/CeuiLiSA/Pixiv-Shaft",
+    "stars": 8219,
+    "sizeKb": 314925,
+    "band": "large",
+    "tag": "v4.9.9",
+    "commit": "6ad80a65ee753c6f0b4436be1a9f7d3a7f327c37"
+  },
+  {
+    "id": "gradle/bmax121-apatch",
+    "ecosystem": "gradle",
+    "url": "https://github.com/bmax121/APatch",
+    "stars": 8122,
+    "sizeKb": 24562,
+    "band": "small",
+    "tag": "11282",
+    "commit": "e8e4651c16fb5075882a25813c8732285fdb3505"
+  },
+  {
+    "id": "gradle/d4rken-org-sdmaid-se",
+    "ecosystem": "gradle",
+    "url": "https://github.com/d4rken-org/sdmaid-se",
+    "stars": 7967,
+    "sizeKb": 147397,
+    "band": "large",
+    "tag": "v2.2.2-rc0",
+    "commit": "2d39c79bf2107a942ab813f5d2a5da862e191544"
+  },
+  {
+    "id": "gradle/permissionlesstech-bitchat-android",
+    "ecosystem": "gradle",
+    "url": "https://github.com/permissionlesstech/bitchat-android",
+    "stars": 7953,
+    "sizeKb": 110883,
+    "band": "medium",
+    "tag": "v2.2.0",
+    "commit": "20501fdfe0d56c7705c377d4a263b01d8f38eeeb"
+  },
+  {
+    "id": "gradle/uber-ribs",
+    "ecosystem": "gradle",
+    "url": "https://github.com/uber/RIBs",
+    "stars": 7949,
+    "sizeKb": 11453,
+    "band": "small",
+    "tag": "v0.16.6",
+    "commit": "22ad3edaec87083d22979886b52f1ada5c488f68"
+  },
+  {
+    "id": "gradle/rukamori-archivetune",
+    "ecosystem": "gradle",
+    "url": "https://github.com/rukamori/ArchiveTune",
+    "stars": 7918,
+    "sizeKb": 102664,
+    "band": "medium",
+    "tag": "v15.1.0",
+    "commit": "2f48b8159ecca45ae39394e2eb0d0b946e6b06f9"
+  },
+  {
+    "id": "gradle/aniyomiorg-aniyomi",
+    "ecosystem": "gradle",
+    "url": "https://github.com/aniyomiorg/aniyomi",
+    "stars": 7865,
+    "sizeKb": 83434,
+    "band": "medium",
+    "tag": "v0.18.2.1",
+    "commit": "97414446b8a95994c72dd33c41c971a89d4d25b8"
+  },
+  {
+    "id": "gradle/google-accompanist",
+    "ecosystem": "gradle",
+    "url": "https://github.com/google/accompanist",
+    "stars": 7847,
+    "sizeKb": 56449,
+    "band": "medium",
+    "tag": "v0.37.3",
+    "commit": "f939af3b068d400265cb59ed835eab3e52615149"
+  },
+  {
+    "id": "gradle/meta-litho",
+    "ecosystem": "gradle",
+    "url": "https://github.com/meta/litho",
+    "stars": 7802,
+    "sizeKb": 833644,
+    "band": "large",
+    "tag": "v0.49.1",
+    "commit": "b5575209056b50ffe6dc87a9c0dab3ec07c25e2a"
+  },
+  {
+    "id": "gradle/skydoves-android-developer-roadmap",
+    "ecosystem": "gradle",
+    "url": "https://github.com/skydoves/android-developer-roadmap",
+    "stars": 7801,
+    "sizeKb": 25206,
+    "band": "small",
+    "tag": "1.0.11",
+    "commit": "f7bd7f924ed351f453e77ffc2a9f85ddbf25cb62"
+  },
+  {
+    "id": "gradle/droid-ify-client",
+    "ecosystem": "gradle",
+    "url": "https://github.com/Droid-ify/client",
+    "stars": 7683,
+    "sizeKb": 119441,
+    "band": "medium",
+    "tag": "v0.7.8",
+    "commit": "ff1453ed957f3b2382abce9a7eb9a9db8def3a3a"
+  },
+  {
+    "id": "gradle/readyouapp-readyou",
+    "ecosystem": "gradle",
+    "url": "https://github.com/ReadYouApp/ReadYou",
+    "stars": 7633,
+    "sizeKb": 12067,
+    "band": "small",
+    "tag": "0.16.2",
+    "commit": "091c9207527a10a135b307c9f7747306da36f686"
+  },
+  {
+    "id": "gradle/chrisbanes-cheesesquare",
+    "ecosystem": "gradle",
+    "url": "https://github.com/chrisbanes/cheesesquare",
+    "stars": 7628,
+    "sizeKb": 1344,
+    "band": "small",
+    "tag": "1.0",
+    "commit": "cf67574cb7444f6ac3fd5e5910640d6272f68741"
+  },
+  {
+    "id": "gradle/kunzisoft-keepassdx",
+    "ecosystem": "gradle",
+    "url": "https://github.com/Kunzisoft/KeePassDX",
+    "stars": 7607,
+    "sizeKb": 72251,
+    "band": "medium",
+    "tag": "4.5.8",
+    "commit": "77ecfa8654a5bd0d79d512f8fa71c0af8a29b554"
+  },
+  {
+    "id": "gradle/libchecker-libchecker",
+    "ecosystem": "gradle",
+    "url": "https://github.com/LibChecker/LibChecker",
+    "stars": 7300,
+    "sizeKb": 25642,
+    "band": "small",
+    "tag": "2.5.4",
+    "commit": "56960145b968d9ac55fa07f96bf4fd903bc43d6f"
+  },
+  {
+    "id": "maven/iluwatar-java-design-patterns",
+    "ecosystem": "maven",
+    "url": "https://github.com/iluwatar/java-design-patterns",
+    "stars": 94843,
+    "sizeKb": 48731,
+    "band": "medium",
+    "tag": null,
+    "commit": "4cabb204f240240bea319605a5ffa46ded728001"
+  },
+  {
+    "id": "maven/macrozheng-mall",
+    "ecosystem": "maven",
+    "url": "https://github.com/macrozheng/mall",
+    "stars": 85006,
+    "sizeKb": 58744,
+    "band": "medium",
+    "tag": "v1.0.3",
+    "commit": "dd617ac3fe89c8083af56bee3364b1e812cda3ed"
+  },
+  {
+    "id": "maven/thealgorithms-java",
+    "ecosystem": "maven",
+    "url": "https://github.com/TheAlgorithms/Java",
+    "stars": 66716,
+    "sizeKb": 7864,
+    "band": "small",
+    "tag": null,
+    "commit": "6edd2d878947c7fb08a6f3286b316eca09fe9200"
+  },
+  {
+    "id": "maven/dbeaver-dbeaver",
+    "ecosystem": "maven",
+    "url": "https://github.com/dbeaver/dbeaver",
+    "stars": 52281,
+    "sizeKb": 225056,
+    "band": "large",
+    "tag": "26.2.4",
+    "commit": "9dcee590939f5c1155652fa729061035d2c347c8"
+  },
+  {
+    "id": "maven/google-guava",
+    "ecosystem": "maven",
+    "url": "https://github.com/google/guava",
+    "stars": 51919,
+    "sizeKb": 1439794,
+    "band": "large",
+    "tag": "v33.8.0",
+    "commit": "309d377f8178f54af3e2cf893c3c4d2014e537c5"
+  },
+  {
+    "id": "maven/apache-dubbo",
+    "ecosystem": "maven",
+    "url": "https://github.com/apache/dubbo",
+    "stars": 41583,
+    "sizeKb": 61830,
+    "band": "medium",
+    "tag": "dubbo-3.2.20",
+    "commit": "d390d2bedc6c616c8ec8ebeb4f3edc347df5506e"
+  },
+  {
+    "id": "maven/yunaiv-ruoyi-vue-pro",
+    "ecosystem": "maven",
+    "url": "https://github.com/YunaiV/ruoyi-vue-pro",
+    "stars": 40183,
+    "sizeKb": 203929,
+    "band": "large",
+    "tag": "v2026.10(jdk25)",
+    "commit": "67be917c2f4ffbcebc0ceb3bffa336accc65cba1"
+  },
+  {
+    "id": "maven/keycloak-keycloak",
+    "ecosystem": "maven",
+    "url": "https://github.com/keycloak/keycloak",
+    "stars": 37663,
+    "sizeKb": 625959,
+    "band": "large",
+    "tag": "26.8.1",
+    "commit": "24ed1dadf3f246a555adb6d3d4a99e9b3003fb3b"
+  },
+  {
+    "id": "maven/alibaba-arthas",
+    "ecosystem": "maven",
+    "url": "https://github.com/alibaba/arthas",
+    "stars": 37606,
+    "sizeKb": 73646,
+    "band": "medium",
+    "tag": "arthas-all-4.3.5",
+    "commit": "be42fd932a26456988b97d863087b116de19253f"
+  },
+  {
+    "id": "maven/eugenp-tutorials",
+    "ecosystem": "maven",
+    "url": "https://github.com/eugenp/tutorials",
+    "stars": 37310,
+    "sizeKb": 133385,
+    "band": "large",
+    "tag": null,
+    "commit": "80e278176ec326bda75729d50ef43cbfb1aa1c53"
+  },
+  {
+    "id": "maven/netty-netty",
+    "ecosystem": "maven",
+    "url": "https://github.com/netty/netty",
+    "stars": 35074,
+    "sizeKb": 119258,
+    "band": "large",
+    "tag": "netty-4.2.20.Final",
+    "commit": "4fb6a5f308382b4bee1bff3ef80b45ea8b35166d"
+  },
+  {
+    "id": "maven/zxing-zxing",
+    "ecosystem": "maven",
+    "url": "https://github.com/zxing/zxing",
+    "stars": 34183,
+    "sizeKb": 244332,
+    "band": "large",
+    "tag": "zxing-3.5.4",
+    "commit": "f651b0a0375676e47144f73397dddff8868b0e4c"
+  },
+  {
+    "id": "maven/xkcoding-spring-boot-demo",
+    "ecosystem": "maven",
+    "url": "https://github.com/xkcoding/spring-boot-demo",
+    "stars": 34054,
+    "sizeKb": 14194,
+    "band": "small",
+    "tag": null,
+    "commit": "87a142f9604c1a5365b4d24d22c2c11c26a9d5ab"
+  },
+  {
+    "id": "maven/alibaba-nacos",
+    "ecosystem": "maven",
+    "url": "https://github.com/alibaba/nacos",
+    "stars": 33492,
+    "sizeKb": 112758,
+    "band": "medium",
+    "tag": "3.3.0",
+    "commit": "e61ba821e025d713fc02d2020a338d4ce4251912"
+  },
+  {
+    "id": "maven/binarywang-wxjava",
+    "ecosystem": "maven",
+    "url": "https://github.com/binarywang/WxJava",
+    "stars": 33176,
+    "sizeKb": 20880,
+    "band": "small",
+    "tag": "v4.8.0",
+    "commit": "42f727cd412be46a86015c34de49256d7377c87e"
+  },
+  {
+    "id": "maven/xuxueli-xxl-job",
+    "ecosystem": "maven",
+    "url": "https://github.com/xuxueli/xxl-job",
+    "stars": 30650,
+    "sizeKb": 39371,
+    "band": "small",
+    "tag": "3.5.0",
+    "commit": "3bebfc1609b95413581b11e270e5670dce679813"
+  },
+  {
+    "id": "maven/chinabugotech-hutool",
+    "ecosystem": "maven",
+    "url": "https://github.com/chinabugotech/hutool",
+    "stars": 30234,
+    "sizeKb": 75491,
+    "band": "medium",
+    "tag": "5.8.48",
+    "commit": "87ec11862baae72914df703e25939eb44a8a843c"
+  },
+  {
+    "id": "maven/apolloconfig-apollo",
+    "ecosystem": "maven",
+    "url": "https://github.com/apolloconfig/apollo",
+    "stars": 29823,
+    "sizeKb": 58228,
+    "band": "medium",
+    "tag": "v3.0.0",
+    "commit": "00d307b0044e2c55c5390ffdf5658f079ee9b187"
+  },
+  {
+    "id": "maven/alibaba-canal",
+    "ecosystem": "maven",
+    "url": "https://github.com/alibaba/canal",
+    "stars": 29742,
+    "sizeKb": 24261,
+    "band": "small",
+    "tag": "canal-1.1.8",
+    "commit": "0741ccda1eee67771dfa5d959df1ef83485cedf5"
+  },
+  {
+    "id": "maven/alibaba-spring-cloud-alibaba",
+    "ecosystem": "maven",
+    "url": "https://github.com/alibaba/spring-cloud-alibaba",
+    "stars": 29164,
+    "sizeKb": 56420,
+    "band": "medium",
+    "tag": "2025.1.0.0",
+    "commit": "09d0a1a767e21571fd5df83c57326e7b08ce14c6"
+  },
+  {
+    "id": "maven/alibaba-druid",
+    "ecosystem": "maven",
+    "url": "https://github.com/alibaba/druid",
+    "stars": 28154,
+    "sizeKb": 94025,
+    "band": "medium",
+    "tag": "1.2.28",
+    "commit": "33824c3dec1612711f9bb4e409319bcab2e4cd0e"
+  },
+  {
+    "id": "maven/floci-io-floci",
+    "ecosystem": "maven",
+    "url": "https://github.com/floci-io/floci",
+    "stars": 27992,
+    "sizeKb": 92879,
+    "band": "medium",
+    "tag": "2.4.0",
+    "commit": "9be236e2890c2042a6bb819f1a9228be996acd90"
+  },
+  {
+    "id": "maven/openapitools-openapi-generator",
+    "ecosystem": "maven",
+    "url": "https://github.com/OpenAPITools/openapi-generator",
+    "stars": 26846,
+    "sizeKb": 1020225,
+    "band": "large",
+    "tag": "v7.27.0",
+    "commit": "b05edef29e730891d2af9817964d16b66a9a66c5"
+  },
+  {
+    "id": "maven/crossoverjie-jcsprout",
+    "ecosystem": "maven",
+    "url": "https://github.com/crossoverJie/JCSprout",
+    "stars": 26796,
+    "sizeKb": 1191,
+    "band": "small",
+    "tag": null,
+    "commit": "fc4c6e5f6d1772c2aec4c0f94cb3c8e7eb04018f"
+  },
+  {
+    "id": "maven/jenkinsci-jenkins",
+    "ecosystem": "maven",
+    "url": "https://github.com/jenkinsci/jenkins",
+    "stars": 26719,
+    "sizeKb": 174227,
+    "band": "large",
+    "tag": "jenkins-2.580.2",
+    "commit": "ea3f958268fe87ed86a5d1c2d90c5a99426b97ce"
+  },
+  {
+    "id": "maven/qiurunze123-miaosha",
+    "ecosystem": "maven",
+    "url": "https://github.com/qiurunze123/miaosha",
+    "stars": 26572,
+    "sizeKb": 65716,
+    "band": "medium",
+    "tag": null,
+    "commit": "e58017658e549b63fc4db2160d2325ccd7f8435b"
+  },
+  {
+    "id": "maven/apache-flink",
+    "ecosystem": "maven",
+    "url": "https://github.com/apache/flink",
+    "stars": 26444,
+    "sizeKb": 558354,
+    "band": "large",
+    "tag": null,
+    "commit": "c48b1f1746dfd8d38858fd35468f5ab90797513d"
+  },
+  {
+    "id": "maven/apache-incubator-seata",
+    "ecosystem": "maven",
+    "url": "https://github.com/apache/incubator-seata",
+    "stars": 26006,
+    "sizeKb": 32901,
+    "band": "small",
+    "tag": "v2.6.0",
+    "commit": "04a42c083e3d720b36642d4f09b89d34b836aa1b"
+  },
+  {
+    "id": "maven/apache-skywalking",
+    "ecosystem": "maven",
+    "url": "https://github.com/apache/skywalking",
+    "stars": 24985,
+    "sizeKb": 181924,
+    "band": "large",
+    "tag": "v11.0.0",
+    "commit": "6f1fd78e872f1d380a14f271c26e8d68eb2430fc"
+  },
+  {
+    "id": "maven/dataease-dataease",
+    "ecosystem": "maven",
+    "url": "https://github.com/dataease/dataease",
+    "stars": 24669,
+    "sizeKb": 352643,
+    "band": "large",
+    "tag": "v3.2.1",
+    "commit": "ea9a5ff1e5d19c735163187b64a678b395ad260b"
+  },
+  {
+    "id": "maven/redisson-redisson",
+    "ecosystem": "maven",
+    "url": "https://github.com/redisson/redisson",
+    "stars": 24425,
+    "sizeKb": 37333,
+    "band": "small",
+    "tag": "redisson-4.8.0",
+    "commit": "36172f9ecbc575918649ad6b0ad5a47e2ecde395"
+  },
+  {
+    "id": "maven/google-gson",
+    "ecosystem": "maven",
+    "url": "https://github.com/google/gson",
+    "stars": 24235,
+    "sizeKb": 23558,
+    "band": "small",
+    "tag": "gson-parent-2.15.0",
+    "commit": "fcd416909db2bea96eb916bcfb2d0a83cb9b86c3"
+  },
+  {
+    "id": "maven/enterprisequalitycoding-fizzbuzzenterpriseedition",
+    "ecosystem": "maven",
+    "url": "https://github.com/EnterpriseQualityCoding/FizzBuzzEnterpriseEdition",
+    "stars": 23932,
+    "sizeKb": 340,
+    "band": "small",
+    "tag": null,
+    "commit": "4922c077c07a3744ae67ee8a932786f15bf57411"
+  },
+  {
+    "id": "maven/alibaba-sentinel",
+    "ecosystem": "maven",
+    "url": "https://github.com/alibaba/Sentinel",
+    "stars": 23150,
+    "sizeKb": 8604,
+    "band": "small",
+    "tag": "1.8.10",
+    "commit": "cf97bba55d260f3182e2e2a65af9d0e3ee5abf1c"
+  },
+  {
+    "id": "maven/apache-rocketmq",
+    "ecosystem": "maven",
+    "url": "https://github.com/apache/rocketmq",
+    "stars": 22649,
+    "sizeKb": 47314,
+    "band": "medium",
+    "tag": "rocketmq-all-5.5.1",
+    "commit": "efa1be59d6fc747ad220f036c86030f05f0419f9"
+  },
+  {
+    "id": "maven/thingsboard-thingsboard",
+    "ecosystem": "maven",
+    "url": "https://github.com/thingsboard/thingsboard",
+    "stars": 22632,
+    "sizeKb": 416852,
+    "band": "large",
+    "tag": "v4.4.0.2",
+    "commit": "adf34aa4f492758a1735b3a8eb392af880ad6001"
+  },
+  {
+    "id": "maven/elunez-eladmin",
+    "ecosystem": "maven",
+    "url": "https://github.com/elunez/eladmin",
+    "stars": 21897,
+    "sizeKb": 7529,
+    "band": "small",
+    "tag": "v2.7",
+    "commit": "39d480938d27a9630d632578c3ef60cf3647a79e"
+  },
+  {
+    "id": "maven/brettwooldridge-hikaricp",
+    "ecosystem": "maven",
+    "url": "https://github.com/brettwooldridge/HikariCP",
+    "stars": 21246,
+    "sizeKb": 5061,
+    "band": "small",
+    "tag": null,
+    "commit": "a4d93f4f85517f90e632b795486d7102e933d7ff"
+  },
+  {
+    "id": "maven/apache-shardingsphere",
+    "ecosystem": "maven",
+    "url": "https://github.com/apache/shardingsphere",
+    "stars": 20817,
+    "sizeKb": 708823,
+    "band": "large",
+    "tag": "5.5.3",
+    "commit": "8d35894433416ef249ebb6ea21f8a8749648e9b6"
+  },
+  {
+    "id": "maven/mybatis-mybatis-3",
+    "ecosystem": "maven",
+    "url": "https://github.com/mybatis/mybatis-3",
+    "stars": 20434,
+    "sizeKb": 159457,
+    "band": "large",
+    "tag": "mybatis-3.6.0",
+    "commit": "73a0c5d4d403efe0875c824a18717037966309ad"
+  },
+  {
+    "id": "maven/linlinjava-litemall",
+    "ecosystem": "maven",
+    "url": "https://github.com/linlinjava/litemall",
+    "stars": 20402,
+    "sizeKb": 24622,
+    "band": "small",
+    "tag": "v1.8.0",
+    "commit": "97338d20928527485650def8e7681816cc7e19f4"
+  },
+  {
+    "id": "maven/yudaocode-springboot-labs",
+    "ecosystem": "maven",
+    "url": "https://github.com/yudaocode/SpringBoot-Labs",
+    "stars": 20121,
+    "sizeKb": 1813,
+    "band": "small",
+    "tag": null,
+    "commit": "6c12efaed06d12907a0f40dd2ad1f7020aec8798"
+  },
+  {
+    "id": "maven/yunaiv-yudao-cloud",
+    "ecosystem": "maven",
+    "url": "https://github.com/YunaiV/yudao-cloud",
+    "stars": 19739,
+    "sizeKb": 64629,
+    "band": "medium",
+    "tag": "v2026.10(jdk25)",
+    "commit": "0c7944372d549612154bd54417e88d95927608e5"
+  },
+  {
+    "id": "maven/dromara-sa-token",
+    "ecosystem": "maven",
+    "url": "https://github.com/dromara/Sa-Token",
+    "stars": 19109,
+    "sizeKb": 15004,
+    "band": "small",
+    "tag": "v1.46.0",
+    "commit": "ae58d1cc22878654c55a55c58f69f691ad5fba1c"
+  },
+  {
+    "id": "maven/antlr-antlr4",
+    "ecosystem": "maven",
+    "url": "https://github.com/antlr/antlr4",
+    "stars": 19037,
+    "sizeKb": 70649,
+    "band": "medium",
+    "tag": "4.13.2",
+    "commit": "cc82115a4e7f53d71d9d905caa2c2dfa4da58899"
+  },
+  {
+    "id": "maven/dianping-cat",
+    "ecosystem": "maven",
+    "url": "https://github.com/dianping/cat",
+    "stars": 18935,
+    "sizeKb": 114117,
+    "band": "medium",
+    "tag": "3.1.0",
+    "commit": "3152e71443eea268773aec1f492899bc0abd4d07"
+  },
+  {
+    "id": "npm/freecodecamp-freecodecamp",
+    "ecosystem": "npm",
+    "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+    "stars": 458461,
+    "sizeKb": 584595,
+    "band": "large",
+    "tag": null,
+    "commit": "124bba5f531aae30f22d679a49923b81634b7f69"
+  },
+  {
+    "id": "npm/morluto-rea",
+    "ecosystem": "npm",
+    "url": "https://github.com/morluto/rea",
+    "stars": 423730,
+    "sizeKb": 137864,
+    "band": "medium",
+    "tag": "rea-agents-6.8.0",
+    "commit": "160d821ac9a0310afcb8d1fc427862dd6508add5"
+  },
+  {
+    "id": "npm/openclaw-openclaw",
+    "ecosystem": "npm",
+    "url": "https://github.com/openclaw/openclaw",
+    "stars": 393760,
+    "sizeKb": 12476978,
+    "band": "large",
+    "tag": "v2026.10.10",
+    "commit": "7dc3350cb9f08fcf9a0af5c4845a20d5b2f1a8be"
+  },
+  {
+    "id": "npm/nilbuild-developer-roadmap",
+    "ecosystem": "npm",
+    "url": "https://github.com/nilbuild/developer-roadmap",
+    "stars": 371103,
+    "sizeKb": 364466,
+    "band": "large",
+    "tag": "4.0",
+    "commit": "d2b5e17ea21826cf4c4a3d89644de75863e8ba5b"
+  },
+  {
+    "id": "npm/affaan-m-ecc",
+    "ecosystem": "npm",
+    "url": "https://github.com/affaan-m/ECC",
+    "stars": 295815,
+    "sizeKb": 60828,
+    "band": "medium",
+    "tag": "v2.2.3",
+    "commit": "c05b2d6614f62f6db0047669aa4eefb223d478f9"
+  },
+  {
+    "id": "npm/deepseek-ai-deepseek-harness",
+    "ecosystem": "npm",
+    "url": "https://github.com/deepseek-ai/deepseek-harness",
+    "stars": 269964,
+    "sizeKb": 345389,
+    "band": "large",
+    "tag": null,
+    "commit": "ce7073d51254c26cd63b22a60835b8f948deb447"
+  },
+  {
+    "id": "npm/react-react",
+    "ecosystem": "npm",
+    "url": "https://github.com/react/react",
+    "stars": 251882,
+    "sizeKb": 1137401,
+    "band": "large",
+    "tag": "v19.3.1",
+    "commit": "61aa00df822d0eb76d0362eb8b6fdd3527693efe"
+  },
+  {
+    "id": "npm/anomalyco-opencode",
+    "ecosystem": "npm",
+    "url": "https://github.com/anomalyco/opencode",
+    "stars": 224160,
+    "sizeKb": 621515,
+    "band": "large",
+    "tag": "v1.19.5",
+    "commit": "810c0eba1a7348036f8bdf61e6632d0c36c6876c"
+  },
+  {
+    "id": "npm/vuejs-vue",
+    "ecosystem": "npm",
+    "url": "https://github.com/vuejs/vue",
+    "stars": 212502,
+    "sizeKb": 32152,
+    "band": "small",
+    "tag": "v2.7.16",
+    "commit": "13f4e7dc03e2caed900ac70ff8b8fe58dda45663"
+  },
+  {
+    "id": "npm/n8n-io-n8n",
+    "ecosystem": "npm",
+    "url": "https://github.com/n8n-io/n8n",
+    "stars": 209415,
+    "sizeKb": 791670,
+    "band": "large",
+    "tag": "n8n@2.45.7",
+    "commit": "01cb29d88764465197742803801c62eff1f71516"
+  },
+  {
+    "id": "npm/trekhleb-javascript-algorithms",
+    "ecosystem": "npm",
+    "url": "https://github.com/trekhleb/javascript-algorithms",
+    "stars": 196721,
+    "sizeKb": 14964,
+    "band": "small",
+    "tag": null,
+    "commit": "85293e3e2b88f4d2ce330d956b139cf628aa1e82"
+  },
+  {
+    "id": "npm/microsoft-vscode",
+    "ecosystem": "npm",
+    "url": "https://github.com/microsoft/vscode",
+    "stars": 194518,
+    "sizeKb": 1668778,
+    "band": "large",
+    "tag": "1.144.0",
+    "commit": "2c33b50b16c472efe58357d1d2a8a5414bc23fbf"
+  },
+  {
+    "id": "npm/dietrichgebert-ponytail",
+    "ecosystem": "npm",
+    "url": "https://github.com/DietrichGebert/ponytail",
+    "stars": 183034,
+    "sizeKb": 13130,
+    "band": "small",
+    "tag": "v5.3.3",
+    "commit": "7801d061243d7b753bad0e0b3c057cd250b11755"
+  },
+  {
+    "id": "npm/snailclimb-javaguide",
+    "ecosystem": "npm",
+    "url": "https://github.com/Snailclimb/JavaGuide",
+    "stars": 159392,
+    "sizeKb": 183539,
+    "band": "medium",
+    "tag": null,
+    "commit": "992dae31eade2a34ba8dbbbcf5ed9de5511325ec"
+  },
+  {
+    "id": "npm/airbnb-javascript",
+    "ecosystem": "npm",
+    "url": "https://github.com/airbnb/javascript",
+    "stars": 148029,
+    "sizeKb": 3738,
+    "band": "small",
+    "tag": null,
+    "commit": "8ed19247bef145e3cc41b24a02dd1fe6d9b5e681"
+  },
+  {
+    "id": "npm/vercel-next.js",
+    "ecosystem": "npm",
+    "url": "https://github.com/vercel/next.js",
+    "stars": 143241,
+    "sizeKb": 2620085,
+    "band": "large",
+    "tag": "v16.4.4",
+    "commit": "b175f52b05a5f6c6c39ca72565ea178542be323b"
+  },
+  {
+    "id": "npm/yangshun-tech-interview-handbook",
+    "ecosystem": "npm",
+    "url": "https://github.com/yangshun/tech-interview-handbook",
+    "stars": 143197,
+    "sizeKb": 33702,
+    "band": "small",
+    "tag": null,
+    "commit": "e1d28e8886c0b6ff3e50da991ce0e895134ddc59"
+  },
+  {
+    "id": "npm/iptv-org-iptv",
+    "ecosystem": "npm",
+    "url": "https://github.com/iptv-org/iptv",
+    "stars": 143105,
+    "sizeKb": 1414980,
+    "band": "large",
+    "tag": null,
+    "commit": "250852d0638fee3f1d4b06869bf1fceb7a46e1e9"
+  },
+  {
+    "id": "npm/garrytan-gstack",
+    "ecosystem": "npm",
+    "url": "https://github.com/garrytan/gstack",
+    "stars": 138714,
+    "sizeKb": 249317,
+    "band": "medium",
+    "tag": "v1.92.55.0",
+    "commit": "2512dd7624a474fee036326989ea0c6bb8470e69"
+  },
+  {
+    "id": "npm/excalidraw-excalidraw",
+    "ecosystem": "npm",
+    "url": "https://github.com/excalidraw/excalidraw",
+    "stars": 135069,
+    "sizeKb": 108848,
+    "band": "medium",
+    "tag": "v0.18.1",
+    "commit": "a2ec2889babf7d2295469c6d90ebe77fae57df84"
+  },
+  {
+    "id": "npm/chalarangelo-30-seconds-of-code",
+    "ecosystem": "npm",
+    "url": "https://github.com/Chalarangelo/30-seconds-of-code",
+    "stars": 129392,
+    "sizeKb": 742719,
+    "band": "large",
+    "tag": "v14.0.0",
+    "commit": "6c9ba41ef25eebdcbd31a0c076d6eeb02a170336"
+  },
+  {
+    "id": "npm/shadcn-ui-ui",
+    "ecosystem": "npm",
+    "url": "https://github.com/shadcn-ui/ui",
+    "stars": 127227,
+    "sizeKb": 75071,
+    "band": "medium",
+    "tag": "shadcn@4.23.0",
+    "commit": "96da9cc7f1aa10580a3741664e2a77c721206c00"
+  },
+  {
+    "id": "npm/earendil-works-pi",
+    "ecosystem": "npm",
+    "url": "https://github.com/earendil-works/pi",
+    "stars": 119654,
+    "sizeKb": 97353,
+    "band": "medium",
+    "tag": "v1.5.0",
+    "commit": "f9a26365568127461c47a07a37dcb42c140a3ac5"
+  },
+  {
+    "id": "npm/immich-app-immich",
+    "ecosystem": "npm",
+    "url": "https://github.com/immich-app/immich",
+    "stars": 118039,
+    "sizeKb": 320324,
+    "band": "large",
+    "tag": "v3.3.5",
+    "commit": "8303cb117e197c700332b33b61b45314c9cc5bb4"
+  },
+  {
+    "id": "npm/mrdoob-three.js",
+    "ecosystem": "npm",
+    "url": "https://github.com/mrdoob/three.js",
+    "stars": 117456,
+    "sizeKb": 1701998,
+    "band": "large",
+    "tag": "r187",
+    "commit": "7e89746a687bb88271253698fa108b1dd59825d0"
+  },
+  {
+    "id": "npm/supabase-supabase",
+    "ecosystem": "npm",
+    "url": "https://github.com/supabase/supabase",
+    "stars": 114463,
+    "sizeKb": 2514512,
+    "band": "large",
+    "tag": "v1.26.08",
+    "commit": "86854671e95be31e24fa0785cded0579fe692fcb"
+  },
+  {
+    "id": "npm/stablyai-orca",
+    "ecosystem": "npm",
+    "url": "https://github.com/stablyai/orca",
+    "stars": 113792,
+    "sizeKb": 2206004,
+    "band": "large",
+    "tag": "v1.4.247",
+    "commit": "97b9bb3613a333450a38057d745628323f3ad185"
+  },
+  {
+    "id": "npm/thedotmack-claude-mem",
+    "ecosystem": "npm",
+    "url": "https://github.com/thedotmack/claude-mem",
+    "stars": 110985,
+    "sizeKb": 732264,
+    "band": "large",
+    "tag": "v15.9.0",
+    "commit": "d0968e5d136abc34dcfe1b78acf3726fa84978d8"
+  },
+  {
+    "id": "npm/paperclipai-paperclip",
+    "ecosystem": "npm",
+    "url": "https://github.com/paperclipai/paperclip",
+    "stars": 110530,
+    "sizeKb": 448735,
+    "band": "large",
+    "tag": "v2026.1023.0",
+    "commit": "1b4c803816e82b0265c8422e1a804327a7ed8c54"
+  },
+  {
+    "id": "npm/axios-axios",
+    "ecosystem": "npm",
+    "url": "https://github.com/axios/axios",
+    "stars": 109316,
+    "sizeKb": 30957,
+    "band": "small",
+    "tag": "v1.21.0",
+    "commit": "aa54a5e1e0e50cd1a2561b854ae5490ff589d065"
+  },
+  {
+    "id": "npm/google-gemini-gemini-cli",
+    "ecosystem": "npm",
+    "url": "https://github.com/google-gemini/gemini-cli",
+    "stars": 108688,
+    "sizeKb": 104809,
+    "band": "medium",
+    "tag": "v0.66.0",
+    "commit": "970413207732f5d4d8c50540c7fc359c44fdaaf2"
+  },
+  {
+    "id": "npm/nexu-io-open-design",
+    "ecosystem": "npm",
+    "url": "https://github.com/nexu-io/open-design",
+    "stars": 105576,
+    "sizeKb": 3636121,
+    "band": "large",
+    "tag": "open-design-v0.26.1",
+    "commit": "ac476788b7393f491df7d511c1c3b2d43b35e0fb"
+  },
+  {
+    "id": "npm/react-create-react-app",
+    "ecosystem": "npm",
+    "url": "https://github.com/react/create-react-app",
+    "stars": 103239,
+    "sizeKb": 25186,
+    "band": "small",
+    "tag": "v5.0.1",
+    "commit": "19fa58d527ae74f2b6baa0867463eea1d290f9a5"
+  },
+  {
+    "id": "npm/angular-angular",
+    "ecosystem": "npm",
+    "url": "https://github.com/angular/angular",
+    "stars": 101099,
+    "sizeKb": 671585,
+    "band": "large",
+    "tag": "v22.2.4",
+    "commit": "b23d79df033faa2d27e5814bb0132b7460ad04a7"
+  },
+  {
+    "id": "npm/ant-design-ant-design",
+    "ecosystem": "npm",
+    "url": "https://github.com/ant-design/ant-design",
+    "stars": 100051,
+    "sizeKb": 284352,
+    "band": "medium",
+    "tag": "6.6.8",
+    "commit": "984592267de88fbf9cdaecc96a56629e721c709d"
+  },
+  {
+    "id": "npm/mui-material-ui",
+    "ecosystem": "npm",
+    "url": "https://github.com/mui/material-ui",
+    "stars": 99299,
+    "sizeKb": 748786,
+    "band": "large",
+    "tag": "v9.5.0",
+    "commit": "1c3f8b4903f21cfad12c102edb3db4ceba2e8c8c"
+  },
+  {
+    "id": "npm/microsoft-playwright",
+    "ecosystem": "npm",
+    "url": "https://github.com/microsoft/playwright",
+    "stars": 99148,
+    "sizeKb": 246833,
+    "band": "medium",
+    "tag": "v1.64.1",
+    "commit": "cfe490d941f992655948eee8fd4fd94e1c4234bf"
+  },
+  {
+    "id": "npm/tailwindlabs-tailwindcss",
+    "ecosystem": "npm",
+    "url": "https://github.com/tailwindlabs/tailwindcss",
+    "stars": 98055,
+    "sizeKb": 114543,
+    "band": "medium",
+    "tag": "v4.3.4",
+    "commit": "2626ae6ceddf36069ab6d55c53a5857c1e2e360a"
+  },
+  {
+    "id": "npm/microsoft-web-dev-for-beginners",
+    "ecosystem": "npm",
+    "url": "https://github.com/microsoft/Web-Dev-For-Beginners",
+    "stars": 97073,
+    "sizeKb": 2204458,
+    "band": "large",
+    "tag": null,
+    "commit": "78085398be0dea7abaaf5eda914817f46f6ddbbc"
+  },
+  {
+    "id": "npm/puppeteer-puppeteer",
+    "ecosystem": "npm",
+    "url": "https://github.com/puppeteer/puppeteer",
+    "stars": 95792,
+    "sizeKb": 1605172,
+    "band": "large",
+    "tag": "browsers-v3.2.6",
+    "commit": "a207faf527ce4305b33a6c0f9706b090c21c115e"
+  },
+  {
+    "id": "npm/louislam-uptime-kuma",
+    "ecosystem": "npm",
+    "url": "https://github.com/louislam/uptime-kuma",
+    "stars": 93200,
+    "sizeKb": 39794,
+    "band": "small",
+    "tag": "2.5.9",
+    "commit": "df601c58d9205562f34cfe5ef35264b341019d19"
+  },
+  {
+    "id": "npm/tt-a1i-archify",
+    "ecosystem": "npm",
+    "url": "https://github.com/tt-a1i/archify",
+    "stars": 92825,
+    "sizeKb": 1450623,
+    "band": "large",
+    "tag": "v3.2.0",
+    "commit": "208acba8d412335185b2056fedf54b3405df43fb"
+  },
+  {
+    "id": "npm/openhands-openhands",
+    "ecosystem": "npm",
+    "url": "https://github.com/OpenHands/OpenHands",
+    "stars": 92533,
+    "sizeKb": 582936,
+    "band": "large",
+    "tag": "v1.34.0",
+    "commit": "6c120073f5a1e1c838ba6fdd9a075c79ff997b98"
+  },
+  {
+    "id": "npm/modelcontextprotocol-servers",
+    "ecosystem": "npm",
+    "url": "https://github.com/modelcontextprotocol/servers",
+    "stars": 91757,
+    "sizeKb": 33158,
+    "band": "small",
+    "tag": "v2.2.0",
+    "commit": "194cc86e3ae6400958555bd4116849d822d69263"
+  },
+  {
+    "id": "npm/storybookjs-storybook",
+    "ecosystem": "npm",
+    "url": "https://github.com/storybookjs/storybook",
+    "stars": 91433,
+    "sizeKb": 1141032,
+    "band": "large",
+    "tag": "v10.6.5",
+    "commit": "4f0a7d27873b2615c8be7d8b35f4576d1782ac62"
+  },
+  {
+    "id": "npm/mermaid-js-mermaid",
+    "ecosystem": "npm",
+    "url": "https://github.com/mermaid-js/mermaid",
+    "stars": 90987,
+    "sizeKb": 283010,
+    "band": "medium",
+    "tag": "@mermaid-js/tiny@12.2.0",
+    "commit": "1fb7869866dd619168d840291c9c54b4f129758b"
+  },
+  {
+    "id": "npm/koala73-worldmonitor",
+    "ecosystem": "npm",
+    "url": "https://github.com/koala73/worldmonitor",
+    "stars": 90036,
+    "sizeKb": 316796,
+    "band": "medium",
+    "tag": "v2.11.7",
+    "commit": "4164eeadb064559c1f83178519b036e582aa1497"
+  },
+  {
+    "id": "npm/egonex-ai-understand-anything",
+    "ecosystem": "npm",
+    "url": "https://github.com/Egonex-AI/Understand-Anything",
+    "stars": 90013,
+    "sizeKb": 35429,
+    "band": "small",
+    "tag": "v2.9.0",
+    "commit": "f08763d11d0202a8a8f52b5dedda6d1b2e2ebac8"
+  },
+  {
+    "id": "npm/chatgptnextweb-nextchat",
+    "ecosystem": "npm",
+    "url": "https://github.com/ChatGPTNextWeb/NextChat",
+    "stars": 88939,
+    "sizeKb": 23969,
+    "band": "small",
+    "tag": "v2.16.1",
+    "commit": "557a2cce357749c6fb3176d42e03ff6f7de4d355"
+  },
+  {
+    "id": "npm/sveltejs-svelte",
+    "ecosystem": "npm",
+    "url": "https://github.com/sveltejs/svelte",
+    "stars": 88538,
+    "sizeKb": 124589,
+    "band": "medium",
+    "tag": "svelte@5.57.3",
+    "commit": "23bb146306ff02cc5041bca0c5de9f8bd086e4a3"
+  },
+  {
+    "id": "npm/cheaper-inference-omniroute",
+    "ecosystem": "npm",
+    "url": "https://github.com/cheaper-inference/OmniRoute",
+    "stars": 84030,
+    "sizeKb": 2494199,
+    "band": "large",
+    "tag": "v3.8.52",
+    "commit": "ad6f33f66bda34eba98645d3bfdabbde294bc843"
+  },
+  {
+    "id": "npm/lobehub-lobehub",
+    "ecosystem": "npm",
+    "url": "https://github.com/lobehub/lobehub",
+    "stars": 83737,
+    "sizeKb": 596171,
+    "band": "large",
+    "tag": "v2.3.0",
+    "commit": "700c8349e35477cb602975f8089c942e96bc9601"
+  },
+  {
+    "id": "npm/vitejs-vite",
+    "ecosystem": "npm",
+    "url": "https://github.com/vitejs/vite",
+    "stars": 83682,
+    "sizeKb": 77594,
+    "band": "medium",
+    "tag": "create-vite@9.3.3",
+    "commit": "cce559ab158cc6b177d0911a0bea73436b48faff"
+  },
+  {
+    "id": "npm/hoppscotch-hoppscotch",
+    "ecosystem": "npm",
+    "url": "https://github.com/hoppscotch/hoppscotch",
+    "stars": 80725,
+    "sizeKb": 100588,
+    "band": "medium",
+    "tag": "2026.10.0",
+    "commit": "39d25650bdb4e86464b2cd69174c567b86f57892"
+  },
+  {
+    "id": "npm/ruvnet-ruflo",
+    "ecosystem": "npm",
+    "url": "https://github.com/ruvnet/ruflo",
+    "stars": 80683,
+    "sizeKb": 663914,
+    "band": "large",
+    "tag": "v3.71.0",
+    "commit": "5f3dacc54b7279e39b172d6027d7989791448e2e"
+  },
+  {
+    "id": "npm/anuraghazra-github-readme-stats",
+    "ecosystem": "npm",
+    "url": "https://github.com/anuraghazra/github-readme-stats",
+    "stars": 79863,
+    "sizeKb": 7982,
+    "band": "small",
+    "tag": null,
+    "commit": "54a7985aeefda00d5eadb55b80c17c7f976c37d2"
+  },
+  {
+    "id": "npm/coder-code-server",
+    "ecosystem": "npm",
+    "url": "https://github.com/coder/code-server",
+    "stars": 79760,
+    "sizeKb": 55235,
+    "band": "small",
+    "tag": "v4.144.0",
+    "commit": "ee31cdbe02c07b3ba718007f221d14c890696c61"
+  },
+  {
+    "id": "npm/career-ops-hq-career-ops",
+    "ecosystem": "npm",
+    "url": "https://github.com/career-ops-hq/career-ops",
+    "stars": 79633,
+    "sizeKb": 125413,
+    "band": "medium",
+    "tag": "career-ops-v1.38.0",
+    "commit": "115bc9873e3d43e23883f3c8f16436617facc62c"
+  },
+  {
+    "id": "npm/heygen-com-hyperframes",
+    "ecosystem": "npm",
+    "url": "https://github.com/heygen-com/hyperframes",
+    "stars": 77849,
+    "sizeKb": 528715,
+    "band": "large",
+    "tag": "v0.9.6",
+    "commit": "398ef506247493b1b2fd17395d8bba6de2166dab"
+  },
+  {
+    "id": "npm/grafana-grafana",
+    "ecosystem": "npm",
+    "url": "https://github.com/grafana/grafana",
+    "stars": 77652,
+    "sizeKb": 2112450,
+    "band": "large",
+    "tag": "v13.3.0",
+    "commit": "752e3462ff71a43a5c1fb62d00a482fa2dc0ee6a"
+  },
+  {
+    "id": "npm/nestjs-nest",
+    "ecosystem": "npm",
+    "url": "https://github.com/nestjs/nest",
+    "stars": 76971,
+    "sizeKb": 492771,
+    "band": "large",
+    "tag": "v12.3.0",
+    "commit": "3acb8e574acdacde6022e58186a823cee4e0d05f"
+  },
+  {
+    "id": "npm/colbymchenry-codegraph",
+    "ecosystem": "npm",
+    "url": "https://github.com/colbymchenry/codegraph",
+    "stars": 76270,
+    "sizeKb": 48358,
+    "band": "small",
+    "tag": "v1.6.2",
+    "commit": "6560052a6f856855d3f71eee838fd66ccfa4285d"
+  },
+  {
+    "id": "npm/typicode-json-server",
+    "ecosystem": "npm",
+    "url": "https://github.com/typicode/json-server",
+    "stars": 75732,
+    "sizeKb": 4258,
+    "band": "small",
+    "tag": "v1.0.0-beta.15",
+    "commit": "89a34a44b7a6a5311dc84f3b8a1b8b45c0905aea"
+  },
+  {
+    "id": "npm/eugeny-tabby",
+    "ecosystem": "npm",
+    "url": "https://github.com/Eugeny/tabby",
+    "stars": 75267,
+    "sizeKb": 100097,
+    "band": "medium",
+    "tag": "v1.0.238",
+    "commit": "54869e108aaa336fdd01bc4de5b160fd8feccf7b"
+  },
+  {
+    "id": "npm/juliangarnier-anime",
+    "ecosystem": "npm",
+    "url": "https://github.com/juliangarnier/anime",
+    "stars": 74230,
+    "sizeKb": 185735,
+    "band": "medium",
+    "tag": "v4.5.0",
+    "commit": "2c9cf8ea00329f6768c7d7902252ed977d75ce42"
+  },
+  {
+    "id": "npm/toeverything-affine",
+    "ecosystem": "npm",
+    "url": "https://github.com/toeverything/AFFiNE",
+    "stars": 74140,
+    "sizeKb": 455526,
+    "band": "large",
+    "tag": "v0.27.4",
+    "commit": "b4c8548c09da21b2898443559a5b846f0ccf5dd8"
+  },
+  {
+    "id": "npm/fission-ai-openspec",
+    "ecosystem": "npm",
+    "url": "https://github.com/Fission-AI/OpenSpec",
+    "stars": 73743,
+    "sizeKb": 12435,
+    "band": "small",
+    "tag": "v1.16.0",
+    "commit": "27c0515724decc633818c735ee596481eec78a8b"
+  },
+  {
+    "id": "npm/strapi-strapi",
+    "ecosystem": "npm",
+    "url": "https://github.com/strapi/strapi",
+    "stars": 73423,
+    "sizeKb": 737226,
+    "band": "large",
+    "tag": "v5.60.0",
+    "commit": "9f3af72b99be721cc692769f160eff2026516db4"
+  },
+  {
+    "id": "npm/hakimel-reveal.js",
+    "ecosystem": "npm",
+    "url": "https://github.com/hakimel/reveal.js",
+    "stars": 72509,
+    "sizeKb": 35674,
+    "band": "small",
+    "tag": "6.0.2",
+    "commit": "75dff6f515d2d08df0c32cf2b7328b89425c6f25"
+  },
+  {
+    "id": "npm/cline-cline",
+    "ecosystem": "npm",
+    "url": "https://github.com/cline/cline",
+    "stars": 71238,
+    "sizeKb": 634296,
+    "band": "large",
+    "tag": "v4.1.26",
+    "commit": "a459f1d04dea030833b558be645011ab739c463b"
+  },
+  {
+    "id": "npm/code-yeongyu-oh-my-openagent",
+    "ecosystem": "npm",
+    "url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "stars": 70641,
+    "sizeKb": 461044,
+    "band": "large",
+    "tag": "v5.1.58",
+    "commit": "31180c810c2a99098fabfc224e8b6c270cc93b6a"
+  },
+  {
+    "id": "npm/remotion-dev-remotion",
+    "ecosystem": "npm",
+    "url": "https://github.com/remotion-dev/remotion",
+    "stars": 70181,
+    "sizeKb": 4474194,
+    "band": "large",
+    "tag": "v4.0.540",
+    "commit": "596c2ed0cd3b274065bc1ef76eb82241bd6dbf19"
+  },
+  {
+    "id": "npm/byoungd-up",
+    "ecosystem": "npm",
+    "url": "https://github.com/byoungd/up",
+    "stars": 69940,
+    "sizeKb": 155149,
+    "band": "medium",
+    "tag": null,
+    "commit": "5746264f2121feddde9ba9df86796b200c15e87b"
+  },
+  {
+    "id": "npm/expressjs-express",
+    "ecosystem": "npm",
+    "url": "https://github.com/expressjs/express",
+    "stars": 69582,
+    "sizeKb": 10074,
+    "band": "small",
+    "tag": "v5.3.0",
+    "commit": "cf6722bf89a86905281d9160b6482e08166b5ef0"
+  },
+  {
+    "id": "npm/gorhill-ublock",
+    "ecosystem": "npm",
+    "url": "https://github.com/gorhill/uBlock",
+    "stars": 69040,
+    "sizeKb": 160176,
+    "band": "medium",
+    "tag": "1.75.2",
+    "commit": "7cdf1375509050e6474509825c95bca79df06081"
+  },
+  {
+    "id": "npm/mintplex-labs-anything-llm",
+    "ecosystem": "npm",
+    "url": "https://github.com/Mintplex-Labs/anything-llm",
+    "stars": 67878,
+    "sizeKb": 95240,
+    "band": "medium",
+    "tag": "v1.19.0",
+    "commit": "9b1fcab141000eaba9f78ed131151de04904454b"
+  },
+  {
+    "id": "npm/chartjs-chart.js",
+    "ecosystem": "npm",
+    "url": "https://github.com/chartjs/Chart.js",
+    "stars": 67774,
+    "sizeKb": 44278,
+    "band": "small",
+    "tag": "v4.6.1",
+    "commit": "76d8cf895a7485dc838c90ef37e2bc9d9e388fcb"
+  },
+  {
+    "id": "npm/apache-echarts",
+    "ecosystem": "npm",
+    "url": "https://github.com/apache/echarts",
+    "stars": 67669,
+    "sizeKb": 271263,
+    "band": "medium",
+    "tag": "6.1.0",
+    "commit": "c5a48f5f97d23e5379720870b8444cd05b50ffb4"
+  },
+  {
+    "id": "npm/meta-docusaurus",
+    "ecosystem": "npm",
+    "url": "https://github.com/meta/docusaurus",
+    "stars": 66643,
+    "sizeKb": 1622711,
+    "band": "large",
+    "tag": "v3.10.2",
+    "commit": "f37f9035584917a97a260b91fc2842cba4f8b94f"
+  },
+  {
+    "id": "npm/leonardomso-33-js-concepts",
+    "ecosystem": "npm",
+    "url": "https://github.com/leonardomso/33-js-concepts",
+    "stars": 66527,
+    "sizeKb": 2967,
+    "band": "small",
+    "tag": null,
+    "commit": "16d0d95c02b19df6a8c841f1a0012d7b7367a340"
+  },
+  {
+    "id": "npm/webpack-webpack",
+    "ecosystem": "npm",
+    "url": "https://github.com/webpack/webpack",
+    "stars": 65986,
+    "sizeKb": 154701,
+    "band": "medium",
+    "tag": "v5.112.2",
+    "commit": "e95a7f2764281318c038e9384371797dfef0e48a"
+  },
+  {
+    "id": "npm/nocodb-nocodb",
+    "ecosystem": "npm",
+    "url": "https://github.com/nocodb/nocodb",
+    "stars": 65413,
+    "sizeKb": 1512322,
+    "band": "large",
+    "tag": "2026.10.1",
+    "commit": "21b0a0b4e71ffc2895034bbb1431045c661d02f0"
+  },
+  {
+    "id": "npm/upstash-context7",
+    "ecosystem": "npm",
+    "url": "https://github.com/upstash/context7",
+    "stars": 64107,
+    "sizeKb": 41871,
+    "band": "small",
+    "tag": "@upstash/context7-sdk@0.6.0",
+    "commit": "58194009e925230037dbf92dcbd65c8a6f68803c"
+  },
+  {
+    "id": "npm/jgraph-drawio-desktop",
+    "ecosystem": "npm",
+    "url": "https://github.com/jgraph/drawio-desktop",
+    "stars": 63778,
+    "sizeKb": 3476,
+    "band": "small",
+    "tag": "v32.6.1",
+    "commit": "45bfb19bf98f513be8a8fb5aa8e22f6de96e8f6b"
+  },
+  {
+    "id": "npm/withastro-astro",
+    "ecosystem": "npm",
+    "url": "https://github.com/withastro/astro",
+    "stars": 63682,
+    "sizeKb": 242749,
+    "band": "medium",
+    "tag": "@astrojs/vercel@11.0.18",
+    "commit": "d354ffba8df77ab9d89480bb5d0ca6efe249573e"
+  },
+  {
+    "id": "npm/marktext-marktext",
+    "ecosystem": "npm",
+    "url": "https://github.com/marktext/marktext",
+    "stars": 63522,
+    "sizeKb": 96140,
+    "band": "medium",
+    "tag": "v0.23.0",
+    "commit": "18fdc1eddc7d36d9b205180d058982f71f4f6373"
+  },
+  {
+    "id": "npm/socketio-socket.io",
+    "ecosystem": "npm",
+    "url": "https://github.com/socketio/socket.io",
+    "stars": 63235,
+    "sizeKb": 33814,
+    "band": "small",
+    "tag": "socket.io@4.8.4",
+    "commit": "c239eb5d8945cee40a696a26e4aca00016f9565f"
+  },
+  {
+    "id": "npm/bilawalsidhu-gods-eye-view",
+    "ecosystem": "npm",
+    "url": "https://github.com/bilawalsidhu/gods-eye-view",
+    "stars": 62364,
+    "sizeKb": 186459,
+    "band": "medium",
+    "tag": "v0.3.0",
+    "commit": "72eb3fdc739991a1286b7f1251de908e9744bb2a"
+  },
+  {
+    "id": "npm/makeplane-plane",
+    "ecosystem": "npm",
+    "url": "https://github.com/makeplane/plane",
+    "stars": 61896,
+    "sizeKb": 219381,
+    "band": "medium",
+    "tag": "v1.4.3",
+    "commit": "37a15d99231042b3ff5a4401fed479fdbec9effe"
+  },
+  {
+    "id": "npm/reduxjs-redux",
+    "ecosystem": "npm",
+    "url": "https://github.com/reduxjs/redux",
+    "stars": 61440,
+    "sizeKb": 35654,
+    "band": "small",
+    "tag": "v5.0.1",
+    "commit": "50b010210df25c470386f7e39a9389a4a77b3842"
+  },
+  {
+    "id": "npm/lodash-lodash",
+    "ecosystem": "npm",
+    "url": "https://github.com/lodash/lodash",
+    "stars": 61269,
+    "sizeKb": 49744,
+    "band": "small",
+    "tag": "4.18.1",
+    "commit": "cb0b9b9212521c08e3eafe7c8cb0af1b42b6649e"
+  },
+  {
+    "id": "npm/nuxt-nuxt",
+    "ecosystem": "npm",
+    "url": "https://github.com/nuxt/nuxt",
+    "stars": 61031,
+    "sizeKb": 159072,
+    "band": "medium",
+    "tag": "v4.6.4",
+    "commit": "b9a6b687018a87db72832620beec55bf46abd623"
+  },
+  {
+    "id": "npm/twentyhq-twenty",
+    "ecosystem": "npm",
+    "url": "https://github.com/twentyhq/twenty",
+    "stars": 60340,
+    "sizeKb": 2458089,
+    "band": "large",
+    "tag": "twenty/v2.54.0",
+    "commit": "c75ef7bfd0589219bd22e8f134df458af0af3445"
+  },
+  {
+    "id": "npm/jquery-jquery",
+    "ecosystem": "npm",
+    "url": "https://github.com/jquery/jquery",
+    "stars": 59820,
+    "sizeKb": 36112,
+    "band": "small",
+    "tag": "4.0.0",
+    "commit": "4f2fae08f23b54ce09322e62e73cce6161b8d3cb"
+  },
+  {
+    "id": "npm/pmndrs-zustand",
+    "ecosystem": "npm",
+    "url": "https://github.com/pmndrs/zustand",
+    "stars": 58892,
+    "sizeKb": 8230,
+    "band": "small",
+    "tag": "v5.0.16",
+    "commit": "382d29c485e67018c06e75ec7235130d0968522c"
+  },
+  {
+    "id": "npm/appwrite-appwrite",
+    "ecosystem": "npm",
+    "url": "https://github.com/appwrite/appwrite",
+    "stars": 57855,
+    "sizeKb": 1172834,
+    "band": "large",
+    "tag": "2.6.2",
+    "commit": "54581f9698f9de23cf4b1432e353b3ee9b0012d5"
+  },
+  {
+    "id": "npm/agalwood-motrix",
+    "ecosystem": "npm",
+    "url": "https://github.com/agalwood/Motrix",
+    "stars": 57718,
+    "sizeKb": 97794,
+    "band": "medium",
+    "tag": "v2.2.1",
+    "commit": "e004e9f71f3a6eeb992fd395cf3528b6bffa4583"
+  },
+  {
+    "id": "npm/ebony-vinyl-dsh-our-free-model",
+    "ecosystem": "npm",
+    "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
+    "stars": 57712,
+    "sizeKb": 143592,
+    "band": "medium",
+    "tag": "v2.8.0-macos-unofficial",
+    "commit": "999e9f784ea3ea7a11cae383b142697b1ff2c42f"
+  },
+  {
+    "id": "npm/h5bp-html5-boilerplate",
+    "ecosystem": "npm",
+    "url": "https://github.com/h5bp/html5-boilerplate",
+    "stars": 57658,
+    "sizeKb": 22823,
+    "band": "small",
+    "tag": "v9.0.1",
+    "commit": "90066899f33e83c0866f8e078e97f9b82999db58"
+  },
+  {
+    "id": "npm/laurent22-joplin",
+    "ecosystem": "npm",
+    "url": "https://github.com/laurent22/joplin",
+    "stars": 57000,
+    "sizeKb": 672007,
+    "band": "large",
+    "tag": "v3.7.22",
+    "commit": "95cab5a86d770c57f58fd43953f37a2cfe5a7016"
+  },
+  {
+    "id": "npm/remix-run-react-router",
+    "ecosystem": "npm",
+    "url": "https://github.com/remix-run/react-router",
+    "stars": 56632,
+    "sizeKb": 47180,
+    "band": "small",
+    "tag": "react-router@8.5.1",
+    "commit": "a2783e6612b8424e9e1a5e3e2d69435805ee51dc"
+  },
+  {
+    "id": "npm/gatsbyjs-gatsby",
+    "ecosystem": "npm",
+    "url": "https://github.com/gatsbyjs/gatsby",
+    "stars": 55919,
+    "sizeKb": 1152394,
+    "band": "large",
+    "tag": "gatsby@5.16.1",
+    "commit": "81c3b47cc8debb7f22cef971910ed368cfcada36"
+  },
+  {
+    "id": "npm/azl397985856-leetcode",
+    "ecosystem": "npm",
+    "url": "https://github.com/azl397985856/leetcode",
+    "stars": 55714,
+    "sizeKb": 126606,
+    "band": "medium",
+    "tag": "v0.39",
+    "commit": "fa597b0ea914cf101c926c8bbc8eb499265a1573"
+  },
+  {
+    "id": "npm/tryghost-ghost",
+    "ecosystem": "npm",
+    "url": "https://github.com/TryGhost/Ghost",
+    "stars": 55658,
+    "sizeKb": 629322,
+    "band": "large",
+    "tag": "v6.73.0",
+    "commit": "5794cfd8daca61fd60cd8659acd6591ece3b7956"
+  },
+  {
+    "id": "npm/lyswhut-lx-music-desktop",
+    "ecosystem": "npm",
+    "url": "https://github.com/lyswhut/lx-music-desktop",
+    "stars": 55015,
+    "sizeKb": 92539,
+    "band": "medium",
+    "tag": "v2.12.6",
+    "commit": "ad95d5091c9ed689fa72b5e5c849df65f5a679ce"
+  },
+  {
+    "id": "npm/vuejs-core",
+    "ecosystem": "npm",
+    "url": "https://github.com/vuejs/core",
+    "stars": 54819,
+    "sizeKb": 47912,
+    "band": "small",
+    "tag": "v3.5.44",
+    "commit": "bf5f0dd877dd3c23ce85c2cbc1dd771567e84c8c"
+  },
+  {
+    "id": "npm/chromedevtools-chrome-devtools-mcp",
+    "ecosystem": "npm",
+    "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+    "stars": 54689,
+    "sizeKb": 25359,
+    "band": "small",
+    "tag": "chrome-devtools-mcp-v1.12.0",
+    "commit": "af2834411a564d366f9cab63efb046d9084f4dba"
+  },
+  {
+    "id": "npm/mozilla-pdf.js",
+    "ecosystem": "npm",
+    "url": "https://github.com/mozilla/pdf.js",
+    "stars": 54086,
+    "sizeKb": 225819,
+    "band": "medium",
+    "tag": "v6.5.438",
+    "commit": "0a4153349dc473ba950fc17941c5ca7eda43c1de"
+  },
+  {
+    "id": "npm/expo-expo",
+    "ecosystem": "npm",
+    "url": "https://github.com/expo/expo",
+    "stars": 53307,
+    "sizeKb": 3871667,
+    "band": "large",
+    "tag": "expo-template-tabs@58.0.31",
+    "commit": "004bfc41cfd82784da23450101015717c5da74e6"
+  },
+  {
+    "id": "npm/cherryhq-cherry-studio",
+    "ecosystem": "npm",
+    "url": "https://github.com/CherryHQ/cherry-studio",
+    "stars": 53212,
+    "sizeKb": 759484,
+    "band": "large",
+    "tag": "v2.1.10",
+    "commit": "c60cd41a66d50920d75950fe3ed614c23bdeacca"
+  },
+  {
+    "id": "npm/poteto-hiring-without-whiteboards",
+    "ecosystem": "npm",
+    "url": "https://github.com/poteto/hiring-without-whiteboards",
+    "stars": 53105,
+    "sizeKb": 3466,
+    "band": "small",
+    "tag": null,
+    "commit": "9b60360e04f354a82d942e56e64df4398058e914"
+  },
+  {
+    "id": "npm/ionic-team-ionic-framework",
+    "ecosystem": "npm",
+    "url": "https://github.com/ionic-team/ionic-framework",
+    "stars": 52735,
+    "sizeKb": 1944612,
+    "band": "large",
+    "tag": "v9.0.10",
+    "commit": "1e12879771b6e23b26e400b9e7e4c158c843746b"
+  },
+  {
+    "id": "npm/prettier-prettier",
+    "ecosystem": "npm",
+    "url": "https://github.com/prettier/prettier",
+    "stars": 52404,
+    "sizeKb": 182353,
+    "band": "medium",
+    "tag": "3.9.10",
+    "commit": "1172b82c295c4f889fd787dc6c78c3e194ebf353"
+  },
+  {
+    "id": "npm/upscayl-upscayl",
+    "ecosystem": "npm",
+    "url": "https://github.com/upscayl/upscayl",
+    "stars": 51654,
+    "sizeKb": 568363,
+    "band": "large",
+    "tag": "v2.15.0",
+    "commit": "4f39acfc6f88260d105920a64deff8431d5e1544"
+  },
+  {
+    "id": "npm/definitelytyped-definitelytyped",
+    "ecosystem": "npm",
+    "url": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+    "stars": 51465,
+    "sizeKb": 833587,
+    "band": "large",
+    "tag": "0.1.450",
+    "commit": "47e9cf6d8947e46a82bb09bbcc3dd74a3ac0ffa1"
+  },
+  {
+    "id": "npm/tldraw-tldraw",
+    "ecosystem": "npm",
+    "url": "https://github.com/tldraw/tldraw",
+    "stars": 51210,
+    "sizeKb": 1611182,
+    "band": "large",
+    "tag": "v5.6.0",
+    "commit": "b022df4163f26896d5f38584a38c5b158bcedf5a"
+  },
+  {
+    "id": "npm/justjavac-wechat-miniapp-radar",
+    "ecosystem": "npm",
+    "url": "https://github.com/justjavac/wechat-miniapp-radar",
+    "stars": 51180,
+    "sizeKb": 1497,
+    "band": "small",
+    "tag": null,
+    "commit": "fd7363bee3bb0e458d9b6a9f5f2305092a751865"
+  },
+  {
+    "id": "npm/davidhdev-react-bits",
+    "ecosystem": "npm",
+    "url": "https://github.com/DavidHDev/react-bits",
+    "stars": 51087,
+    "sizeKb": 372884,
+    "band": "large",
+    "tag": null,
+    "commit": "4dc7b5b7772e1217c8fb8d2a7aa074302180e5b4"
+  },
+  {
+    "id": "npm/moeru-ai-airi",
+    "ecosystem": "npm",
+    "url": "https://github.com/moeru-ai/airi",
+    "stars": 51039,
+    "sizeKb": 600204,
+    "band": "large",
+    "tag": "v0.14.1",
+    "commit": "349ecfeda2d0e1508a6b2c2a25740757c9ed51c6"
+  },
+  {
+    "id": "npm/cypress-io-cypress",
+    "ecosystem": "npm",
+    "url": "https://github.com/cypress-io/cypress",
+    "stars": 51018,
+    "sizeKb": 580936,
+    "band": "large",
+    "tag": "v16.2.1",
+    "commit": "519d66d80b0ae1bd3f9581665ce69473b82af59b"
+  },
+  {
+    "id": "npm/keygraphhq-shannon",
+    "ecosystem": "npm",
+    "url": "https://github.com/KeygraphHQ/shannon",
+    "stars": 51008,
+    "sizeKb": 92729,
+    "band": "medium",
+    "tag": "v3.5.0",
+    "commit": "33dc203b32ef45bca15cc68b5a6c8931d5752236"
+  },
+  {
+    "id": "npm/semantic-org-semantic-ui",
+    "ecosystem": "npm",
+    "url": "https://github.com/Semantic-Org/Semantic-UI",
+    "stars": 51003,
+    "sizeKb": 113201,
+    "band": "medium",
+    "tag": "2.5.0",
+    "commit": "decf1883804ef205db0ce0ea7d73b9cb6aaf31c1"
+  },
+  {
+    "id": "npm/chenglou-pretext",
+    "ecosystem": "npm",
+    "url": "https://github.com/chenglou/pretext",
+    "stars": 50989,
+    "sizeKb": 100673,
+    "band": "medium",
+    "tag": "v1.0.0",
+    "commit": "4a98f37b1e5396a73197f17c13f3128c15d8c17c"
+  },
+  {
+    "id": "npm/tanstack-query",
+    "ecosystem": "npm",
+    "url": "https://github.com/TanStack/query",
+    "stars": 50520,
+    "sizeKb": 146511,
+    "band": "medium",
+    "tag": "release-2026-11-02-2039",
+    "commit": "7bf1e0f7d7e76cdf31bad0708a4c5a47df8babca"
+  },
+  {
+    "id": "npm/calcom-cal.diy",
+    "ecosystem": "npm",
+    "url": "https://github.com/calcom/cal.diy",
+    "stars": 49656,
+    "sizeKb": 1160423,
+    "band": "large",
+    "tag": "v6.2.0",
+    "commit": "1c193cca8682b33b9866c792186033f7ef886682"
+  },
+  {
+    "id": "npm/bigskysoftware-htmx",
+    "ecosystem": "npm",
+    "url": "https://github.com/bigskysoftware/htmx",
+    "stars": 49597,
+    "sizeKb": 141204,
+    "band": "medium",
+    "tag": "v4.0.1",
+    "commit": "8d112c71624f2e48e741d740b4531d5010f057ae"
+  },
+  {
+    "id": "npm/algorithm-visualizer-algorithm-visualizer",
+    "ecosystem": "npm",
+    "url": "https://github.com/algorithm-visualizer/algorithm-visualizer",
+    "stars": 49385,
+    "sizeKb": 21182,
+    "band": "small",
+    "tag": null,
+    "commit": "18de2edf6b629e843ee4bcedfa2208d22b253f0f"
+  },
+  {
+    "id": "npm/slidevjs-slidev",
+    "ecosystem": "npm",
+    "url": "https://github.com/slidevjs/slidev",
+    "stars": 49335,
+    "sizeKb": 82027,
+    "band": "medium",
+    "tag": "v53.0.0",
+    "commit": "30a0a54c8739b4b395d9b336a6304cc8ebcc3947"
+  },
+  {
+    "id": "npm/iamkun-dayjs",
+    "ecosystem": "npm",
+    "url": "https://github.com/iamkun/dayjs",
+    "stars": 48658,
+    "sizeKb": 6187,
+    "band": "small",
+    "tag": "v1.11.23",
+    "commit": "4549b8d03307891143e8a50d39fcdab1f16f77cf"
+  },
+  {
+    "id": "npm/pixijs-pixijs",
+    "ecosystem": "npm",
+    "url": "https://github.com/pixijs/pixijs",
+    "stars": 48620,
+    "sizeKb": 137687,
+    "band": "medium",
+    "tag": "v8.22.0",
+    "commit": "5b41ee37fd36c61e089113345a8f12cf1c3323cf"
+  },
+  {
+    "id": "npm/type-challenges-type-challenges",
+    "ecosystem": "npm",
+    "url": "https://github.com/type-challenges/type-challenges",
+    "stars": 48558,
+    "sizeKb": 3328,
+    "band": "small",
+    "tag": null,
+    "commit": "91220864b0cbb84106c3b97e8d116316db2856e7"
+  },
+  {
+    "id": "npm/abhigyanpatwari-gitnexus",
+    "ecosystem": "npm",
+    "url": "https://github.com/abhigyanpatwari/GitNexus",
+    "stars": 48229,
+    "sizeKb": 135745,
+    "band": "medium",
+    "tag": "v1.6.12",
+    "commit": "c4ecf398de637cf779ab2238e69958cfd5d601ce"
+  },
+  {
+    "id": "npm/usebruno-bruno",
+    "ecosystem": "npm",
+    "url": "https://github.com/usebruno/bruno",
+    "stars": 47997,
+    "sizeKb": 68003,
+    "band": "medium",
+    "tag": "v4.3.0",
+    "commit": "a025f49fe5f1e41e4244f96b554140b8f06ec420"
+  },
+  {
+    "id": "npm/moment-moment",
+    "ecosystem": "npm",
+    "url": "https://github.com/moment/moment",
+    "stars": 47881,
+    "sizeKb": 23264,
+    "band": "small",
+    "tag": "2.31.0",
+    "commit": "15b45d48a176312e8f34143c5a800090abf4787f"
+  },
+  {
+    "id": "npm/prisma-orm",
+    "ecosystem": "npm",
+    "url": "https://github.com/prisma/orm",
+    "stars": 47659,
+    "sizeKb": 294240,
+    "band": "medium",
+    "tag": "7.10.1",
+    "commit": "97ea359250335c1a174504c9b2b7e5fe030ab937"
+  },
+  {
+    "id": "npm/slab-quill",
+    "ecosystem": "npm",
+    "url": "https://github.com/slab/quill",
+    "stars": 47371,
+    "sizeKb": 18429,
+    "band": "small",
+    "tag": "v2.0.3",
+    "commit": "522fd7ee0682498516df7389bacb6f7eb6e92b77"
+  },
+  {
+    "id": "npm/typescript-cheatsheets-react",
+    "ecosystem": "npm",
+    "url": "https://github.com/typescript-cheatsheets/react",
+    "stars": 47082,
+    "sizeKb": 3737,
+    "band": "small",
+    "tag": null,
+    "commit": "c550e41b98f7ec20d993eb3c2acc4cbf6eac2e29"
+  },
+  {
+    "id": "npm/microsoft-monaco-editor",
+    "ecosystem": "npm",
+    "url": "https://github.com/microsoft/monaco-editor",
+    "stars": 46945,
+    "sizeKb": 140551,
+    "band": "medium",
+    "tag": "v0.57.0",
+    "commit": "d61824269f1377111d34306e4a47172327777083"
+  },
+  {
+    "id": "npm/serverless-serverless",
+    "ecosystem": "npm",
+    "url": "https://github.com/serverless/serverless",
+    "stars": 46927,
+    "sizeKb": 118371,
+    "band": "medium",
+    "tag": "sf-core@4.46.0",
+    "commit": "128e6b4d4455243dc026d3567085323d8bb5dd80"
+  },
+  {
+    "id": "npm/diygod-rsshub",
+    "ecosystem": "npm",
+    "url": "https://github.com/DIYgod/RSSHub",
+    "stars": 46780,
+    "sizeKb": 1317393,
+    "band": "large",
+    "tag": "v2026.11.03-8549.8af1498",
+    "commit": "8af1498bf1f40ddb7ee1c9709973bd24caa8caf5"
+  },
+  {
+    "id": "npm/librechat-ai-librechat",
+    "ecosystem": "npm",
+    "url": "https://github.com/LibreChat-AI/LibreChat",
+    "stars": 46661,
+    "sizeKb": 293865,
+    "band": "medium",
+    "tag": null,
+    "commit": "f4154b649efa37e1345ccc517a4d8d1ed2178c82"
+  },
+  {
+    "id": "npm/tashfeenahmed-freellmapi",
+    "ecosystem": "npm",
+    "url": "https://github.com/tashfeenahmed/freellmapi",
+    "stars": 46525,
+    "sizeKb": 23637,
+    "band": "small",
+    "tag": "v0.16.17",
+    "commit": "741d03094398facceb1b6019a838f806e4d9f7f9"
+  },
+  {
+    "id": "npm/google-zx",
+    "ecosystem": "npm",
+    "url": "https://github.com/google/zx",
+    "stars": 45832,
+    "sizeKb": 3730,
+    "band": "small",
+    "tag": "8.8.5",
+    "commit": "1ca92700ef5430b2119d9b8a915ba87cd9d678f3"
+  },
+  {
+    "id": "npm/leaflet-leaflet",
+    "ecosystem": "npm",
+    "url": "https://github.com/Leaflet/Leaflet",
+    "stars": 45813,
+    "sizeKb": 61372,
+    "band": "medium",
+    "tag": "v1.9.4",
+    "commit": "d15112c9e8ac339f0f74f563959d0423d291308d"
+  },
+  {
+    "id": "npm/sudheerj-reactjs-interview-questions",
+    "ecosystem": "npm",
+    "url": "https://github.com/sudheerj/reactjs-interview-questions",
+    "stars": 44920,
+    "sizeKb": 19348,
+    "band": "small",
+    "tag": null,
+    "commit": "55b7d491cd74c7b37f9352f3b2420d66e7187951"
+  },
+  {
+    "id": "npm/meteor-meteor",
+    "ecosystem": "npm",
+    "url": "https://github.com/meteor/meteor",
+    "stars": 44800,
+    "sizeKb": 154305,
+    "band": "medium",
+    "tag": "release/METEOR@3.5.3",
+    "commit": "af0af5666565b769fcbfd4f7f5c52c24b013aa2c"
+  },
+  {
+    "id": "npm/parcel-bundler-parcel",
+    "ecosystem": "npm",
+    "url": "https://github.com/parcel-bundler/parcel",
+    "stars": 44006,
+    "sizeKb": 70980,
+    "band": "medium",
+    "tag": "v2.16.4",
+    "commit": "59484858a1a0bcbb71f74088956bb437a2db6505"
+  },
+  {
+    "id": "npm/yangshun-front-end-interview-handbook",
+    "ecosystem": "npm",
+    "url": "https://github.com/yangshun/front-end-interview-handbook",
+    "stars": 44002,
+    "sizeKb": 331176,
+    "band": "large",
+    "tag": null,
+    "commit": "75ee62afc63bb9b48be160b0710bfcba6ab01a75"
+  },
+  {
+    "id": "npm/unitech-pm2",
+    "ecosystem": "npm",
+    "url": "https://github.com/Unitech/pm2",
+    "stars": 43330,
+    "sizeKb": 14232,
+    "band": "small",
+    "tag": "v7.1.1",
+    "commit": "34dec9197301165850741b319890b2633ae797f4"
+  },
+  {
+    "id": "npm/saadeghi-daisyui",
+    "ecosystem": "npm",
+    "url": "https://github.com/saadeghi/daisyui",
+    "stars": 42732,
+    "sizeKb": 12401725,
+    "band": "large",
+    "tag": "v5.7.50",
+    "commit": "bf3bac3a397b543e55641ecb2d60a2ed961f09ec"
+  },
+  {
+    "id": "npm/goabstract-awesome-design-tools",
+    "ecosystem": "npm",
+    "url": "https://github.com/goabstract/Awesome-Design-Tools",
+    "stars": 41737,
+    "sizeKb": 19220,
+    "band": "small",
+    "tag": null,
+    "commit": "dc60e63c248c44acb42f09fb0c985b77b5fe4bf5"
+  },
+  {
+    "id": "npm/dcloudio-uni-app",
+    "ecosystem": "npm",
+    "url": "https://github.com/dcloudio/uni-app",
+    "stars": 41631,
+    "sizeKb": 8632106,
+    "band": "large",
+    "tag": null,
+    "commit": "0b6ea31bae9f4fee63418df0972417dbafad1983"
+  },
+  {
+    "id": "npm/yarnpkg-yarn",
+    "ecosystem": "npm",
+    "url": "https://github.com/yarnpkg/yarn",
+    "stars": 41464,
+    "sizeKb": 119774,
+    "band": "medium",
+    "tag": "v1.22.22",
+    "commit": "740c38c3a962c30ddb344a919bbfb7065620714b"
+  },
+  {
+    "id": "npm/patrickjs-awesome-cursorrules",
+    "ecosystem": "npm",
+    "url": "https://github.com/PatrickJS/awesome-cursorrules",
+    "stars": 41090,
+    "sizeKb": 2938,
+    "band": "small",
+    "tag": null,
+    "commit": "b044f956f021b6e8877f16781bcfc466a6a120e9"
+  },
+  {
+    "id": "npm/remoteintech-remote-jobs",
+    "ecosystem": "npm",
+    "url": "https://github.com/remoteintech/remote-jobs",
+    "stars": 41001,
+    "sizeKb": 13693,
+    "band": "small",
+    "tag": null,
+    "commit": "fa2253f1ed02cc4d8f59ab3ccc831b008cdd7189"
+  },
+  {
+    "id": "npm/github-awesome-copilot",
+    "ecosystem": "npm",
+    "url": "https://github.com/github/awesome-copilot",
+    "stars": 40737,
+    "sizeKb": 137380,
+    "band": "medium",
+    "tag": null,
+    "commit": "e2306b6922220f28d91ef5f7f2eaeb6de99913a0"
+  },
+  {
+    "id": "npm/phaserjs-phaser",
+    "ecosystem": "npm",
+    "url": "https://github.com/phaserjs/phaser",
+    "stars": 40636,
+    "sizeKb": 479407,
+    "band": "large",
+    "tag": "v4.2.1",
+    "commit": "41be1e462bc600064e498cba370bfa8c5c055a22"
+  },
+  {
+    "id": "npm/drawdb-io-drawdb",
+    "ecosystem": "npm",
+    "url": "https://github.com/drawdb-io/drawdb",
+    "stars": 40228,
+    "sizeKb": 7886,
+    "band": "small",
+    "tag": "v1.9.0",
+    "commit": "a249c7fb730c2de9b5c2ce6e863f2ea7344ac372"
+  },
+  {
+    "id": "npm/preactjs-preact",
+    "ecosystem": "npm",
+    "url": "https://github.com/preactjs/preact",
+    "stars": 38974,
+    "sizeKb": 20259,
+    "band": "small",
+    "tag": "11.1.1",
+    "commit": "cad3d26f92c266f22d8d8877f53c7350d9718eee"
+  },
+  {
+    "id": "npm/naptha-tesseract.js",
+    "ecosystem": "npm",
+    "url": "https://github.com/naptha/tesseract.js",
+    "stars": 38804,
+    "sizeKb": 109272,
+    "band": "medium",
+    "tag": "v7.0.0",
+    "commit": "42eae669e4b3a66429d8516f078912cc747a89df"
+  },
+  {
+    "id": "npm/dogfalo-materialize",
+    "ecosystem": "npm",
+    "url": "https://github.com/Dogfalo/materialize",
+    "stars": 38772,
+    "sizeKb": 165858,
+    "band": "medium",
+    "tag": "1.0.0",
+    "commit": "80e8ed370487aaf1e2185b028f7deda40da94eb9"
+  },
+  {
+    "id": "npm/impress-impress.js",
+    "ecosystem": "npm",
+    "url": "https://github.com/impress/impress.js",
+    "stars": 38151,
+    "sizeKb": 4388,
+    "band": "small",
+    "tag": "v2.0.0",
+    "commit": "dc3cf69747e0b1b0d1fe534509d09c3c48030e68"
+  },
+  {
+    "id": "npm/denysdovhan-wtfjs",
+    "ecosystem": "npm",
+    "url": "https://github.com/denysdovhan/wtfjs",
+    "stars": 37684,
+    "sizeKb": 1523,
+    "band": "small",
+    "tag": "v1.22.8",
+    "commit": "001378ab84ed62dce1c0f2ffdffdf9f4998fba5f"
+  },
+  {
+    "id": "npm/hmjz100-linkswift",
+    "ecosystem": "npm",
+    "url": "https://github.com/hmjz100/LinkSwift",
+    "stars": 37494,
+    "sizeKb": 1222,
+    "band": "small",
+    "tag": "v1.1.3",
+    "commit": "9fb5b9c7a069a02b335788b1352d107c7308a6f6"
+  },
+  {
+    "id": "npm/fastify-fastify",
+    "ecosystem": "npm",
+    "url": "https://github.com/fastify/fastify",
+    "stars": 37336,
+    "sizeKb": 10833,
+    "band": "small",
+    "tag": "v5.12.8",
+    "commit": "0c7413a8332a7892e12dcc351c27a190fefc0053"
+  },
+  {
+    "id": "npm/markedjs-marked",
+    "ecosystem": "npm",
+    "url": "https://github.com/markedjs/marked",
+    "stars": 37280,
+    "sizeKb": 11423,
+    "band": "small",
+    "tag": "v18.1.3",
+    "commit": "ba50aa95636ac8f97f46446bbfeb04592ed22216"
+  },
+  {
+    "id": "npm/gchq-cyberchef",
+    "ecosystem": "npm",
+    "url": "https://github.com/gchq/CyberChef",
+    "stars": 36301,
+    "sizeKb": 96672,
+    "band": "medium",
+    "tag": "v11.5.0",
+    "commit": "8cd426dd4f40f1423912d5fad91b578a86a65112"
+  },
+  {
+    "id": "npm/carbon-app-carbon",
+    "ecosystem": "npm",
+    "url": "https://github.com/carbon-app/carbon",
+    "stars": 36127,
+    "sizeKb": 23816,
+    "band": "small",
+    "tag": "4.9.10",
+    "commit": "0a07790d017aa60400e36eb9d34730961f3455e9"
+  },
+  {
+    "id": "npm/koajs-koa",
+    "ecosystem": "npm",
+    "url": "https://github.com/koajs/koa",
+    "stars": 35682,
+    "sizeKb": 4037,
+    "band": "small",
+    "tag": "v3.3.0",
+    "commit": "b7ead6f7a2bb56e2948b1c5e1cca77483e89c885"
+  },
+  {
+    "id": "npm/freestylefly-awesome-gpt-image-2",
+    "ecosystem": "npm",
+    "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+    "stars": 35396,
+    "sizeKb": 236583,
+    "band": "medium",
+    "tag": null,
+    "commit": "63e6176fa01be51c000108dacd72716d3e46784b"
+  },
+  {
+    "id": "npm/typicode-husky",
+    "ecosystem": "npm",
+    "url": "https://github.com/typicode/husky",
+    "stars": 35378,
+    "sizeKb": 4846,
+    "band": "small",
+    "tag": "v9.1.7",
+    "commit": "799e84b716d0e03db80db5d5b0dcdd15b9d555fc"
+  },
+  {
+    "id": "npm/alvarotrigo-fullpage.js",
+    "ecosystem": "npm",
+    "url": "https://github.com/alvarotrigo/fullPage.js",
+    "stars": 35363,
+    "sizeKb": 17285,
+    "band": "small",
+    "tag": "4.0.41",
+    "commit": "49f15effa7b195def295a36f872c28153cf9fb00"
+  },
+  {
+    "id": "npm/sahat-hackathon-starter",
+    "ecosystem": "npm",
+    "url": "https://github.com/sahat/hackathon-starter",
+    "stars": 35258,
+    "sizeKb": 17854,
+    "band": "small",
+    "tag": "10.0.0",
+    "commit": "b8f47ec8d5a548dd8e9f5f82757a717e63e1a986"
+  },
+  {
+    "id": "npm/sillytavern-sillytavern",
+    "ecosystem": "npm",
+    "url": "https://github.com/SillyTavern/SillyTavern",
+    "stars": 35244,
+    "sizeKb": 215670,
+    "band": "medium",
+    "tag": "1.19.0",
+    "commit": "7e8663cd9c184a550b37238218bdd32c6efc68e9"
+  },
+  {
+    "id": "cmake/ggml-org-llama.cpp",
+    "ecosystem": "cmake",
+    "url": "https://github.com/ggml-org/llama.cpp",
+    "stars": 133220,
+    "sizeKb": 473714,
+    "band": "large",
+    "tag": "v0.8.0",
+    "commit": "8642541b255bfb5dc39cd351a178be09013a55d6"
+  },
+  {
+    "id": "cmake/opencv-opencv",
+    "ecosystem": "cmake",
+    "url": "https://github.com/opencv/opencv",
+    "stars": 91415,
+    "sizeKb": 570800,
+    "band": "large",
+    "tag": "5.0.0",
+    "commit": "40738fb16ceddb5fb3fea747585f7ce6abb0605b"
+  },
+  {
+    "id": "cmake/bitcoin-bitcoin",
+    "ecosystem": "cmake",
+    "url": "https://github.com/bitcoin/bitcoin",
+    "stars": 90592,
+    "sizeKb": 330971,
+    "band": "large",
+    "tag": "v32.1",
+    "commit": "f0de87f040621468b956f01f526a43a010310501"
+  },
+  {
+    "id": "cmake/obsproject-obs-studio",
+    "ecosystem": "cmake",
+    "url": "https://github.com/obsproject/obs-studio",
+    "stars": 78854,
+    "sizeKb": 87818,
+    "band": "medium",
+    "tag": "33.0.1",
+    "commit": "65c320b46e1af5c7a555161aea6182cdf7a8c524"
+  },
+  {
+    "id": "cmake/tesseract-ocr-tesseract",
+    "ecosystem": "cmake",
+    "url": "https://github.com/tesseract-ocr/tesseract",
+    "stars": 77308,
+    "sizeKb": 54824,
+    "band": "medium",
+    "tag": "5.5.4",
+    "commit": "7e548e6eff172f38f97664afe7f7ce40db36c8d6"
+  },
+  {
+    "id": "cmake/protocolbuffers-protobuf",
+    "ecosystem": "cmake",
+    "url": "https://github.com/protocolbuffers/protobuf",
+    "stars": 72150,
+    "sizeKb": 251773,
+    "band": "large",
+    "tag": "v36.2",
+    "commit": "2c74169b34066ceb8ddb6b882fcb3fb32d737a55"
+  },
+  {
+    "id": "cmake/ladybirdbrowser-ladybird",
+    "ecosystem": "cmake",
+    "url": "https://github.com/LadybirdBrowser/ladybird",
+    "stars": 66810,
+    "sizeKb": 570636,
+    "band": "large",
+    "tag": null,
+    "commit": "e45c3172e5a878a813acc7c61a808c39d6dd2eef"
+  },
+  {
+    "id": "cmake/werwolv-imhex",
+    "ecosystem": "cmake",
+    "url": "https://github.com/WerWolv/ImHex",
+    "stars": 55723,
+    "sizeKb": 53325,
+    "band": "medium",
+    "tag": "v1.38.1",
+    "commit": "76cf8771158012095d3b3ed58cc93c27ccfac7df"
+  },
+  {
+    "id": "cmake/ggml-org-whisper.cpp",
+    "ecosystem": "cmake",
+    "url": "https://github.com/ggml-org/whisper.cpp",
+    "stars": 54874,
+    "sizeKb": 49668,
+    "band": "medium",
+    "tag": "v1.9.5",
+    "commit": "d1be6fde11ac6e0407606b4e42fe72d34add8037"
+  },
+  {
+    "id": "cmake/nlohmann-json",
+    "ecosystem": "cmake",
+    "url": "https://github.com/nlohmann/json",
+    "stars": 50836,
+    "sizeKb": 320332,
+    "band": "large",
+    "tag": "v3.12.0",
+    "commit": "55f93686c01528224f448c19128836e7df245f72"
+  },
+  {
+    "id": "cmake/boykopovar-anyps5",
+    "ecosystem": "cmake",
+    "url": "https://github.com/boykopovar/AnyPS5",
+    "stars": 50755,
+    "sizeKb": 152191,
+    "band": "medium",
+    "tag": "v0.1.4",
+    "commit": "7fcab08f71e463b1768730a626a0f5472d336708"
+  },
+  {
+    "id": "cmake/clickhouse-clickhouse",
+    "ecosystem": "cmake",
+    "url": "https://github.com/ClickHouse/ClickHouse",
+    "stars": 50723,
+    "sizeKb": 14997039,
+    "band": "large",
+    "tag": "v26.10.2.103-stable",
+    "commit": "c6428ebcc39fdff48bb0f50e128b2078701901d5"
+  },
+  {
+    "id": "cmake/x64dbg-x64dbg",
+    "ecosystem": "cmake",
+    "url": "https://github.com/x64dbg/x64dbg",
+    "stars": 50173,
+    "sizeKb": 65354,
+    "band": "medium",
+    "tag": "2026.05.27",
+    "commit": "9c8ca1cae0b6d56cc44f31fddcb10e3b02ffbb87"
+  },
+  {
+    "id": "cmake/grpc-grpc",
+    "ecosystem": "cmake",
+    "url": "https://github.com/grpc/grpc",
+    "stars": 45418,
+    "sizeKb": 632331,
+    "band": "large",
+    "tag": "v1.83.2",
+    "commit": "3b05ca3dff22b16879fde0a2852577ebdb493edc"
+  },
+  {
+    "id": "cmake/curl-curl",
+    "ecosystem": "cmake",
+    "url": "https://github.com/curl/curl",
+    "stars": 43360,
+    "sizeKb": 150924,
+    "band": "medium",
+    "tag": "curl-8_23_0",
+    "commit": "3163ec065643ba20709f190111f42c3e1fe95273"
+  },
+  {
+    "id": "cmake/lizardbyte-sunshine",
+    "ecosystem": "cmake",
+    "url": "https://github.com/LizardByte/Sunshine",
+    "stars": 42937,
+    "sizeKb": 594856,
+    "band": "large",
+    "tag": "v2026.914.233613",
+    "commit": "63d35f702ee9e362e43263742981836ec0710384"
+  },
+  {
+    "id": "cmake/duckdb-duckdb",
+    "ecosystem": "cmake",
+    "url": "https://github.com/duckdb/duckdb",
+    "stars": 42760,
+    "sizeKb": 570672,
+    "band": "large",
+    "tag": "v2.0.0",
+    "commit": "d54cbbe3df17e8e5ce68312f483b4155836112aa"
+  },
+  {
+    "id": "cmake/microsoft-bitnet",
+    "ecosystem": "cmake",
+    "url": "https://github.com/microsoft/BitNet",
+    "stars": 41451,
+    "sizeKb": 8729,
+    "band": "small",
+    "tag": null,
+    "commit": "0b341e582afbf9e1011f24744b554c96a3477eb5"
+  },
+  {
+    "id": "cmake/qbittorrent-qbittorrent",
+    "ecosystem": "cmake",
+    "url": "https://github.com/qbittorrent/qBittorrent",
+    "stars": 41319,
+    "sizeKb": 331215,
+    "band": "large",
+    "tag": "release-5.3.0",
+    "commit": "9213075dd5f7b352208361c6a84c1c115efc898e"
+  },
+  {
+    "id": "cmake/facebookresearch-faiss",
+    "ecosystem": "cmake",
+    "url": "https://github.com/facebookresearch/faiss",
+    "stars": 41251,
+    "sizeKb": 292610,
+    "band": "large",
+    "tag": "v1.15.1",
+    "commit": "75c755c5a1fc854756aaf3bd1131213aeb21d8d1"
+  },
+  {
+    "id": "cmake/aseprite-aseprite",
+    "ecosystem": "cmake",
+    "url": "https://github.com/aseprite/aseprite",
+    "stars": 40604,
+    "sizeKb": 48420,
+    "band": "small",
+    "tag": "v1.3.18.6",
+    "commit": "331e898ef405d919539c03fd1675691cfa16c3a3"
+  },
+  {
+    "id": "cmake/hyprwm-hyprland",
+    "ecosystem": "cmake",
+    "url": "https://github.com/hyprwm/Hyprland",
+    "stars": 40046,
+    "sizeKb": 83167,
+    "band": "medium",
+    "tag": "v0.57.0",
+    "commit": "0aa6745f705f2c4b0a5004eb019ef76e5bbdb426"
+  },
+  {
+    "id": "cmake/google-googletest",
+    "ecosystem": "cmake",
+    "url": "https://github.com/google/googletest",
+    "stars": 39696,
+    "sizeKb": 14283,
+    "band": "small",
+    "tag": "v1.18.0",
+    "commit": "063de7e9578f82b369302001269680b4b1553359"
+  },
+  {
+    "id": "cmake/google-leveldb",
+    "ecosystem": "cmake",
+    "url": "https://github.com/google/leveldb",
+    "stars": 39519,
+    "sizeKb": 1849,
+    "band": "small",
+    "tag": "1.23",
+    "commit": "99b3c03b3284f5886f9ef9a4ef703d57373e61be"
+  },
+  {
+    "id": "cmake/niko1221-strata",
+    "ecosystem": "cmake",
+    "url": "https://github.com/Niko1221/Strata",
+    "stars": 38638,
+    "sizeKb": 87595,
+    "band": "medium",
+    "tag": "v0.2.10",
+    "commit": "ffa80d73133ea5c548aefe57889a16e8085a938f"
+  },
+  {
+    "id": "cmake/raysan5-raylib",
+    "ecosystem": "cmake",
+    "url": "https://github.com/raysan5/raylib",
+    "stars": 35543,
+    "sizeKb": 416215,
+    "band": "large",
+    "tag": "6.2",
+    "commit": "02566453880e06bec97f5b8160fa6fe1e98397ca"
+  },
+  {
+    "id": "cmake/aristocratos-btop",
+    "ecosystem": "cmake",
+    "url": "https://github.com/aristocratos/btop",
+    "stars": 35231,
+    "sizeKb": 10505,
+    "band": "small",
+    "tag": "v1.4.8",
+    "commit": "cf1da5900b1e9eaa1c20fd7148dd812b43340b8a"
+  },
+  {
+    "id": "cmake/freecad-freecad",
+    "ecosystem": "cmake",
+    "url": "https://github.com/FreeCAD/FreeCAD",
+    "stars": 35075,
+    "sizeKb": 2970085,
+    "band": "large",
+    "tag": "1.1.4",
+    "commit": "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  },
+  {
+    "id": "cmake/thealgorithms-c-plus-plus",
+    "ecosystem": "cmake",
+    "url": "https://github.com/TheAlgorithms/C-Plus-Plus",
+    "stars": 34848,
+    "sizeKb": 144042,
+    "band": "medium",
+    "tag": null,
+    "commit": "fdcc29b0ac2848e9d1a8d926e171cc5b39f97759"
+  },
+  {
+    "id": "cmake/cmu-perceptual-computing-lab-openpose",
+    "ecosystem": "cmake",
+    "url": "https://github.com/CMU-Perceptual-Computing-Lab/openpose",
+    "stars": 34554,
+    "sizeKb": 86496,
+    "band": "medium",
+    "tag": "v1.7.0",
+    "commit": "8ca5c1d95a42340b323e9273654d1db98bec779c"
+  },
+  {
+    "id": "cmake/bvlc-caffe",
+    "ecosystem": "cmake",
+    "url": "https://github.com/BVLC/caffe",
+    "stars": 34553,
+    "sizeKb": 76170,
+    "band": "medium",
+    "tag": "1.0",
+    "commit": "eeebdab16155d34ff8f5f42137da7df4d1c7eab0"
+  },
+  {
+    "id": "cmake/microsoft-wsl",
+    "ecosystem": "cmake",
+    "url": "https://github.com/microsoft/WSL",
+    "stars": 34293,
+    "sizeKb": 109177,
+    "band": "medium",
+    "tag": "3.0.3",
+    "commit": "15ea3b3846c5f18318722d1381186b2ff6ed72eb"
+  },
+  {
+    "id": "cmake/shadps4-emu-shadps4",
+    "ecosystem": "cmake",
+    "url": "https://github.com/shadps4-emu/shadPS4",
+    "stars": 34035,
+    "sizeKb": 75741,
+    "band": "medium",
+    "tag": "v.0.21.0",
+    "commit": "11557f2eb60b3b00712c8887c30852de7615d6df"
+  },
+  {
+    "id": "cmake/serenityos-serenity",
+    "ecosystem": "cmake",
+    "url": "https://github.com/SerenityOS/serenity",
+    "stars": 33938,
+    "sizeKb": 244181,
+    "band": "medium",
+    "tag": null,
+    "commit": "ac779f06cc2013c7ebfd8c8586e4d6671caa136d"
+  },
+  {
+    "id": "cmake/telegramdesktop-tdesktop",
+    "ecosystem": "cmake",
+    "url": "https://github.com/telegramdesktop/tdesktop",
+    "stars": 33441,
+    "sizeKb": 312716,
+    "band": "large",
+    "tag": "v7.3.3",
+    "commit": "5c674f1f6a0f6ace55b67f8bc295138680fe588b"
+  },
+  {
+    "id": "cmake/barry-ran-qtscrcpy",
+    "ecosystem": "cmake",
+    "url": "https://github.com/barry-ran/QtScrcpy",
+    "stars": 32694,
+    "sizeKb": 43425,
+    "band": "small",
+    "tag": "v4.2.1",
+    "commit": "f90e2259ea6745c30fc242f501a0210771288f8a"
+  },
+  {
+    "id": "cmake/78-xiaozhi-esp32",
+    "ecosystem": "cmake",
+    "url": "https://github.com/78/xiaozhi-esp32",
+    "stars": 32509,
+    "sizeKb": 11986,
+    "band": "small",
+    "tag": "v2.5.2",
+    "commit": "49b4380b3faa0ceadd28a3e78aaf0f311c46c57e"
+  },
+  {
+    "id": "cmake/meta-rocksdb",
+    "ecosystem": "cmake",
+    "url": "https://github.com/meta/rocksdb",
+    "stars": 32241,
+    "sizeKb": 253234,
+    "band": "large",
+    "tag": "v11.12",
+    "commit": "ef3dd12e9a6314aaf08fba6d5d445494eac9b253"
+  },
+  {
+    "id": "cmake/lizongying-my-tv",
+    "ecosystem": "cmake",
+    "url": "https://github.com/lizongying/my-tv",
+    "stars": 31972,
+    "sizeKb": 72954,
+    "band": "medium",
+    "tag": "v2.1.8",
+    "commit": "acff1d41fcbbe2733237c620ccebe7e4c691ccac"
+  },
+  {
+    "id": "cmake/dragonflydb-dragonfly",
+    "ecosystem": "cmake",
+    "url": "https://github.com/dragonflydb/dragonfly",
+    "stars": 31843,
+    "sizeKb": 33932,
+    "band": "small",
+    "tag": "v2.0.2",
+    "commit": "8ce4bbb106586057fbd85f71ed353c60d0d5bf87"
+  },
+  {
+    "id": "cmake/flameshot-org-flameshot",
+    "ecosystem": "cmake",
+    "url": "https://github.com/flameshot-org/flameshot",
+    "stars": 31399,
+    "sizeKb": 27770,
+    "band": "small",
+    "tag": "v14.0.0",
+    "commit": "e408812d77ff1835957f85796c4cf737466bd69d"
+  },
+  {
+    "id": "cmake/meta-folly",
+    "ecosystem": "cmake",
+    "url": "https://github.com/meta/folly",
+    "stars": 30556,
+    "sizeKb": 61692,
+    "band": "medium",
+    "tag": "v2026.10.26.00",
+    "commit": "c8c7adb72c6d73e2fced5ff5cebc96aa3ff65b2c"
+  },
+  {
+    "id": "cmake/deskflow-deskflow",
+    "ecosystem": "cmake",
+    "url": "https://github.com/deskflow/deskflow",
+    "stars": 30500,
+    "sizeKb": 185834,
+    "band": "medium",
+    "tag": "v1.27.0",
+    "commit": "081f6478e654a112168879e67a41ce7d7e4ae3af"
+  },
+  {
+    "id": "cmake/gabime-spdlog",
+    "ecosystem": "cmake",
+    "url": "https://github.com/gabime/spdlog",
+    "stars": 29733,
+    "sizeKb": 42950,
+    "band": "small",
+    "tag": "v1.17.0",
+    "commit": "79524ddd08a4ec981b7fea76afd08ee05f83755d"
+  },
+  {
+    "id": "cmake/keepassxreboot-keepassxc",
+    "ecosystem": "cmake",
+    "url": "https://github.com/keepassxreboot/keepassxc",
+    "stars": 29722,
+    "sizeKb": 83633,
+    "band": "medium",
+    "tag": "2.8.0",
+    "commit": "1c2f23ef5914c0f442a00533def1689857afb5a7"
+  },
+  {
+    "id": "cmake/ml-explore-mlx",
+    "ecosystem": "cmake",
+    "url": "https://github.com/ml-explore/mlx",
+    "stars": 29032,
+    "sizeKb": 71513,
+    "band": "medium",
+    "tag": "v0.32.4",
+    "commit": "36969c094354086e15d2a327a9c50feb20b9cf11"
+  },
+  {
+    "id": "cmake/dmlc-xgboost",
+    "ecosystem": "cmake",
+    "url": "https://github.com/dmlc/xgboost",
+    "stars": 28940,
+    "sizeKb": 39214,
+    "band": "small",
+    "tag": "v3.4.2",
+    "commit": "fdf0888bedddbd444d72994d845c59b3ca182c5b"
+  },
+  {
+    "id": "cmake/taichi-dev-taichi",
+    "ecosystem": "cmake",
+    "url": "https://github.com/taichi-dev/taichi",
+    "stars": 28450,
+    "sizeKb": 60269,
+    "band": "medium",
+    "tag": "v1.7.4",
+    "commit": "b4b956fdaa67fd3e198527fd607053ecb9bf4aa2"
+  },
+  {
+    "id": "cmake/meta-zstd",
+    "ecosystem": "cmake",
+    "url": "https://github.com/meta/zstd",
+    "stars": 28154,
+    "sizeKb": 40651,
+    "band": "small",
+    "tag": "v1.5.7",
+    "commit": "f8745da6ff1ad1e7bab384bd1f9d742439278e99"
+  },
+  {
+    "id": "cmake/valkey-io-valkey",
+    "ecosystem": "cmake",
+    "url": "https://github.com/valkey-io/valkey",
+    "stars": 27590,
+    "sizeKb": 280175,
+    "band": "large",
+    "tag": "9.1.3",
+    "commit": "29173b67508b2de4c0f0ed551f3b47cf19fc3ca8"
+  },
+  {
+    "id": "cmake/libuv-libuv",
+    "ecosystem": "cmake",
+    "url": "https://github.com/libuv/libuv",
+    "stars": 27299,
+    "sizeKb": 18282,
+    "band": "small",
+    "tag": "v1.53.0",
+    "commit": "840404ce8ba7cc0204be52389a6cfff9f2c90fb6"
+  },
+  {
+    "id": "cmake/typesense-typesense",
+    "ecosystem": "cmake",
+    "url": "https://github.com/typesense/typesense",
+    "stars": 27076,
+    "sizeKb": 15066,
+    "band": "small",
+    "tag": "v30.2",
+    "commit": "d45d46baf3996d1de8bf96a87f375cfb43691560"
+  },
+  {
+    "id": "cmake/google-flatbuffers",
+    "ecosystem": "cmake",
+    "url": "https://github.com/google/flatbuffers",
+    "stars": 26606,
+    "sizeKb": 22281,
+    "band": "small",
+    "tag": "v25.12.19-2026-02-06-03fffb2",
+    "commit": "03fffb25e2d777462b719cb4964249c30b19d58f"
+  },
+  {
+    "id": "cmake/fmtlib-fmt",
+    "ecosystem": "cmake",
+    "url": "https://github.com/fmtlib/fmt",
+    "stars": 25902,
+    "sizeKb": 17765,
+    "band": "small",
+    "tag": "12.2.0",
+    "commit": "1be298e1bd68957e4cd352e1f676f00e07dcfb57"
+  },
+  {
+    "id": "cmake/argotorg-solidity",
+    "ecosystem": "cmake",
+    "url": "https://github.com/argotorg/solidity",
+    "stars": 25768,
+    "sizeKb": 87867,
+    "band": "medium",
+    "tag": "v0.8.38",
+    "commit": "1835d247de183f23e7b0e2bc4a50732af525b77c"
+  },
+  {
+    "id": "cmake/fastfetch-cli-fastfetch",
+    "ecosystem": "cmake",
+    "url": "https://github.com/fastfetch-cli/fastfetch",
+    "stars": 25243,
+    "sizeKb": 21412,
+    "band": "small",
+    "tag": "2.70.0",
+    "commit": "17bb3fd2384bd814b421d73b8c8b8d08e06cfa26"
+  },
+  {
+    "id": "cmake/taosdata-tdengine",
+    "ecosystem": "cmake",
+    "url": "https://github.com/taosdata/TDengine",
+    "stars": 25182,
+    "sizeKb": 1348128,
+    "band": "large",
+    "tag": "ver-3.4.3.9",
+    "commit": "47aa8267d30af0c9a36372575c0ecf445717e469"
+  },
+  {
+    "id": "cmake/lvgl-lvgl",
+    "ecosystem": "cmake",
+    "url": "https://github.com/lvgl/lvgl",
+    "stars": 25079,
+    "sizeKb": 532439,
+    "band": "large",
+    "tag": "v9.6.0",
+    "commit": "80ca777e37a2b176770726a02e07a6fb79ef0b39"
+  },
+  {
+    "id": "cmake/sqlitebrowser-sqlitebrowser",
+    "ecosystem": "cmake",
+    "url": "https://github.com/sqlitebrowser/sqlitebrowser",
+    "stars": 24749,
+    "sizeKb": 35720,
+    "band": "small",
+    "tag": "v3.13.1",
+    "commit": "5d84f53f85570a31767548cded89c96de6ff70ae"
+  },
+  {
+    "id": "cmake/simdjson-simdjson",
+    "ecosystem": "cmake",
+    "url": "https://github.com/simdjson/simdjson",
+    "stars": 24498,
+    "sizeKb": 120174,
+    "band": "medium",
+    "tag": "v5.1.1",
+    "commit": "40a686ab89dc5ee58ec10d0514dd5c99abbc472b"
+  },
+  {
+    "id": "cmake/ssloy-tinyrenderer",
+    "ecosystem": "cmake",
+    "url": "https://github.com/ssloy/tinyrenderer",
+    "stars": 24491,
+    "sizeKb": 64049,
+    "band": "medium",
+    "tag": null,
+    "commit": "97eb7a480e762285899a93c5d21e70a79e60782e"
+  },
+  {
+    "id": "cmake/maaassistantarknights-maaassistantarknights",
+    "ecosystem": "cmake",
+    "url": "https://github.com/MaaAssistantArknights/MaaAssistantArknights",
+    "stars": 24243,
+    "sizeKb": 1282414,
+    "band": "large",
+    "tag": "v6.21.1",
+    "commit": "d8a98c72a45618f24e9c55fa014809d5ade6bf52"
+  },
+  {
+    "id": "cmake/paddlepaddle-paddle",
+    "ecosystem": "cmake",
+    "url": "https://github.com/PaddlePaddle/Paddle",
+    "stars": 24134,
+    "sizeKb": 560302,
+    "band": "large",
+    "tag": "v3.4.0",
+    "commit": "9ec620dd44571852155d520574fb32ee04c4ec8d"
+  },
+  {
+    "id": "cmake/tencent-ncnn",
+    "ecosystem": "cmake",
+    "url": "https://github.com/Tencent/ncnn",
+    "stars": 24024,
+    "sizeKb": 38171,
+    "band": "small",
+    "tag": "20261020",
+    "commit": "7e36d25cb153092ba87a60530455c7376fedf452"
+  },
+  {
+    "id": "cmake/timescale-timescaledb",
+    "ecosystem": "cmake",
+    "url": "https://github.com/timescale/timescaledb",
+    "stars": 23792,
+    "sizeKb": 67472,
+    "band": "medium",
+    "tag": "2.31.0",
+    "commit": "4fa2a7c6b579171a1a8966fd87a0d4189ebab43b"
+  },
+  {
+    "id": "cmake/osquery-osquery",
+    "ecosystem": "cmake",
+    "url": "https://github.com/osquery/osquery",
+    "stars": 23715,
+    "sizeKb": 28535,
+    "band": "small",
+    "tag": "5.24.0",
+    "commit": "2c333df27d580eec639ed621abf74705fa56687c"
+  },
+  {
+    "id": "cmake/iovisor-bcc",
+    "ecosystem": "cmake",
+    "url": "https://github.com/iovisor/bcc",
+    "stars": 22727,
+    "sizeKb": 23988,
+    "band": "small",
+    "tag": "v0.37.0",
+    "commit": "306a2819f73d9525430693e6399d58caf6e12b3b"
+  },
+  {
+    "id": "cmake/thealgorithms-c",
+    "ecosystem": "cmake",
+    "url": "https://github.com/TheAlgorithms/C",
+    "stars": 22595,
+    "sizeKb": 20365,
+    "band": "small",
+    "tag": null,
+    "commit": "e5dad3fa8def3726ec850ca66a7f51521f8ad393"
+  },
+  {
+    "id": "cmake/k4yt3x-video2x",
+    "ecosystem": "cmake",
+    "url": "https://github.com/k4yt3x/video2x",
+    "stars": 22535,
+    "sizeKb": 574222,
+    "band": "large",
+    "tag": "6.4.0",
+    "commit": "a96bda9b4d79616cc6b71b94e6945146b5b4d509"
+  },
+  {
+    "id": "cmake/blender-blender",
+    "ecosystem": "cmake",
+    "url": "https://github.com/blender/blender",
+    "stars": 21561,
+    "sizeKb": 1441877,
+    "band": "large",
+    "tag": null,
+    "commit": "b131ae371dd965ad0d762dad72bae6991e51b81a"
+  },
+  {
+    "id": "cmake/catchorg-catch2",
+    "ecosystem": "cmake",
+    "url": "https://github.com/catchorg/Catch2",
+    "stars": 21543,
+    "sizeKb": 33829,
+    "band": "small",
+    "tag": "v3.16.1",
+    "commit": "08092139210881f01a34e60c5f2fd6afa0ea4024"
+  },
+  {
+    "id": "cmake/xbmc-xbmc",
+    "ecosystem": "cmake",
+    "url": "https://github.com/xbmc/xbmc",
+    "stars": 21423,
+    "sizeKb": 1670772,
+    "band": "large",
+    "tag": "21.3-Omega",
+    "commit": "a3a448d26b8d560a65655dab2cd122994dc4e146"
+  },
+  {
+    "id": "cmake/google-filament",
+    "ecosystem": "cmake",
+    "url": "https://github.com/google/filament",
+    "stars": 20684,
+    "sizeKb": 1197631,
+    "band": "large",
+    "tag": "v1.80.0",
+    "commit": "c26a2a880bec5862522af18dcaead96910719fb0"
+  },
+  {
+    "id": "cmake/rpcs3-rpcs3",
+    "ecosystem": "cmake",
+    "url": "https://github.com/RPCS3/rpcs3",
+    "stars": 20307,
+    "sizeKb": 161336,
+    "band": "medium",
+    "tag": "v0.0.43",
+    "commit": "53d44aa4a1c2cdba3601938a48ee3b86b73b8e3c"
+  },
+  {
+    "id": "cmake/rizinorg-cutter",
+    "ecosystem": "cmake",
+    "url": "https://github.com/rizinorg/cutter",
+    "stars": 20141,
+    "sizeKb": 16346,
+    "band": "small",
+    "tag": "v2.5.0",
+    "commit": "a6f6ad7bed987c56735ab763970bb405df0a4cfc"
+  },
+  {
+    "id": "cmake/espressif-esp-idf",
+    "ecosystem": "cmake",
+    "url": "https://github.com/espressif/esp-idf",
+    "stars": 19408,
+    "sizeKb": 460542,
+    "band": "large",
+    "tag": "v6.1",
+    "commit": "fff9895c82d744c7237be8847347bdd1b07c6643"
+  },
+  {
+    "id": "cmake/reactos-reactos",
+    "ecosystem": "cmake",
+    "url": "https://github.com/reactos/reactos",
+    "stars": 18427,
+    "sizeKb": 695604,
+    "band": "large",
+    "tag": "0.4.16-release",
+    "commit": "822e8647792a2c43f033e3e00ed273d59f163c7b"
+  },
+  {
+    "id": "cmake/nicbarker-clay",
+    "ecosystem": "cmake",
+    "url": "https://github.com/nicbarker/clay",
+    "stars": 18379,
+    "sizeKb": 19203,
+    "band": "small",
+    "tag": "v0.14",
+    "commit": "b25a31c1a152915cd7dd6796e6592273e5a10aac"
+  },
+  {
+    "id": "cmake/zephyrproject-rtos-zephyr",
+    "ecosystem": "cmake",
+    "url": "https://github.com/zephyrproject-rtos/zephyr",
+    "stars": 16986,
+    "sizeKb": 979352,
+    "band": "large",
+    "tag": "v4.5.0",
+    "commit": "41d10b59730406bbab4ca9f1fbbe9e96aafb4966"
+  },
+  {
+    "id": "cmake/skywind3000-kcp",
+    "ecosystem": "cmake",
+    "url": "https://github.com/skywind3000/kcp",
+    "stars": 16951,
+    "sizeKb": 625,
+    "band": "small",
+    "tag": "2.1.1",
+    "commit": "fbd716b257628036375b94061a38a188ea4ed0c8"
+  },
+  {
+    "id": "cmake/libsdl-org-sdl",
+    "ecosystem": "cmake",
+    "url": "https://github.com/libsdl-org/SDL",
+    "stars": 16936,
+    "sizeKb": 152621,
+    "band": "medium",
+    "tag": "release-3.4.18",
+    "commit": "829a65d769d935c4852f8159e964312c0957260a"
+  },
+  {
+    "id": "cmake/winsiderss-systeminformer",
+    "ecosystem": "cmake",
+    "url": "https://github.com/winsiderss/systeminformer",
+    "stars": 16398,
+    "sizeKb": 105672,
+    "band": "medium",
+    "tag": "v4.0.26241.138",
+    "commit": "99a0d28e091878967a804ac9ea2fe22f2c1fdadb"
+  },
+  {
+    "id": "cmake/glfw-glfw",
+    "ecosystem": "cmake",
+    "url": "https://github.com/glfw/glfw",
+    "stars": 15437,
+    "sizeKb": 17086,
+    "band": "small",
+    "tag": "3.5.1",
+    "commit": "d9d6f0f1f967807ffade6598ea9a631ebaf37a56"
+  },
+  {
+    "id": "cmake/openvpn-openvpn",
+    "ecosystem": "cmake",
+    "url": "https://github.com/OpenVPN/openvpn",
+    "stars": 14764,
+    "sizeKb": 29996,
+    "band": "small",
+    "tag": "v2.7.8",
+    "commit": "dc1f569087135894ac2703aeabd7a960ee9452d4"
+  },
+  {
+    "id": "cmake/coturn-coturn",
+    "ecosystem": "cmake",
+    "url": "https://github.com/coturn/coturn",
+    "stars": 14534,
+    "sizeKb": 8344,
+    "band": "small",
+    "tag": "docker/4.18.0-r0",
+    "commit": "1986df21e4b4152b5e0216989f649e20ff76aced"
+  }
+]

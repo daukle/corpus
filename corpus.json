@@ -1,0 +1,482 @@
+[
+  {
+    "id": "gradle/termux-termux-app",
+    "ecosystem": "gradle",
+    "url": "https://github.com/termux/termux-app",
+    "stars": 63981,
+    "sizeKb": 5271,
+    "band": "small",
+    "tag": "v0.118.3",
+    "commit": "5b657c6adf4304e5198951ce815fe0205dcac29c"
+  },
+  {
+    "id": "gradle/skylot-jadx",
+    "ecosystem": "gradle",
+    "url": "https://github.com/skylot/jadx",
+    "stars": 51510,
+    "sizeKb": 26340,
+    "band": "small",
+    "tag": "v1.5.6",
+    "commit": "28ff15e4ae69950aebea110a13e5ab895d234dfc"
+  },
+  {
+    "id": "gradle/android-architecture-samples",
+    "ecosystem": "gradle",
+    "url": "https://github.com/android/architecture-samples",
+    "stars": 45889,
+    "sizeKb": 13365,
+    "band": "small",
+    "tag": null,
+    "commit": "ee66e1526b84c026615df032c705842b7d2a521f"
+  },
+  {
+    "id": "gradle/lysine-dev-retrofit",
+    "ecosystem": "gradle",
+    "url": "https://github.com/lysine-dev/retrofit",
+    "stars": 43939,
+    "sizeKb": 11816,
+    "band": "small",
+    "tag": "3.0.0",
+    "commit": "3ab0f1a2c18666adb79ebf4eacef6fbc40d3e801"
+  },
+  {
+    "id": "gradle/lysine-dev-okhttp",
+    "ecosystem": "gradle",
+    "url": "https://github.com/lysine-dev/okhttp",
+    "stars": 47106,
+    "sizeKb": 68304,
+    "band": "medium",
+    "tag": null,
+    "commit": "16fb6aef3aee1c4645fc8d24af01f8a4dc128ebf"
+  },
+  {
+    "id": "gradle/teamnewpipe-newpipe",
+    "ecosystem": "gradle",
+    "url": "https://github.com/TeamNewPipe/NewPipe",
+    "stars": 40407,
+    "sizeKb": 91987,
+    "band": "medium",
+    "tag": "v0.29.1",
+    "commit": "00acf2f318b0af7ffacbd687bba011b642cc01d0"
+  },
+  {
+    "id": "gradle/halo-dev-halo",
+    "ecosystem": "gradle",
+    "url": "https://github.com/halo-dev/halo",
+    "stars": 40106,
+    "sizeKb": 89938,
+    "band": "medium",
+    "tag": "v2.27.2",
+    "commit": "4f9f661976bb2f989317035e05d217854108dcc5"
+  },
+  {
+    "id": "gradle/shadowsocks-shadowsocks-android",
+    "ecosystem": "gradle",
+    "url": "https://github.com/shadowsocks/shadowsocks-android",
+    "stars": 36840,
+    "sizeKb": 53845,
+    "band": "medium",
+    "tag": "v5.3.5-nightly",
+    "commit": "ae28fd91931fe4d2d5aab044de9ceaf9ed07ad56"
+  },
+  {
+    "id": "gradle/nationalsecurityagency-ghidra",
+    "ecosystem": "gradle",
+    "url": "https://github.com/NationalSecurityAgency/ghidra",
+    "stars": 97260,
+    "sizeKb": 416362,
+    "band": "large",
+    "tag": "Ghidra_12.2_build",
+    "commit": "8ca9077040cc43cd790babcfccf19475622a3e9a"
+  },
+  {
+    "id": "gradle/spring-projects-spring-boot",
+    "ecosystem": "gradle",
+    "url": "https://github.com/spring-projects/spring-boot",
+    "stars": 81733,
+    "sizeKb": 226394,
+    "band": "large",
+    "tag": "v4.1.2",
+    "commit": "634e6fd6bc2e475d745c0bdceb8e775864f7f2ec"
+  },
+  {
+    "id": "gradle/elastic-elasticsearch",
+    "ecosystem": "gradle",
+    "url": "https://github.com/elastic/elasticsearch",
+    "stars": 78472,
+    "sizeKb": 1839408,
+    "band": "large",
+    "tag": "v9.5.6",
+    "commit": "fd1e8011342a0988e432b999cea4bf884ca120ed"
+  },
+  {
+    "id": "gradle/spring-projects-spring-framework",
+    "ecosystem": "gradle",
+    "url": "https://github.com/spring-projects/spring-framework",
+    "stars": 60312,
+    "sizeKb": 246756,
+    "band": "large",
+    "tag": "v7.0.10",
+    "commit": "33a85b0bec67adb759aa898e3b80d603786be082"
+  },
+  {
+    "id": "maven/thealgorithms-java",
+    "ecosystem": "maven",
+    "url": "https://github.com/TheAlgorithms/Java",
+    "stars": 66716,
+    "sizeKb": 7864,
+    "band": "small",
+    "tag": null,
+    "commit": "6edd2d878947c7fb08a6f3286b316eca09fe9200"
+  },
+  {
+    "id": "maven/xkcoding-spring-boot-demo",
+    "ecosystem": "maven",
+    "url": "https://github.com/xkcoding/spring-boot-demo",
+    "stars": 34054,
+    "sizeKb": 14194,
+    "band": "small",
+    "tag": null,
+    "commit": "87a142f9604c1a5365b4d24d22c2c11c26a9d5ab"
+  },
+  {
+    "id": "maven/binarywang-wxjava",
+    "ecosystem": "maven",
+    "url": "https://github.com/binarywang/WxJava",
+    "stars": 33176,
+    "sizeKb": 20880,
+    "band": "small",
+    "tag": "v4.8.0",
+    "commit": "42f727cd412be46a86015c34de49256d7377c87e"
+  },
+  {
+    "id": "maven/xuxueli-xxl-job",
+    "ecosystem": "maven",
+    "url": "https://github.com/xuxueli/xxl-job",
+    "stars": 30650,
+    "sizeKb": 39371,
+    "band": "small",
+    "tag": "3.5.0",
+    "commit": "3bebfc1609b95413581b11e270e5670dce679813"
+  },
+  {
+    "id": "maven/iluwatar-java-design-patterns",
+    "ecosystem": "maven",
+    "url": "https://github.com/iluwatar/java-design-patterns",
+    "stars": 94843,
+    "sizeKb": 48731,
+    "band": "medium",
+    "tag": null,
+    "commit": "4cabb204f240240bea319605a5ffa46ded728001"
+  },
+  {
+    "id": "maven/macrozheng-mall",
+    "ecosystem": "maven",
+    "url": "https://github.com/macrozheng/mall",
+    "stars": 85006,
+    "sizeKb": 58744,
+    "band": "medium",
+    "tag": "v1.0.3",
+    "commit": "dd617ac3fe89c8083af56bee3364b1e812cda3ed"
+  },
+  {
+    "id": "maven/apache-dubbo",
+    "ecosystem": "maven",
+    "url": "https://github.com/apache/dubbo",
+    "stars": 41583,
+    "sizeKb": 61830,
+    "band": "medium",
+    "tag": "dubbo-3.2.20",
+    "commit": "d390d2bedc6c616c8ec8ebeb4f3edc347df5506e"
+  },
+  {
+    "id": "maven/alibaba-arthas",
+    "ecosystem": "maven",
+    "url": "https://github.com/alibaba/arthas",
+    "stars": 37606,
+    "sizeKb": 73646,
+    "band": "medium",
+    "tag": "arthas-all-4.3.5",
+    "commit": "be42fd932a26456988b97d863087b116de19253f"
+  },
+  {
+    "id": "maven/dbeaver-dbeaver",
+    "ecosystem": "maven",
+    "url": "https://github.com/dbeaver/dbeaver",
+    "stars": 52281,
+    "sizeKb": 225056,
+    "band": "large",
+    "tag": "26.2.4",
+    "commit": "9dcee590939f5c1155652fa729061035d2c347c8"
+  },
+  {
+    "id": "maven/google-guava",
+    "ecosystem": "maven",
+    "url": "https://github.com/google/guava",
+    "stars": 51919,
+    "sizeKb": 1439794,
+    "band": "large",
+    "tag": "v33.8.0",
+    "commit": "309d377f8178f54af3e2cf893c3c4d2014e537c5"
+  },
+  {
+    "id": "maven/yunaiv-ruoyi-vue-pro",
+    "ecosystem": "maven",
+    "url": "https://github.com/YunaiV/ruoyi-vue-pro",
+    "stars": 40183,
+    "sizeKb": 203929,
+    "band": "large",
+    "tag": "v2026.10(jdk25)",
+    "commit": "67be917c2f4ffbcebc0ceb3bffa336accc65cba1"
+  },
+  {
+    "id": "maven/keycloak-keycloak",
+    "ecosystem": "maven",
+    "url": "https://github.com/keycloak/keycloak",
+    "stars": 37663,
+    "sizeKb": 625959,
+    "band": "large",
+    "tag": "26.8.1",
+    "commit": "24ed1dadf3f246a555adb6d3d4a99e9b3003fb3b"
+  },
+  {
+    "id": "npm/vuejs-vue",
+    "ecosystem": "npm",
+    "url": "https://github.com/vuejs/vue",
+    "stars": 212502,
+    "sizeKb": 32152,
+    "band": "small",
+    "tag": "v2.7.16",
+    "commit": "13f4e7dc03e2caed900ac70ff8b8fe58dda45663"
+  },
+  {
+    "id": "npm/trekhleb-javascript-algorithms",
+    "ecosystem": "npm",
+    "url": "https://github.com/trekhleb/javascript-algorithms",
+    "stars": 196721,
+    "sizeKb": 14964,
+    "band": "small",
+    "tag": null,
+    "commit": "85293e3e2b88f4d2ce330d956b139cf628aa1e82"
+  },
+  {
+    "id": "npm/dietrichgebert-ponytail",
+    "ecosystem": "npm",
+    "url": "https://github.com/DietrichGebert/ponytail",
+    "stars": 183034,
+    "sizeKb": 13130,
+    "band": "small",
+    "tag": "v5.3.3",
+    "commit": "7801d061243d7b753bad0e0b3c057cd250b11755"
+  },
+  {
+    "id": "npm/airbnb-javascript",
+    "ecosystem": "npm",
+    "url": "https://github.com/airbnb/javascript",
+    "stars": 148029,
+    "sizeKb": 3738,
+    "band": "small",
+    "tag": null,
+    "commit": "8ed19247bef145e3cc41b24a02dd1fe6d9b5e681"
+  },
+  {
+    "id": "npm/morluto-rea",
+    "ecosystem": "npm",
+    "url": "https://github.com/morluto/rea",
+    "stars": 423730,
+    "sizeKb": 137864,
+    "band": "medium",
+    "tag": "rea-agents-6.8.0",
+    "commit": "160d821ac9a0310afcb8d1fc427862dd6508add5"
+  },
+  {
+    "id": "npm/affaan-m-ecc",
+    "ecosystem": "npm",
+    "url": "https://github.com/affaan-m/ECC",
+    "stars": 295815,
+    "sizeKb": 60828,
+    "band": "medium",
+    "tag": "v2.2.3",
+    "commit": "c05b2d6614f62f6db0047669aa4eefb223d478f9"
+  },
+  {
+    "id": "npm/snailclimb-javaguide",
+    "ecosystem": "npm",
+    "url": "https://github.com/Snailclimb/JavaGuide",
+    "stars": 159392,
+    "sizeKb": 183539,
+    "band": "medium",
+    "tag": null,
+    "commit": "992dae31eade2a34ba8dbbbcf5ed9de5511325ec"
+  },
+  {
+    "id": "npm/garrytan-gstack",
+    "ecosystem": "npm",
+    "url": "https://github.com/garrytan/gstack",
+    "stars": 138714,
+    "sizeKb": 249317,
+    "band": "medium",
+    "tag": "v1.92.55.0",
+    "commit": "2512dd7624a474fee036326989ea0c6bb8470e69"
+  },
+  {
+    "id": "npm/freecodecamp-freecodecamp",
+    "ecosystem": "npm",
+    "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+    "stars": 458461,
+    "sizeKb": 584595,
+    "band": "large",
+    "tag": null,
+    "commit": "124bba5f531aae30f22d679a49923b81634b7f69"
+  },
+  {
+    "id": "npm/openclaw-openclaw",
+    "ecosystem": "npm",
+    "url": "https://github.com/openclaw/openclaw",
+    "stars": 393760,
+    "sizeKb": 12476978,
+    "band": "large",
+    "tag": "v2026.10.10",
+    "commit": "7dc3350cb9f08fcf9a0af5c4845a20d5b2f1a8be"
+  },
+  {
+    "id": "npm/nilbuild-developer-roadmap",
+    "ecosystem": "npm",
+    "url": "https://github.com/nilbuild/developer-roadmap",
+    "stars": 371103,
+    "sizeKb": 364466,
+    "band": "large",
+    "tag": "4.0",
+    "commit": "d2b5e17ea21826cf4c4a3d89644de75863e8ba5b"
+  },
+  {
+    "id": "npm/deepseek-ai-deepseek-harness",
+    "ecosystem": "npm",
+    "url": "https://github.com/deepseek-ai/deepseek-harness",
+    "stars": 269964,
+    "sizeKb": 345389,
+    "band": "large",
+    "tag": null,
+    "commit": "ce7073d51254c26cd63b22a60835b8f948deb447"
+  },
+  {
+    "id": "cmake/microsoft-bitnet",
+    "ecosystem": "cmake",
+    "url": "https://github.com/microsoft/BitNet",
+    "stars": 41451,
+    "sizeKb": 8729,
+    "band": "small",
+    "tag": null,
+    "commit": "0b341e582afbf9e1011f24744b554c96a3477eb5"
+  },
+  {
+    "id": "cmake/aseprite-aseprite",
+    "ecosystem": "cmake",
+    "url": "https://github.com/aseprite/aseprite",
+    "stars": 40604,
+    "sizeKb": 48420,
+    "band": "small",
+    "tag": "v1.3.18.6",
+    "commit": "331e898ef405d919539c03fd1675691cfa16c3a3"
+  },
+  {
+    "id": "cmake/google-googletest",
+    "ecosystem": "cmake",
+    "url": "https://github.com/google/googletest",
+    "stars": 39696,
+    "sizeKb": 14283,
+    "band": "small",
+    "tag": "v1.18.0",
+    "commit": "063de7e9578f82b369302001269680b4b1553359"
+  },
+  {
+    "id": "cmake/google-leveldb",
+    "ecosystem": "cmake",
+    "url": "https://github.com/google/leveldb",
+    "stars": 39519,
+    "sizeKb": 1849,
+    "band": "small",
+    "tag": "1.23",
+    "commit": "99b3c03b3284f5886f9ef9a4ef703d57373e61be"
+  },
+  {
+    "id": "cmake/obsproject-obs-studio",
+    "ecosystem": "cmake",
+    "url": "https://github.com/obsproject/obs-studio",
+    "stars": 78854,
+    "sizeKb": 87818,
+    "band": "medium",
+    "tag": "33.0.1",
+    "commit": "65c320b46e1af5c7a555161aea6182cdf7a8c524"
+  },
+  {
+    "id": "cmake/tesseract-ocr-tesseract",
+    "ecosystem": "cmake",
+    "url": "https://github.com/tesseract-ocr/tesseract",
+    "stars": 77308,
+    "sizeKb": 54824,
+    "band": "medium",
+    "tag": "5.5.4",
+    "commit": "7e548e6eff172f38f97664afe7f7ce40db36c8d6"
+  },
+  {
+    "id": "cmake/werwolv-imhex",
+    "ecosystem": "cmake",
+    "url": "https://github.com/WerWolv/ImHex",
+    "stars": 55723,
+    "sizeKb": 53325,
+    "band": "medium",
+    "tag": "v1.38.1",
+    "commit": "76cf8771158012095d3b3ed58cc93c27ccfac7df"
+  },
+  {
+    "id": "cmake/ggml-org-whisper.cpp",
+    "ecosystem": "cmake",
+    "url": "https://github.com/ggml-org/whisper.cpp",
+    "stars": 54874,
+    "sizeKb": 49668,
+    "band": "medium",
+    "tag": "v1.9.5",
+    "commit": "d1be6fde11ac6e0407606b4e42fe72d34add8037"
+  },
+  {
+    "id": "cmake/ggml-org-llama.cpp",
+    "ecosystem": "cmake",
+    "url": "https://github.com/ggml-org/llama.cpp",
+    "stars": 133220,
+    "sizeKb": 473714,
+    "band": "large",
+    "tag": "v0.8.0",
+    "commit": "8642541b255bfb5dc39cd351a178be09013a55d6"
+  },
+  {
+    "id": "cmake/opencv-opencv",
+    "ecosystem": "cmake",
+    "url": "https://github.com/opencv/opencv",
+    "stars": 91415,
+    "sizeKb": 570800,
+    "band": "large",
+    "tag": "5.0.0",
+    "commit": "40738fb16ceddb5fb3fea747585f7ce6abb0605b"
+  },
+  {
+    "id": "cmake/bitcoin-bitcoin",
+    "ecosystem": "cmake",
+    "url": "https://github.com/bitcoin/bitcoin",
+    "stars": 90592,
+    "sizeKb": 330971,
+    "band": "large",
+    "tag": "v32.1",
+    "commit": "f0de87f040621468b956f01f526a43a010310501"
+  },
+  {
+    "id": "cmake/protocolbuffers-protobuf",
+    "ecosystem": "cmake",
+    "url": "https://github.com/protocolbuffers/protobuf",
+    "stars": 72150,
+    "sizeKb": 251773,
+    "band": "large",
+    "tag": "v36.2",
+    "commit": "2c74169b34066ceb8ddb6b882fcb3fb32d737a55"
+  }
+]

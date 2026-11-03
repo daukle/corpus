@@ -1,0 +1,186 @@
+import { existsSync, mkdirSync, readFileSync, rmSync } from "node:fs";
+import { join } from "node:path";
+
+import { REFERENCE_BUILDS, type Shipped, type Side } from "./builds.ts";
+import { compareFiles, comparisonKindOf, memberKey } from "./compare.ts";
+import type { EcosystemName } from "./ecosystems.ts";
+import { migratedCounterparts, type MigrateReport } from "./migrated.ts";
+import { capture, run, stopJvmsUnder, type Finished } from "./process.ts";
+
+export interface Entry {
+  id: string;
+  ecosystem: EcosystemName;
+  url: string;
+  commit: string;
+}
+
+export interface Settings {
+  daukle: string;
+  catalog: string;
+  work: string;
+  daukleCache: string;
+  timeoutMs: number;
+}
+
+export type Outcome =
+  | "same" | "proof-only" | "proof-failed" | "blocked" | "no-migrator" | "error"
+  | "unreproducible" | "not-admitted";
+
+export interface ShippedResult {
+  key: string;
+  unstable: number;
+  counterpart: string | null;
+  differing: string[];
+}
+
+export interface EntryResult {
+  id: string;
+  ecosystem: EcosystemName;
+  url: string;
+  commit: string;
+  outcome: Outcome;
+  reason?: string;
+  seconds: Record<string, number>;
+  shipped: ShippedResult[];
+  blockers: MigrateReport["blockers"];
+  proofFailure?: string;
+}
+
+/** Three checkouts at three different paths, so whatever a build writes from its own path differs between the controls. */
+const SIDES = { controlA: "a", controlB: "control-b", migrated: "m" } as const;
+
+function failed(entry: Entry, outcome: Outcome, reason: string, seconds: Record<string, number>): EntryResult {
+  return { ...pick(entry), outcome, reason, seconds, shipped: [], blockers: [] };
+}
+
+function pick(entry: Entry): Pick<EntryResult, "id" | "ecosystem" | "url" | "commit"> {
+  return { id: entry.id, ecosystem: entry.ecosystem, url: entry.url, commit: entry.commit };
+}
+
+function git(args: string[], cwd: string): void {
+  const result = capture("git", ["-c", "core.autocrlf=false", ...args], cwd);
+  if (result.code !== 0) throw new Error(`git ${args.join(" ")}: ${result.stderr.trim()}`);
+}
+
+/** One blobless clone from the network, then a local clone per side, each with the tags version plugins read. */
+function checkout(entry: Entry, entryWork: string): void {
+  const source = join(entryWork, "source");
+  git(["clone", "--filter=blob:none", "--no-checkout", entry.url, source], entryWork);
+  git(["checkout", "--detach", entry.commit], source);
+  for (const name of Object.values(SIDES)) {
+    git(["clone", "--no-checkout", source, name], entryWork);
+    git(["checkout", "--detach", entry.commit], join(entryWork, name));
+  }
+}
+
+function sideOf(entryWork: string, name: string, settings: Settings): Side {
+  return {
+    dir: join(entryWork, name),
+    outside: join(entryWork, `${name}-out`),
+    log: join(entryWork, `${name}.log`),
+    timeoutMs: settings.timeoutMs,
+  };
+}
+
+function describeFailure(finished: Finished | string, log: string): string {
+  if (typeof finished === "string") return finished;
+  if (finished.timedOut) return `timed out after ${finished.seconds} s; see ${log}`;
+  return `exited ${finished.code}; see ${log}`;
+}
+
+/** Members that differ between the two controls, by shipped key; null when the two cannot be paired. */
+function unstableMembers(settings: Settings, a: Shipped[], b: Shipped[]): Map<string, Set<string>> | string {
+  const unstable = new Map<string, Set<string>>();
+  const bByKey = new Map(b.map((file) => [file.key, file.path]));
+  for (const file of a) {
+    const other = bByKey.get(file.key);
+    if (other === undefined) return `the second control build did not ship ${file.key}`;
+    const comparison = compareFiles(settings.daukle, file.path, other, comparisonKindOf(file.key));
+    if (!comparison.readable) return `${file.key}: ${comparison.error}`;
+    unstable.set(file.key, new Set(comparison.differences.map(memberKey)));
+  }
+  return unstable;
+}
+
+function compareShipped(
+  settings: Settings, reference: Shipped[], counterparts: Map<string, string>, unstable: Map<string, Set<string>>,
+): ShippedResult[] {
+  return reference.map((file) => {
+    const counterpart = counterparts.get(file.key) ?? null;
+    const ignored = unstable.get(file.key) ?? new Set<string>();
+    const result: ShippedResult = { key: file.key, unstable: ignored.size, counterpart, differing: [] };
+    if (counterpart === null) return result;
+    const comparison = compareFiles(settings.daukle, file.path, counterpart, comparisonKindOf(file.key));
+    result.differing = comparison.readable
+      ? comparison.differences.map(memberKey).filter((member) => !ignored.has(member))
+      : [comparison.error];
+    return result;
+  });
+}
+
+const REPORT_OUTCOMES: Record<MigrateReport["outcome"], Outcome> = {
+  migrated: "same",
+  blocked: "blocked",
+  unproved: "proof-failed",
+  undetected: "no-migrator",
+  error: "error",
+};
+
+async function migrate(entry: Entry, entryWork: string, settings: Settings, seconds: Record<string, number>):
+    Promise<{ report: MigrateReport } | { failure: string }> {
+  const side = sideOf(entryWork, SIDES.migrated, settings);
+  const reportPath = join(entryWork, "report.json");
+  const finished = await run(settings.daukle, ["migrate", "--catalog", settings.catalog, "--report", reportPath], {
+    ...side, env: { ...process.env, DAUKLE_CACHE_DIR: settings.daukleCache },
+  });
+  seconds.migrate = finished.seconds;
+  stopJvmsUnder(settings.daukleCache);
+  if (finished.timedOut) return { failure: `daukle migrate timed out after ${finished.seconds} s` };
+  if (!existsSync(reportPath)) return { failure: `daukle migrate exited ${finished.code} and wrote no report` };
+  const text = readFileSync(reportPath, "utf8");
+  if (text === "") return { failure: `daukle migrate exited ${finished.code} and left its report empty` };
+  return { report: JSON.parse(text) as MigrateReport };
+}
+
+export async function runEntry(entry: Entry, settings: Settings): Promise<EntryResult> {
+  const entryWork = join(settings.work, entry.id.replaceAll("/", "_"));
+  rmSync(entryWork, { recursive: true, force: true });
+  mkdirSync(entryWork, { recursive: true });
+  const seconds: Record<string, number> = {};
+  try {
+    checkout(entry, entryWork);
+  } catch (error) {
+    return failed(entry, "error", (error as Error).message, seconds);
+  }
+
+  const builder = REFERENCE_BUILDS[entry.ecosystem];
+  const a = sideOf(entryWork, SIDES.controlA, settings);
+  const b = sideOf(entryWork, SIDES.controlB, settings);
+  for (const [name, side] of [["controlA", a], ["controlB", b]] as const) {
+    const finished = await builder.build(side);
+    if (typeof finished !== "string") seconds[name] = finished.seconds;
+    if (typeof finished === "string" || finished.code !== 0) {
+      return failed(entry, "not-admitted", `the original build ${describeFailure(finished, side.log)}`, seconds);
+    }
+  }
+  const reference = builder.shipped(a);
+  if (reference.length === 0) return failed(entry, "not-admitted", "the original build shipped nothing the corpus recognises", seconds);
+  const unstable = unstableMembers(settings, reference, builder.shipped(b));
+  if (typeof unstable === "string") return failed(entry, "unreproducible", unstable, seconds);
+
+  const migrated = await migrate(entry, entryWork, settings, seconds);
+  if ("failure" in migrated) return failed(entry, "error", migrated.failure, seconds);
+  const { report } = migrated;
+  const result: EntryResult = {
+    ...pick(entry), outcome: REPORT_OUTCOMES[report.outcome], seconds, shipped: [], blockers: report.blockers,
+  };
+  if (report.error !== undefined) result.reason = report.error;
+  if (report.proof.failure !== undefined) result.proofFailure = report.proof.failure;
+  if (report.outcome !== "migrated") return result;
+
+  const counterparts = migratedCounterparts(entry.ecosystem, report, join(entryWork, SIDES.migrated), reference);
+  result.shipped = compareShipped(settings, reference, counterparts, unstable);
+  const covered = result.shipped.every((file) => file.counterpart !== null && file.differing.length === 0);
+  if (!covered) result.outcome = "proof-only";
+  return result;
+}
