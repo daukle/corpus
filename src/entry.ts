@@ -174,7 +174,10 @@ export async function runEntry(entry: Entry, settings: Settings): Promise<EntryR
   if ("failure" in migrated) return failed(entry, "error", migrated.failure, seconds);
   const { report } = migrated;
   const result: EntryResult = {
-    ...pick(entry), outcome: REPORT_OUTCOMES[report.outcome], seconds, shipped: [], blockers: report.blockers,
+    ...pick(entry), outcome: REPORT_OUTCOMES[report.outcome], seconds, blockers: report.blockers,
+    shipped: reference.map((file) => ({
+      key: file.key, unstable: unstable.get(file.key)?.size ?? 0, counterpart: null, differing: [],
+    })),
   };
   if (report.error !== undefined) result.reason = report.error;
   if (report.proof.failure !== undefined) result.proofFailure = report.proof.failure;
