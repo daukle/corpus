@@ -1,9 +1,10 @@
 import { existsSync, mkdirSync, readFileSync, rmSync } from "node:fs";
 import { join } from "node:path";
 
-import { REFERENCE_BUILDS, type Shipped, type Side } from "./builds.ts";
+import { REFERENCE_BUILDS, type ReferenceBuild, type Shipped, type Side } from "./builds.ts";
 import { compareFiles, comparisonKindOf, memberKey } from "./compare.ts";
 import type { EcosystemName } from "./ecosystems.ts";
+import { availableJdks, failedOnJdk } from "./jdk.ts";
 import { migratedCounterparts, type MigrateReport } from "./migrated.ts";
 import { capture, run, stopJvmsUnder, type Finished } from "./process.ts";
 
@@ -44,6 +45,8 @@ export interface EntryResult {
   shipped: ShippedResult[];
   blockers: MigrateReport["blockers"];
   proofFailure?: string;
+  /** The JDK the original build ran on, when the harness chose one. */
+  jdk?: string;
 }
 
 /** Three checkouts at three different paths, so whatever a build writes from its own path differs between the controls. */
@@ -62,11 +65,21 @@ function git(args: string[], cwd: string): void {
   if (result.code !== 0) throw new Error(`git ${args.join(" ")}: ${result.stderr.trim()}`);
 }
 
-/** One blobless clone from the network, then a local clone per side, each with the tags version plugins read. */
+/**
+ * One clone from the network, then a local clone per side, each with the tags version plugins read.
+ * @implNote blobless first; GitHub has answered a blobless checkout's blob fetch with HTTP 400 on a
+ * large repository, so a failure falls back to a full clone.
+ */
 function checkout(entry: Entry, entryWork: string): void {
   const source = join(entryWork, "source");
-  git(["clone", "--filter=blob:none", "--no-checkout", entry.url, source], entryWork);
-  git(["checkout", "--detach", entry.commit], source);
+  try {
+    git(["clone", "--filter=blob:none", "--no-checkout", entry.url, source], entryWork);
+    git(["checkout", "--detach", entry.commit], source);
+  } catch {
+    rmSync(source, { recursive: true, force: true });
+    git(["clone", "--no-checkout", entry.url, source], entryWork);
+    git(["checkout", "--detach", entry.commit], source);
+  }
   for (const name of Object.values(SIDES)) {
     git(["clone", "--no-checkout", source, name], entryWork);
     git(["checkout", "--detach", entry.commit], join(entryWork, name));
@@ -143,6 +156,44 @@ async function migrate(entry: Entry, entryWork: string, settings: Settings, seco
   return { report: JSON.parse(text) as MigrateReport };
 }
 
+function withJdk(side: Side, home: string): Side {
+  return { ...side, env: { ...process.env, JAVA_HOME: home, PATH: `${home}/bin:${process.env.PATH ?? ""}` } };
+}
+
+async function timedBuild(builder: ReferenceBuild, side: Side, seconds: Record<string, number>, name: string) {
+  const started = Date.now();
+  const finished = await builder.build(side);
+  seconds[name] = (seconds[name] ?? 0) + Math.round((Date.now() - started) / 1000);
+  return finished;
+}
+
+/**
+ * Builds control A on each JDK the image offers until one succeeds, moving on only when the failure
+ * names the Java version, then control B on the JDK that worked. A string is why it was not admitted.
+ */
+async function buildControls(builder: ReferenceBuild, a: Side, b: Side, seconds: Record<string, number>):
+    Promise<{ jdk?: string } | string> {
+  const jdks = builder.onJdk ? availableJdks() : [];
+  const tries = jdks.length > 0 ? jdks : [undefined];
+  let chosen: { version: string; home: string } | undefined;
+  for (const [index, jdk] of tries.entries()) {
+    if (index > 0) git(["clean", "-fdxq"], a.dir);
+    const side = jdk === undefined ? a : withJdk(a, jdk.home);
+    const finished = await timedBuild(builder, side, seconds, "controlA");
+    if (typeof finished !== "string" && finished.code === 0) {
+      chosen = jdk;
+      break;
+    }
+    const last = index === tries.length - 1;
+    if (typeof finished === "string" || finished.timedOut || last || !failedOnJdk(a.log)) {
+      return `the original build ${describeFailure(finished, a.log)}`;
+    }
+  }
+  const finished = await timedBuild(builder, chosen === undefined ? b : withJdk(b, chosen.home), seconds, "controlB");
+  if (typeof finished === "string" || finished.code !== 0) return `the original build ${describeFailure(finished, b.log)}`;
+  return chosen === undefined ? {} : { jdk: chosen.version };
+}
+
 export function entryWorkOf(id: string, settings: Settings): string {
   return join(settings.work, id.replaceAll("/", "_"));
 }
@@ -161,14 +212,8 @@ export async function runEntry(entry: Entry, settings: Settings): Promise<EntryR
   const builder = REFERENCE_BUILDS[entry.ecosystem];
   const a = sideOf(entryWork, SIDES.controlA, settings);
   const b = sideOf(entryWork, SIDES.controlB, settings);
-  for (const [name, side] of [["controlA", a], ["controlB", b]] as const) {
-    const started = Date.now();
-    const finished = await builder.build(side);
-    seconds[name] = Math.round((Date.now() - started) / 1000);
-    if (typeof finished === "string" || finished.code !== 0) {
-      return failed(entry, "not-admitted", `the original build ${describeFailure(finished, side.log)}`, seconds);
-    }
-  }
+  const controls = await buildControls(builder, a, b, seconds);
+  if (typeof controls === "string") return failed(entry, "not-admitted", controls, seconds);
   const reference = builder.shipped(a);
   if (reference.length === 0) return failed(entry, "not-admitted", "the original build shipped nothing the corpus recognises", seconds);
   const unstable = unstableMembers(settings, reference, builder.shipped(b));
@@ -183,6 +228,7 @@ export async function runEntry(entry: Entry, settings: Settings): Promise<EntryR
       key: file.key, unstable: unstable.get(file.key)?.size ?? 0, counterpart: null, differing: [],
     })),
   };
+  if (controls.jdk !== undefined) result.jdk = controls.jdk;
   if (report.error !== undefined) result.reason = report.error;
   if (report.proof.failure !== undefined) result.proofFailure = report.proof.failure;
   if (report.outcome !== "migrated") return result;

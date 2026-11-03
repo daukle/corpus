@@ -2,6 +2,7 @@ import { existsSync, mkdirSync, readdirSync } from "node:fs";
 import { join, relative } from "node:path";
 
 import type { EcosystemName } from "./ecosystems.ts";
+import { packageManagerOf } from "./package-manager.ts";
 import { run, type Finished, type RunOptions } from "./process.ts";
 
 /** One file the original build ships, under a key both sides of a comparison agree on. */
@@ -17,15 +18,19 @@ export interface Side {
   outside: string;
   log: string;
   timeoutMs: number;
+  /** JAVA_HOME and PATH for the JDK this side builds with, or nothing for the default. */
+  env?: NodeJS.ProcessEnv;
 }
 
 function inSide(side: Side): RunOptions {
-  return { cwd: side.dir, log: side.log, timeoutMs: side.timeoutMs };
+  return { cwd: side.dir, log: side.log, timeoutMs: side.timeoutMs, env: side.env };
 }
 
 export interface ReferenceBuild {
   build(side: Side): Promise<Finished | string>;
   shipped(side: Side): Shipped[];
+  /** Whether the build runs on a JDK the harness chooses, and so may retry on another. */
+  onJdk: boolean;
 }
 
 const IS_WINDOWS = process.platform === "win32";
@@ -64,6 +69,7 @@ const gradle: ReferenceBuild = {
     return run(command, ["assemble", "--no-daemon", "--console=plain"], inSide(side));
   },
   shipped: (side) => shippedUnder(side.dir, /(^|\/)build\/libs\/[^/]+\.jar$/),
+  onJdk: true,
 };
 
 const maven: ReferenceBuild = {
@@ -73,18 +79,20 @@ const maven: ReferenceBuild = {
     return run(command, ["-B", "-DskipTests", "package"], inSide(side));
   },
   shipped: (side) => shippedUnder(side.dir, /(^|\/)target\/[^/]+\.jar$/),
+  onJdk: true,
 };
 
 const npm: ReferenceBuild = {
   async build(side) {
-    const install = existsSync(join(side.dir, "package-lock.json")) ? "ci" : "install";
-    const installed = await run("npm", [install], inSide(side));
+    const manager = packageManagerOf(side.dir);
+    const installed = await run(manager.name, manager.install, inSide(side));
     if (installed.code !== 0) return installed;
     mkdirSync(side.outside, { recursive: true });
-    return run("npm", ["pack", "--pack-destination", side.outside], inSide(side));
+    return run(manager.name, manager.pack(side.outside), inSide(side));
   },
   shipped: (side) =>
     shippedUnder(side.outside, /^[^/]+\.tgz$/).map((file) => ({ key: "package.tgz", path: file.path })),
+  onJdk: false,
 };
 
 const cmake: ReferenceBuild = {
@@ -98,6 +106,7 @@ const cmake: ReferenceBuild = {
     return run("cmake", ["--install", tree, "--config", "Release", "--prefix", prefix], inSide(side));
   },
   shipped: (side) => shippedUnder(join(side.outside, "install"), /./),
+  onJdk: false,
 };
 
 export const REFERENCE_BUILDS: Record<EcosystemName, ReferenceBuild> = { gradle, maven, npm, cmake };

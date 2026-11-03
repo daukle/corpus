@@ -13,6 +13,14 @@ COPY --from=jdk8 /opt/java/openjdk /usr/lib/jvm/temurin-8
 COPY --from=jdk11 /opt/java/openjdk /usr/lib/jvm/temurin-11
 COPY --from=jdk21 /opt/java/openjdk /usr/lib/jvm/temurin-21
 
+# A Maven build takes whatever JAVA_HOME says, so the harness tries these in order when a build fails
+# on its Java version; Gradle picks its own toolchains from the same directories.
+ENV CORPUS_JDKS=17=/usr/lib/jvm/java-17-openjdk-amd64,21=/usr/lib/jvm/temurin-21,11=/usr/lib/jvm/temurin-11,8=/usr/lib/jvm/temurin-8
+
+# A project names pnpm or yarn in packageManager; corepack fetches the version it pins.
+ENV COREPACK_ENABLE_DOWNLOAD_PROMPT=0
+RUN corepack enable pnpm yarn
+
 ARG DAUKLE_VERSION=0.18.0
 ARG DAUKLE_SHA256=3d3a23aa3d24245c2644bb19688fda421a4546c5928a97550bbd1e5e0d4cb010
 RUN curl -fsSL -o /usr/local/bin/daukle \
