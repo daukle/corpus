@@ -61,6 +61,9 @@ function shippedUnder(root: string, pattern: RegExp): Shipped[] {
   }));
 }
 
+/** A library's jars, and what an Android module ships instead: an AAR, or an APK per variant. */
+const GRADLE_SHIPPED = /(^|\/)build\/(libs\/[^/]+\.jar|outputs\/aar\/[^/]+\.aar|outputs\/apk\/.+\.apk)$/;
+
 const gradle: ReferenceBuild = {
   async build(side) {
     const wrapper = IS_WINDOWS ? "gradlew.bat" : "gradlew";
@@ -68,7 +71,7 @@ const gradle: ReferenceBuild = {
     const command = IS_WINDOWS ? join(side.dir, wrapper) : "./gradlew";
     return run(command, ["assemble", "--no-daemon", "--console=plain"], inSide(side));
   },
-  shipped: (side) => shippedUnder(side.dir, /(^|\/)build\/libs\/[^/]+\.jar$/),
+  shipped: (side) => shippedUnder(side.dir, GRADLE_SHIPPED),
   onJdk: true,
 };
 

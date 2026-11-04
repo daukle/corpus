@@ -25,5 +25,5 @@ export function memberKey(difference: Difference): string {
 
 /** jars, zips and tarballs compare by member; anything else by bytes. */
 export function comparisonKindOf(path: string): "archive" | "bytes" {
-  return /\.(jar|zip|tgz|tar\.gz|war|aar)$/i.test(path) ? "archive" : "bytes";
+  return /\.(jar|zip|tgz|tar\.gz|war|aar|apk)$/i.test(path) ? "archive" : "bytes";
 }
