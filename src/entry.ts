@@ -87,9 +87,20 @@ function checkout(entry: Entry, entryWork: string, sides: string[]): void {
     git(["checkout", "--detach", entry.commit], source);
   }
   for (const name of sides) {
+    const side = join(entryWork, name);
     git(["clone", "--no-checkout", source, name], entryWork);
-    git(["checkout", "--detach", entry.commit], join(entryWork, name));
+    git(["checkout", "--detach", entry.commit], side);
+    if (existsSync(join(side, ".gitmodules"))) fetchSubmodules(entry, side);
   }
+}
+
+/**
+ * @implNote origin is pointed back at the project first: a side is cloned from the local source, so
+ * a relative submodule url such as `../dep.git` would otherwise resolve next to that directory.
+ */
+function fetchSubmodules(entry: Entry, side: string): void {
+  git(["remote", "set-url", "origin", entry.url], side);
+  git(["submodule", "update", "--init", "--recursive", "--depth", "1"], side);
 }
 
 function sideOf(entryWork: string, name: string, settings: Settings): Side {
