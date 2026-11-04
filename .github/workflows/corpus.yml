@@ -1,0 +1,27 @@
+name: Corpus
+
+on:
+  schedule:
+    - cron: "0 3 * * 1"
+  workflow_dispatch:
+    inputs:
+      only:
+        description: 'Space separated entry ids; empty runs every entry'
+        required: false
+        default: ''
+      catalog:
+        description: 'Plugin catalog url, such as a development catalog; empty takes the published one'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+  packages: write
+
+jobs:
+  corpus:
+    uses: daukle/workflows/.github/workflows/corpus.yml@main
+    with:
+      only: ${{ inputs.only || '' }}
+      catalog: ${{ inputs.catalog || '' }}
+      fail_on_regression: ${{ github.event_name == 'schedule' || github.ref_name == github.event.repository.default_branch }}
