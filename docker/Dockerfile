@@ -1,6 +1,8 @@
 FROM eclipse-temurin:8-jdk AS jdk8
 FROM eclipse-temurin:11-jdk AS jdk11
 FROM eclipse-temurin:21-jdk AS jdk21
+FROM eclipse-temurin:25-jdk AS jdk25
+FROM eclipse-temurin:26-jdk AS jdk26
 
 FROM node:24-bookworm
 
@@ -8,14 +10,16 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends git openjdk-17-jdk-headless ca-certificates curl maven cmake build-essential ninja-build pkg-config \
     && rm -rf /var/lib/apt/lists/*
 
-# Gradle finds a toolchain in /usr/lib/jvm by itself, and popular builds ask for 8, 11 and 21 beside 17.
+# Gradle finds a toolchain in /usr/lib/jvm by itself, and popular builds ask for 8, 11, 21, 25 and 26 beside 17.
 COPY --from=jdk8 /opt/java/openjdk /usr/lib/jvm/temurin-8
 COPY --from=jdk11 /opt/java/openjdk /usr/lib/jvm/temurin-11
 COPY --from=jdk21 /opt/java/openjdk /usr/lib/jvm/temurin-21
+COPY --from=jdk25 /opt/java/openjdk /usr/lib/jvm/temurin-25
+COPY --from=jdk26 /opt/java/openjdk /usr/lib/jvm/temurin-26
 
 # A Maven build takes whatever JAVA_HOME says, so the harness tries these in order when a build fails
 # on its Java version; Gradle picks its own toolchains from the same directories.
-ENV CORPUS_JDKS=17=/usr/lib/jvm/java-17-openjdk-amd64,21=/usr/lib/jvm/temurin-21,11=/usr/lib/jvm/temurin-11,8=/usr/lib/jvm/temurin-8
+ENV CORPUS_JDKS=17=/usr/lib/jvm/java-17-openjdk-amd64,21=/usr/lib/jvm/temurin-21,11=/usr/lib/jvm/temurin-11,8=/usr/lib/jvm/temurin-8,25=/usr/lib/jvm/temurin-25,26=/usr/lib/jvm/temurin-26
 
 # A project names pnpm or yarn in packageManager; corepack fetches the version it pins.
 ENV COREPACK_ENABLE_DOWNLOAD_PROMPT=0
