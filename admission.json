@@ -1,0 +1,471 @@
+{
+  "measured": "2026-11-04",
+  "image": "CORPUS_REFERENCE_ENV=1",
+  "admitted": [
+    "gradle/lysine-dev-retrofit",
+    "gradle/greenrobot-eventbus",
+    "gradle/lysine-dev-okhttp",
+    "gradle/halo-dev-halo",
+    "gradle/apache-kafka",
+    "maven/thealgorithms-java",
+    "maven/binarywang-wxjava",
+    "maven/xuxueli-xxl-job",
+    "maven/alibaba-canal",
+    "maven/iluwatar-java-design-patterns",
+    "maven/apache-dubbo",
+    "maven/alibaba-arthas",
+    "maven/alibaba-nacos",
+    "maven/google-guava",
+    "maven/zxing-zxing",
+    "maven/openapitools-openapi-generator",
+    "npm/vuejs-vue",
+    "npm/trekhleb-javascript-algorithms",
+    "npm/dietrichgebert-ponytail",
+    "npm/airbnb-javascript",
+    "npm/morluto-rea",
+    "npm/affaan-m-ecc",
+    "npm/snailclimb-javaguide",
+    "npm/shadcn-ui-ui",
+    "npm/freecodecamp-freecodecamp",
+    "npm/deepseek-ai-deepseek-harness",
+    "npm/n8n-io-n8n",
+    "npm/vercel-next.js",
+    "cmake/google-googletest",
+    "cmake/gabime-spdlog",
+    "cmake/ggml-org-whisper.cpp",
+    "cmake/thealgorithms-c-plus-plus",
+    "cmake/ggml-org-llama.cpp",
+    "cmake/protocolbuffers-protobuf",
+    "cmake/nlohmann-json"
+  ],
+  "rejected": [
+    {
+      "id": "gradle/termux-termux-app",
+      "band": "small",
+      "outcome": "not-admitted",
+      "reason": "the original build shipped nothing the corpus recognises"
+    },
+    {
+      "id": "gradle/skylot-jadx",
+      "band": "small",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/gradle_skylot-jadx/a.log"
+    },
+    {
+      "id": "gradle/android-architecture-samples",
+      "band": "small",
+      "outcome": "not-admitted",
+      "reason": "the original build shipped nothing the corpus recognises"
+    },
+    {
+      "id": "gradle/gkd-kit-gkd",
+      "band": "small",
+      "outcome": "not-admitted",
+      "reason": "the original build exited null; see /home/corpus/work/gradle_gkd-kit-gkd/a.log"
+    },
+    {
+      "id": "gradle/philjay-mpandroidchart",
+      "band": "small",
+      "outcome": "not-admitted",
+      "reason": "the original build shipped nothing the corpus recognises"
+    },
+    {
+      "id": "gradle/junkfood02-seal",
+      "band": "small",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/gradle_junkfood02-seal/a.log"
+    },
+    {
+      "id": "gradle/jakewharton-butterknife",
+      "band": "small",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/gradle_jakewharton-butterknife/a.log"
+    },
+    {
+      "id": "gradle/lsposed-lsposed",
+      "band": "small",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/gradle_lsposed-lsposed/a.log"
+    },
+    {
+      "id": "gradle/teamnewpipe-newpipe",
+      "band": "medium",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/gradle_teamnewpipe-newpipe/a.log"
+    },
+    {
+      "id": "gradle/shadowsocks-shadowsocks-android",
+      "band": "medium",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/gradle_shadowsocks-shadowsocks-android/a.log"
+    },
+    {
+      "id": "gradle/yuliskov-smarttube",
+      "band": "medium",
+      "outcome": "not-admitted",
+      "reason": "the original build exited null; see /home/corpus/work/gradle_yuliskov-smarttube/a.log"
+    },
+    {
+      "id": "gradle/airbnb-lottie-android",
+      "band": "medium",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/gradle_airbnb-lottie-android/a.log"
+    },
+    {
+      "id": "gradle/bumptech-glide",
+      "band": "medium",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/gradle_bumptech-glide/a.log"
+    },
+    {
+      "id": "gradle/blankj-androidutilcode",
+      "band": "medium",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/gradle_blankj-androidutilcode/a.log"
+    },
+    {
+      "id": "gradle/rikkaapps-shizuku",
+      "band": "medium",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/gradle_rikkaapps-shizuku/a.log"
+    },
+    {
+      "id": "gradle/conductor-oss-conductor",
+      "band": "medium",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/gradle_conductor-oss-conductor/a.log"
+    },
+    {
+      "id": "gradle/nationalsecurityagency-ghidra",
+      "band": "large",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/gradle_nationalsecurityagency-ghidra/a.log"
+    },
+    {
+      "id": "gradle/spring-projects-spring-boot",
+      "band": "large",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/gradle_spring-projects-spring-boot/a.log"
+    },
+    {
+      "id": "gradle/elastic-elasticsearch",
+      "band": "large",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/gradle_elastic-elasticsearch/a.log"
+    },
+    {
+      "id": "gradle/spring-projects-spring-framework",
+      "band": "large",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/gradle_spring-projects-spring-framework/a.log"
+    },
+    {
+      "id": "gradle/jetbrains-kotlin",
+      "band": "large",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/gradle_jetbrains-kotlin/a.log"
+    },
+    {
+      "id": "gradle/team-spotube-spotube",
+      "band": "large",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/gradle_team-spotube-spotube/a.log"
+    },
+    {
+      "id": "gradle/reactivex-rxjava",
+      "band": "large",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/gradle_reactivex-rxjava/a.log"
+    },
+    {
+      "id": "gradle/drklo-telegram",
+      "band": "large",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/gradle_drklo-telegram/a.log"
+    },
+    {
+      "id": "gradle/kestra-io-kestra",
+      "band": "large",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/gradle_kestra-io-kestra/a.log"
+    },
+    {
+      "id": "maven/xkcoding-spring-boot-demo",
+      "band": "small",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/maven_xkcoding-spring-boot-demo/a.log"
+    },
+    {
+      "id": "maven/macrozheng-mall",
+      "band": "medium",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/maven_macrozheng-mall/a.log"
+    },
+    {
+      "id": "maven/dbeaver-dbeaver",
+      "band": "large",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/maven_dbeaver-dbeaver/a.log"
+    },
+    {
+      "id": "maven/yunaiv-ruoyi-vue-pro",
+      "band": "large",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/maven_yunaiv-ruoyi-vue-pro/a.log"
+    },
+    {
+      "id": "maven/keycloak-keycloak",
+      "band": "large",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/maven_keycloak-keycloak/a.log"
+    },
+    {
+      "id": "maven/eugenp-tutorials",
+      "band": "large",
+      "outcome": "not-admitted",
+      "reason": "the original build shipped nothing the corpus recognises"
+    },
+    {
+      "id": "maven/netty-netty",
+      "band": "large",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/maven_netty-netty/a.log"
+    },
+    {
+      "id": "maven/jenkinsci-jenkins",
+      "band": "large",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/maven_jenkinsci-jenkins/a.log"
+    },
+    {
+      "id": "maven/apache-flink",
+      "band": "large",
+      "outcome": "not-admitted",
+      "reason": "the original build timed out after 3600 s; see /home/corpus/work/maven_apache-flink/a.log"
+    },
+    {
+      "id": "npm/garrytan-gstack",
+      "band": "medium",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/npm_garrytan-gstack/a.log"
+    },
+    {
+      "id": "npm/excalidraw-excalidraw",
+      "band": "medium",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/npm_excalidraw-excalidraw/a.log"
+    },
+    {
+      "id": "npm/openclaw-openclaw",
+      "band": "large",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/npm_openclaw-openclaw/a.log"
+    },
+    {
+      "id": "npm/nilbuild-developer-roadmap",
+      "band": "large",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/npm_nilbuild-developer-roadmap/a.log"
+    },
+    {
+      "id": "npm/react-react",
+      "band": "large",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/npm_react-react/a.log"
+    },
+    {
+      "id": "npm/anomalyco-opencode",
+      "band": "large",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/npm_anomalyco-opencode/a.log"
+    },
+    {
+      "id": "npm/microsoft-vscode",
+      "band": "large",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/npm_microsoft-vscode/a.log"
+    },
+    {
+      "id": "cmake/microsoft-bitnet",
+      "band": "small",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/cmake_microsoft-bitnet/a.log"
+    },
+    {
+      "id": "cmake/aseprite-aseprite",
+      "band": "small",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/cmake_aseprite-aseprite/a.log"
+    },
+    {
+      "id": "cmake/google-leveldb",
+      "band": "small",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/cmake_google-leveldb/a.log"
+    },
+    {
+      "id": "cmake/aristocratos-btop",
+      "band": "small",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/cmake_aristocratos-btop/a.log"
+    },
+    {
+      "id": "cmake/barry-ran-qtscrcpy",
+      "band": "small",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/cmake_barry-ran-qtscrcpy/a.log"
+    },
+    {
+      "id": "cmake/78-xiaozhi-esp32",
+      "band": "small",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/cmake_78-xiaozhi-esp32/a.log"
+    },
+    {
+      "id": "cmake/dragonflydb-dragonfly",
+      "band": "small",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/cmake_dragonflydb-dragonfly/a.log"
+    },
+    {
+      "id": "cmake/flameshot-org-flameshot",
+      "band": "small",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/cmake_flameshot-org-flameshot/a.log"
+    },
+    {
+      "id": "cmake/obsproject-obs-studio",
+      "band": "medium",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/cmake_obsproject-obs-studio/a.log"
+    },
+    {
+      "id": "cmake/tesseract-ocr-tesseract",
+      "band": "medium",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/cmake_tesseract-ocr-tesseract/a.log"
+    },
+    {
+      "id": "cmake/werwolv-imhex",
+      "band": "medium",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/cmake_werwolv-imhex/a.log"
+    },
+    {
+      "id": "cmake/boykopovar-anyps5",
+      "band": "medium",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/cmake_boykopovar-anyps5/a.log"
+    },
+    {
+      "id": "cmake/x64dbg-x64dbg",
+      "band": "medium",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/cmake_x64dbg-x64dbg/a.log"
+    },
+    {
+      "id": "cmake/curl-curl",
+      "band": "medium",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/cmake_curl-curl/a.log"
+    },
+    {
+      "id": "cmake/hyprwm-hyprland",
+      "band": "medium",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/cmake_hyprwm-hyprland/a.log"
+    },
+    {
+      "id": "cmake/niko1221-strata",
+      "band": "medium",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/cmake_niko1221-strata/control-b.log"
+    },
+    {
+      "id": "cmake/opencv-opencv",
+      "band": "large",
+      "outcome": "not-admitted",
+      "reason": "the original build timed out after 3600 s; see /home/corpus/work/cmake_opencv-opencv/a.log"
+    },
+    {
+      "id": "cmake/bitcoin-bitcoin",
+      "band": "large",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/cmake_bitcoin-bitcoin/a.log"
+    },
+    {
+      "id": "cmake/ladybirdbrowser-ladybird",
+      "band": "large",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/cmake_ladybirdbrowser-ladybird/a.log"
+    },
+    {
+      "id": "cmake/clickhouse-clickhouse",
+      "band": "large",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/cmake_clickhouse-clickhouse/a.log"
+    },
+    {
+      "id": "cmake/grpc-grpc",
+      "band": "large",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/cmake_grpc-grpc/a.log"
+    },
+    {
+      "id": "cmake/lizardbyte-sunshine",
+      "band": "large",
+      "outcome": "not-admitted",
+      "reason": "the original build exited 1; see /home/corpus/work/cmake_lizardbyte-sunshine/a.log"
+    },
+    {
+      "id": "cmake/duckdb-duckdb",
+      "band": "large",
+      "outcome": "not-admitted",
+      "reason": "the original build timed out after 3600 s; see /home/corpus/work/cmake_duckdb-duckdb/a.log"
+    }
+  ],
+  "shortBands": [
+    {
+      "ecosystem": "gradle",
+      "band": "small",
+      "admitted": 2,
+      "tried": 10
+    },
+    {
+      "ecosystem": "gradle",
+      "band": "medium",
+      "admitted": 2,
+      "tried": 10
+    },
+    {
+      "ecosystem": "gradle",
+      "band": "large",
+      "admitted": 1,
+      "tried": 10
+    },
+    {
+      "ecosystem": "maven",
+      "band": "large",
+      "admitted": 3,
+      "tried": 10
+    },
+    {
+      "ecosystem": "cmake",
+      "band": "small",
+      "admitted": 2,
+      "tried": 10
+    },
+    {
+      "ecosystem": "cmake",
+      "band": "medium",
+      "admitted": 2,
+      "tried": 10
+    },
+    {
+      "ecosystem": "cmake",
+      "band": "large",
+      "admitted": 3,
+      "tried": 10
+    }
+  ]
+}
