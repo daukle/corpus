@@ -1,5 +1,25 @@
 [
   {
+    "id": "gradle/termux-termux-app",
+    "ecosystem": "gradle",
+    "url": "https://github.com/termux/termux-app",
+    "stars": 63981,
+    "sizeKb": 5271,
+    "band": "small",
+    "tag": "v0.118.3",
+    "commit": "5b657c6adf4304e5198951ce815fe0205dcac29c"
+  },
+  {
+    "id": "gradle/android-architecture-samples",
+    "ecosystem": "gradle",
+    "url": "https://github.com/android/architecture-samples",
+    "stars": 45889,
+    "sizeKb": 13365,
+    "band": "small",
+    "tag": null,
+    "commit": "ee66e1526b84c026615df032c705842b7d2a521f"
+  },
+  {
     "id": "gradle/lysine-dev-retrofit",
     "ecosystem": "gradle",
     "url": "https://github.com/lysine-dev/retrofit",
@@ -10,14 +30,14 @@
     "commit": "3ab0f1a2c18666adb79ebf4eacef6fbc40d3e801"
   },
   {
-    "id": "gradle/greenrobot-eventbus",
+    "id": "gradle/philjay-mpandroidchart",
     "ecosystem": "gradle",
-    "url": "https://github.com/greenrobot/EventBus",
-    "stars": 24682,
-    "sizeKb": 1742,
+    "url": "https://github.com/PhilJay/MPAndroidChart",
+    "stars": 38189,
+    "sizeKb": 24458,
     "band": "small",
-    "tag": "V3.3.1",
-    "commit": "c7993322e531653789777360cc4821dd2183c4d7"
+    "tag": "v4.0.1",
+    "commit": "5e97310da3d50a55b922bf3c07c998aeaa18fa20"
   },
   {
     "id": "gradle/lysine-dev-okhttp",
@@ -38,6 +58,26 @@
     "band": "medium",
     "tag": "v2.27.2",
     "commit": "4f9f661976bb2f989317035e05d217854108dcc5"
+  },
+  {
+    "id": "gradle/spring-projects-spring-framework",
+    "ecosystem": "gradle",
+    "url": "https://github.com/spring-projects/spring-framework",
+    "stars": 60312,
+    "sizeKb": 246756,
+    "band": "large",
+    "tag": "v7.0.10",
+    "commit": "33a85b0bec67adb759aa898e3b80d603786be082"
+  },
+  {
+    "id": "gradle/reactivex-rxjava",
+    "ecosystem": "gradle",
+    "url": "https://github.com/ReactiveX/RxJava",
+    "stars": 48158,
+    "sizeKb": 180160,
+    "band": "large",
+    "tag": "v4.0.0-alpha-21",
+    "commit": "f2cb677f0b2d6c7ad49537e397b56a27a2ac5461"
   },
   {
     "id": "gradle/apache-kafka",

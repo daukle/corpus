@@ -2,10 +2,14 @@
   "measured": "2026-11-04",
   "image": "CORPUS_REFERENCE_ENV=1",
   "admitted": [
+    "gradle/termux-termux-app",
+    "gradle/android-architecture-samples",
     "gradle/lysine-dev-retrofit",
-    "gradle/greenrobot-eventbus",
+    "gradle/philjay-mpandroidchart",
     "gradle/lysine-dev-okhttp",
     "gradle/halo-dev-halo",
+    "gradle/spring-projects-spring-framework",
+    "gradle/reactivex-rxjava",
     "gradle/apache-kafka",
     "maven/thealgorithms-java",
     "maven/binarywang-wxjava",
@@ -40,52 +44,16 @@
   ],
   "rejected": [
     {
-      "id": "gradle/termux-termux-app",
-      "band": "small",
-      "outcome": "not-admitted",
-      "reason": "the original build shipped nothing the corpus recognises"
-    },
-    {
       "id": "gradle/skylot-jadx",
       "band": "small",
       "outcome": "not-admitted",
       "reason": "the original build exited 1; see /home/corpus/work/gradle_skylot-jadx/a.log"
     },
     {
-      "id": "gradle/android-architecture-samples",
-      "band": "small",
-      "outcome": "not-admitted",
-      "reason": "the original build shipped nothing the corpus recognises"
-    },
-    {
       "id": "gradle/gkd-kit-gkd",
       "band": "small",
       "outcome": "not-admitted",
       "reason": "the original build exited null; see /home/corpus/work/gradle_gkd-kit-gkd/a.log"
-    },
-    {
-      "id": "gradle/philjay-mpandroidchart",
-      "band": "small",
-      "outcome": "not-admitted",
-      "reason": "the original build shipped nothing the corpus recognises"
-    },
-    {
-      "id": "gradle/junkfood02-seal",
-      "band": "small",
-      "outcome": "not-admitted",
-      "reason": "the original build exited 1; see /home/corpus/work/gradle_junkfood02-seal/a.log"
-    },
-    {
-      "id": "gradle/jakewharton-butterknife",
-      "band": "small",
-      "outcome": "not-admitted",
-      "reason": "the original build exited 1; see /home/corpus/work/gradle_jakewharton-butterknife/a.log"
-    },
-    {
-      "id": "gradle/lsposed-lsposed",
-      "band": "small",
-      "outcome": "not-admitted",
-      "reason": "the original build exited 1; see /home/corpus/work/gradle_lsposed-lsposed/a.log"
     },
     {
       "id": "gradle/teamnewpipe-newpipe",
@@ -154,12 +122,6 @@
       "reason": "the original build exited 1; see /home/corpus/work/gradle_elastic-elasticsearch/a.log"
     },
     {
-      "id": "gradle/spring-projects-spring-framework",
-      "band": "large",
-      "outcome": "not-admitted",
-      "reason": "the original build exited 1; see /home/corpus/work/gradle_spring-projects-spring-framework/a.log"
-    },
-    {
       "id": "gradle/jetbrains-kotlin",
       "band": "large",
       "outcome": "not-admitted",
@@ -170,12 +132,6 @@
       "band": "large",
       "outcome": "not-admitted",
       "reason": "the original build exited 1; see /home/corpus/work/gradle_team-spotube-spotube/a.log"
-    },
-    {
-      "id": "gradle/reactivex-rxjava",
-      "band": "large",
-      "outcome": "not-admitted",
-      "reason": "the original build exited 1; see /home/corpus/work/gradle_reactivex-rxjava/a.log"
     },
     {
       "id": "gradle/drklo-telegram",
@@ -427,12 +383,6 @@
   "shortBands": [
     {
       "ecosystem": "gradle",
-      "band": "small",
-      "admitted": 2,
-      "tried": 10
-    },
-    {
-      "ecosystem": "gradle",
       "band": "medium",
       "admitted": 2,
       "tried": 10
@@ -440,7 +390,7 @@
     {
       "ecosystem": "gradle",
       "band": "large",
-      "admitted": 1,
+      "admitted": 3,
       "tried": 10
     },
     {
