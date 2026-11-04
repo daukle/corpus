@@ -55,6 +55,14 @@ export interface EntryResult {
   referenceReused?: boolean;
 }
 
+/**
+ * Whether the project's own build succeeded twice, which alone decides admission: an entry whose
+ * migration then errors is a finding about daukle, and dropping it would hide exactly that.
+ */
+export function isAdmitted(result: EntryResult): boolean {
+  return result.outcome === "unreproducible" || result.shipped.length > 0;
+}
+
 /** Three checkouts at three different paths, so whatever a build writes from its own path differs between the controls. */
 const SIDES = { controlA: "a", controlB: "control-b", migrated: "m" } as const;
 
@@ -260,16 +268,16 @@ export async function runEntry(entry: Entry, settings: Settings): Promise<EntryR
   if ("outcome" in built) return failed(entry, built.outcome, built.reason, seconds);
   const { shipped: reference, unstable } = built;
 
+  const unmatched: ShippedResult[] = reference.map((file) => ({
+    key: file.key, unstable: unstable.get(file.key)?.size ?? 0,
+    unstableSample: sampleOf(unstable.get(file.key) ?? new Set<string>()), counterpart: null, differing: [],
+  }));
   const migrated = await migrate(entry, entryWork, settings, seconds);
-  if ("failure" in migrated) return failed(entry, "error", migrated.failure, seconds);
+  if ("failure" in migrated) return { ...failed(entry, "error", migrated.failure, seconds), shipped: unmatched };
   const { report } = migrated;
   const result: EntryResult = {
     ...pick(entry), outcome: REPORT_OUTCOMES[report.outcome], seconds, blockers: report.blockers,
-    referenceReused: stored !== null,
-    shipped: reference.map((file) => ({
-      key: file.key, unstable: unstable.get(file.key)?.size ?? 0,
-      unstableSample: sampleOf(unstable.get(file.key) ?? new Set<string>()), counterpart: null, differing: [],
-    })),
+    referenceReused: stored !== null, shipped: unmatched,
   };
   if (built.jdk !== undefined) result.jdk = built.jdk;
   if (report.error !== undefined) result.reason = report.error;

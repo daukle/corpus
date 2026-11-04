@@ -2,7 +2,7 @@ import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 
 import { backlogOf } from "./backlog.ts";
-import { runEntry, type EntryResult, type Outcome } from "./entry.ts";
+import { isAdmitted, runEntry, type EntryResult, type Outcome } from "./entry.ts";
 import { recordEntry, writeJson } from "./record.ts";
 import type { Candidate } from "./select.ts";
 import { invocationFrom } from "./settings.ts";
@@ -11,7 +11,6 @@ const PER_BAND = 4;
 /** A band that admits nothing in this many tries says so rather than walking the whole pool. */
 const MAX_TRIES_PER_BAND = 10;
 const BANDS = ["small", "medium", "large"] as const;
-const NOT_ADMITTED: Outcome[] = ["not-admitted", "error"];
 
 interface Admission {
   admitted: Candidate[];
@@ -53,7 +52,7 @@ async function main(): Promise<void> {
         const result = await runEntry(candidate, settings);
         recordEntry(result, settings, results);
         console.log(`${candidate.id}: ${result.outcome}${result.reason !== undefined ? ` (${result.reason})` : ""}`);
-        if (NOT_ADMITTED.includes(result.outcome)) {
+        if (!isAdmitted(result)) {
           admission.rejected.push({ id: candidate.id, band, outcome: result.outcome, reason: result.reason ?? "" });
         } else {
           admitted++;
