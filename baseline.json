@@ -729,7 +729,8 @@
     "commit": "0741ccda1eee67771dfa5d959df1ef83485cedf5",
     "outcome": "blocked",
     "blockers": [
-      "engines.npm"
+      ".gitignore",
+      "scripts.\"test:unit\""
     ]
   },
   "maven/alibaba-nacos": {
@@ -1735,7 +1736,6 @@
       "\"main\"",
       ".npmrc",
       ".nvmrc",
-      "engines.npm",
       "scripts.\"coverage\"",
       "scripts.\"prepare\""
     ]
