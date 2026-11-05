@@ -10,10 +10,8 @@
     "blockers": [
       "\"overrides\"",
       ".npmrc",
-      "scripts.\"cleanup\"",
       "scripts.\"format:files\"",
       "scripts.\"prepare\"",
-      "scripts.\"reset\"",
       "scripts.\"test\"",
       "src/lib/vendors/package.json"
     ]
@@ -23,8 +21,7 @@
     "outcome": "blocked",
     "blockers": [
       "\"files\"",
-      "\"main\"",
-      "scripts.\"standard\""
+      "\"main\""
     ]
   },
   "cmake/google-googletest": {
@@ -51,8 +48,6 @@
     "commit": "ee66e1526b84c026615df032c705842b7d2a521f",
     "outcome": "blocked",
     "blockers": [
-      "android.enableJetifier",
-      "android.useAndroidX",
       "configure.android.aaptOptions",
       "configure.android.adbOptions",
       "configure.android.aidlPackageWhiteList",
@@ -115,7 +110,6 @@
       "configure.buildOutputs.release.zipAlign",
       "configure.kotlin.kotlinDaemonJvmArgs",
       "configure.kotlinTestRegistry.allTestsTask",
-      "ksp.incremental.apt",
       "org.gradle.unsafe.configuration-cache",
       "proof",
       "sourceSets",
@@ -160,7 +154,6 @@
       "createStreamsVersionFile",
       "createVersionFile",
       "generator/src/main/java/org/apache/kafka/message/HeaderVersions.java",
-      "group",
       "group-coordinator/group-coordinator-api/src/main/java/org/apache/kafka/coordinator/group/api/streams/StreamsGroupTopologyDescriptionPlugin.java",
       "group-coordinator/src/main/java/org/apache/kafka/coordinator/group/Group.java",
       "group-coordinator/src/test/java/org/apache/kafka/coordinator/group/GroupCoordinatorServiceTopologyDescriptionTest.java",
@@ -171,7 +164,6 @@
       "project ':api-checker:core'",
       "project ':api-checker:gradle-plugins'",
       "raft/src/main/java/org/apache/kafka/raft/EpochState.java",
-      "scalaVersion",
       "server-common/src/main/java/org/apache/kafka/timeline/SnapshottableHashTable.java",
       "storage/src/main/java/org/apache/kafka/storage/internals/log/Cleaner.java",
       "storage/src/test/java/org/apache/kafka/storage/internals/log/LogCleanerTest.java",
@@ -179,8 +171,6 @@
       "streams/src/main/java/org/apache/kafka/streams/AutoOffsetReset.java",
       "streams/src/test/java/org/apache/kafka/streams/KafkaStreamsTest.java",
       "streams/test-utils/src/main/java/org/apache/kafka/streams/processor/api/MockProcessorContext.java",
-      "swaggerVersion",
-      "task",
       "test",
       "the generated build",
       "tools/src/main/java/org/apache/kafka/tools/streams/StreamsGroupCommand.java",
@@ -188,16 +178,13 @@
       "transaction-coordinator/src/test/java/org/apache/kafka/coordinator/transaction/TransactionLogTest.java",
       "updateVersion",
       "verifyLatestStableMetadataVersion",
-      "verifyVersionConsistency",
-      "version"
+      "verifyVersionConsistency"
     ]
   },
   "gradle/halo-dev-halo": {
     "commit": "4f9f661976bb2f989317035e05d217854108dcc5",
     "outcome": "blocked",
     "blockers": [
-      "\"browserslist\"",
-      "\"lint-staged\"",
       "\"packageManager\"",
       "\"workspaces\"",
       ":thymeleaf-spring6:3.1.3.RELEASE",
@@ -233,7 +220,6 @@
       "devDependencies.\"vitest\"",
       "downloadPluginPresets",
       "jdk",
-      "jsonassert.version",
       "packages/api-client/package.json",
       "packages/components/package.json",
       "packages/console-shared/package.json",
@@ -241,13 +227,9 @@
       "packages/shared/package.json",
       "packages/ui-plugin-bundler-kit/package.json",
       "pnpm-lock.yaml",
-      "scripts.\"build:packages\"",
       "scripts.\"prepare\"",
       "sourceSets",
-      "the generated build",
-      "thymeleaf-extras-springsecurity.version",
-      "thymeleaf.version",
-      "version"
+      "the generated build"
     ]
   },
   "gradle/lysine-dev-okhttp": {
@@ -270,10 +252,6 @@
       ":okhttp-tls",
       ":okhttp-urlconnection",
       "Gradle Kotlin DSL",
-      "android.builtInKotlin",
-      "android.newDsl",
-      "android.useAndroidX",
-      "androidBuild",
       "com.github.ajalt.clikt:clikt-core-jvm:5.1.0",
       "com.github.ajalt.clikt:clikt-jvm:5.1.0",
       "com.github.ajalt.colormath:colormath-jvm:3.6.0",
@@ -400,15 +378,9 @@
       "configure.spotless.rootDiagnoseTask",
       "configure.spotless.rootInstallPreHook",
       "downloadDependencies",
-      "graalBuild",
       "java9",
       "jdk",
-      "kotlin.mpp.applyDefaultHierarchyTemplate",
-      "kotlin.test.infer.jvm.variant",
-      "loomBuild",
       "main",
-      "okhttpDokka",
-      "okhttpModuleTests",
       "org.gradle.configuration-cache",
       "org.gradle.configuration-cache.parallel",
       "org.gradle.configuration-cache.problems",
@@ -424,21 +396,6 @@
     "outcome": "blocked",
     "blockers": [
       ".gitignore",
-      "GROUP",
-      "POM_DEVELOPER_ID",
-      "POM_DEVELOPER_NAME",
-      "POM_LICENCE_DIST",
-      "POM_LICENCE_NAME",
-      "POM_LICENCE_URL",
-      "POM_SCM_CONNECTION",
-      "POM_SCM_DEV_CONNECTION",
-      "POM_SCM_URL",
-      "POM_URL",
-      "RELEASE_SIGNING_ENABLED",
-      "SONATYPE_AUTOMATIC_RELEASE",
-      "SONATYPE_HOST",
-      "VERSION_NAME",
-      "android.useAndroidX",
       "com.google.guava:guava:33.2.1-android",
       "configure.android.aaptOptions",
       "configure.android.adbOptions",
@@ -565,7 +522,6 @@
       "jdk",
       "main",
       "sourceSets",
-      "systemProp.org.gradle.internal.publish.checksums.insecure",
       "the generated build"
     ]
   },
@@ -573,7 +529,6 @@
     "commit": "5e97310da3d50a55b922bf3c07c998aeaa18fa20",
     "outcome": "blocked",
     "blockers": [
-      "android.useAndroidX",
       "apiBuild",
       "apiCheck",
       "configure.android.buildTypes.debug.shaders.scopedArgs.map",
@@ -608,7 +563,6 @@
       "configure.dokka.konanHome",
       "configure.kotlin.kotlinDaemonJvmArgs",
       "configure.lintLifecycle",
-      "kotlin.code.style",
       "sourceSets",
       "the generated build",
       "version"
@@ -618,33 +572,15 @@
     "commit": "f2cb677f0b2d6c7ad49537e397b56a27a2ac5461",
     "outcome": "blocked",
     "blockers": [
-      "POM_ARTIFACT_ID",
-      "POM_DESCRIPTION",
-      "POM_DEVELOPER_EMAIL",
-      "POM_DEVELOPER_ID",
-      "POM_DEVELOPER_NAME",
-      "POM_DEVELOPER_URL",
-      "POM_INCEPTION_YEAR",
-      "POM_LICENCE_DIST",
-      "POM_LICENCE_NAME",
-      "POM_LICENCE_URL",
-      "POM_NAME",
-      "POM_PACKAGING",
-      "POM_SCM_CONNECTION",
-      "POM_SCM_DEV_CONNECTION",
-      "POM_SCM_URL",
-      "POM_URL",
       "configure.checkstyle.configProperties.checkstyle.header.file",
       "configure.checkstyle.configProperties.checkstyle.suppressions.file",
       "configure.checkstyle.configProperties.project_loc",
       "description",
-      "group",
       "java.toolchain.languageVersion",
       "javadocCleanup",
       "sourceSets.jmh.compileClasspath",
       "sourceSets.jmh.runtimeClasspath",
-      "the generated build",
-      "version"
+      "the generated build"
     ]
   },
   "gradle/spring-projects-spring-framework": {
@@ -670,7 +606,6 @@
       ":spring-webmvc",
       ":spring-websocket",
       "buildSrc",
-      "byteBuddyVersion",
       "configure.antora.arguments",
       "configure.antora.playbookFile",
       "configure.antora.playbookProvider.downloadUrl",
@@ -714,26 +649,19 @@
       "java24",
       "javadoc",
       "jdk",
-      "kotlin.jvm.target.validation.mode",
-      "kotlin.stdlib.default.dependency",
-      "kotlinVersion",
       "main",
       "sourceSets",
       "sourceSets.jmh.compileClasspath",
       "sourceSets.jmh.runtimeClasspath",
       "spring-javapoet-repack-0.10.0.jar",
       "spring-objenesis-repack-3.5.jar",
-      "the generated build",
-      "version"
+      "the generated build"
     ]
   },
   "gradle/termux-termux-app": {
     "commit": "5b657c6adf4304e5198951ce815fe0205dcac29c",
-    "outcome": "blocked",
-    "blockers": [
-      "distributionUrl",
-      "proof"
-    ]
+    "outcome": "error",
+    "blockers": []
   },
   "maven/alibaba-arthas": {
     "commit": "be42fd932a26456988b97d863087b116de19253f",
@@ -744,7 +672,6 @@
     "commit": "0741ccda1eee67771dfa5d959df1ef83485cedf5",
     "outcome": "blocked",
     "blockers": [
-      "\"browserslist\"",
       "engines.npm"
     ]
   },
@@ -752,8 +679,6 @@
     "commit": "e61ba821e025d713fc02d2020a338d4ce4251912",
     "outcome": "blocked",
     "blockers": [
-      "\"husky\"",
-      "\"lint-staged\"",
       "\"main\"",
       "\"overrides\"",
       ".npmrc",
@@ -786,22 +711,11 @@
     "commit": "b05edef29e730891d2af9817964d16b66a9a66c5",
     "outcome": "blocked",
     "blockers": [
-      "\"browser\"",
-      "\"browserslist\"",
-      "\"directories\"",
-      "\"eslintConfig\"",
       "\"exports\"",
       "\"files\"",
-      "\"jest\"",
       "\"main\"",
-      "\"module\"",
       "\"peerDependencies\"",
-      "\"prettier\"",
       "\"publishConfig\"",
-      "\"sideEffects\"",
-      "\"types\"",
-      "\"typings\"",
-      "\"zapier\"",
       ".gitignore",
       "builds/default/package.json",
       "builds/query-param-deep-object/package.json",
@@ -820,10 +734,6 @@
       "scripts.\"browserify\"",
       "scripts.\"build\"",
       "scripts.\"build:clean\"",
-      "scripts.\"build:flow\"",
-      "scripts.\"build:lib\"",
-      "scripts.\"clean\"",
-      "scripts.\"format\"",
       "scripts.\"lint\"",
       "scripts.\"postinstall\"",
       "scripts.\"preinstall\"",
@@ -865,10 +775,7 @@
       "\"main\"",
       "\"overrides\"",
       "\"packageManager\"",
-      "\"pi\"",
       "\"publishConfig\"",
-      "\"resolutions\"",
-      "\"types\"",
       ".opencode/package.json",
       "docker/context-profiles/complex-eval/cases/incident-triage/files/package.json",
       "docker/context-profiles/complex-eval/cases/sentinel-api/files/package.json",
@@ -885,7 +792,6 @@
       "docker/context-profiles/complex-eval/cases4/recurring-incident/files/package.json",
       "pi/core/package.json",
       "scripts.\"coverage\"",
-      "scripts.\"lint\"",
       "scripts.\"prepack\"",
       "scripts.\"welcome\"",
       "tests/fixtures/docker-plugin-project/package.json",
@@ -901,7 +807,6 @@
       "packages/eslint-config-airbnb/package.json",
       "scripts.\"install:config\"",
       "scripts.\"install:config:base\"",
-      "scripts.\"lint\"",
       "scripts.\"postinstall\"",
       "scripts.\"preinstall\"",
       "scripts.\"pretest\"",
@@ -1389,11 +1294,6 @@
       "scripts.\"test\"",
       "scripts.\"test:approval-policy\"",
       "scripts.\"test:coverage\"",
-      "scripts.\"test:expected:refresh\"",
-      "scripts.\"test:snapshot:record\"",
-      "scripts.\"test:snapshot:refresh\"",
-      "scripts.\"test:web:perf:built\"",
-      "scripts.\"test:web:refresh\"",
       "scripts.\"upload:latest:mac:arm64\"",
       "scripts.\"upload:latest:mac:x64\"",
       "scripts.\"upload:latest:win:x64\"",
@@ -1422,7 +1322,6 @@
     "blockers": [
       "\"exports\"",
       "\"files\"",
-      "\"pi\"",
       "\"publishConfig\"",
       "pi-extension/package.json",
       "scripts.\"test\""
@@ -1437,12 +1336,9 @@
     "commit": "160d821ac9a0310afcb8d1fc427862dd6508add5",
     "outcome": "blocked",
     "blockers": [
-      "\"allowScripts\"",
       "\"bin\"",
       "\"files\"",
       "\"imports\"",
-      "\"lint-staged\"",
-      "\"mcpName\"",
       "\"optionalDependencies\"",
       "\"overrides\"",
       "\"packageManager\"",
@@ -1477,7 +1373,6 @@
       "scripts.\"pretest:verbose\"",
       "scripts.\"pretest:watch:all\"",
       "scripts.\"test:ci\"",
-      "scripts.\"test:python\"",
       "scripts/verify-tools/skills/package.json",
       "tests/conformance/readiness/electron/package.json",
       "tests/conformance/readiness/javascript-cli/package.json",
@@ -1630,8 +1525,6 @@
       "packages/quality/testing/test-impact/package.json",
       "packages/workflow/package.json",
       "pnpm-lock.yaml",
-      "scripts.\"build:docker:clean\"",
-      "scripts.\"build:docker:coverage\"",
       "scripts.\"check:cubic-config\"",
       "scripts.\"db:schema:check\"",
       "scripts.\"db:schema:check:sqlite\"",
@@ -1663,7 +1556,6 @@
     "outcome": "blocked",
     "blockers": [
       "\"packageManager\"",
-      "\"pnpm\"",
       "\"workspaces\"",
       ".npmrc",
       ".nvmrc",
@@ -1725,7 +1617,6 @@
       "packages/tests/fixtures/vite-monorepo-imports/packages/ui/package.json",
       "packages/tests/package.json",
       "pnpm-lock.yaml",
-      "scripts.\"build:packages\"",
       "scripts.\"explore:capture\"",
       "scripts.\"pub:beta\"",
       "scripts.\"pub:rc\"",
@@ -1736,7 +1627,6 @@
       "scripts.\"shadcn:build\"",
       "scripts.\"shadcn:prod\"",
       "scripts.\"shadcn:test\"",
-      "scripts.\"sync:templates\"",
       "scripts.\"test\"",
       "scripts.\"test:apps\"",
       "scripts.\"v4:build\"",
@@ -1770,16 +1660,13 @@
     "commit": "992dae31eade2a34ba8dbbbcf5ed9de5511325ec",
     "outcome": "blocked",
     "blockers": [
-      "\"nano-staged\"",
       "\"packageManager\"",
-      "\"pnpm\"",
       "pnpm-lock.yaml",
       "scripts.\"build\"",
       "scripts.\"build:clean\"",
       "scripts.\"dev\"",
       "scripts.\"docs:build:clean\"",
       "scripts.\"lint\"",
-      "scripts.\"lint:md\"",
       "scripts.\"prepare\"",
       "scripts.\"update\""
     ]
@@ -1793,7 +1680,6 @@
       ".nvmrc",
       "engines.npm",
       "scripts.\"coverage\"",
-      "scripts.\"lint\"",
       "scripts.\"prepare\""
     ]
   },
@@ -1802,7 +1688,6 @@
     "outcome": "blocked",
     "blockers": [
       "\"packageManager\"",
-      "\"pnpm\"",
       "\"workspaces\"",
       ".github/actions/needs-triage/package.json",
       ".github/actions/next-integration-stat/package.json",
@@ -2516,15 +2401,8 @@
     "blockers": [
       "\"exports\"",
       "\"files\"",
-      "\"gitHooks\"",
-      "\"jsdelivr\"",
-      "\"lint-staged\"",
       "\"main\"",
-      "\"module\"",
       "\"packageManager\"",
-      "\"sideEffects\"",
-      "\"typings\"",
-      "\"unpkg\"",
       "compiler-sfc/package.json",
       "dependencies.\"@vue/compiler-sfc\"",
       "packages/compiler-sfc/package.json",
