@@ -178,7 +178,9 @@ async function migrate(entry: Entry, entryWork: string, settings: Settings, seco
     Promise<{ report: MigrateReport } | { failure: string }> {
   const side = sideOf(entryWork, SIDES.migrated, settings);
   const reportPath = join(entryWork, "report.json");
-  const finished = await run(settings.daukle, ["migrate", "--catalog", settings.catalog, "--report", reportPath], {
+  // --resolve, as a user migrates a project whose dependencies have to be pinned (D-229).
+  const finished = await run(settings.daukle, ["migrate", "--resolve", "--catalog", settings.catalog,
+    "--report", reportPath], {
     cwd: side.dir, log: side.log, timeoutMs: side.timeoutMs,
     env: { ...process.env, DAUKLE_CACHE_DIR: settings.daukleCache },
   });
