@@ -729,7 +729,6 @@
     "commit": "0741ccda1eee67771dfa5d959df1ef83485cedf5",
     "outcome": "blocked",
     "blockers": [
-      ".gitignore",
       "scripts.\"test:unit\""
     ]
   },
