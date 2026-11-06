@@ -9,7 +9,6 @@
     "outcome": "blocked",
     "blockers": [
       "\"overrides\"",
-      ".npmrc",
       "scripts.\"format:files\"",
       "scripts.\"prepare\"",
       "scripts.\"test\"",
@@ -394,7 +393,6 @@
     "commit": "3ab0f1a2c18666adb79ebf4eacef6fbc40d3e801",
     "outcome": "blocked",
     "blockers": [
-      ".gitignore",
       "com.google.guava:guava:33.2.1-android",
       "configure.android.aaptOptions",
       "configure.android.adbOptions",
@@ -578,7 +576,6 @@
     "commit": "33a85b0bec67adb759aa898e3b80d603786be082",
     "outcome": "blocked",
     "blockers": [
-      ".gitignore",
       ":",
       ":spring-aop",
       ":spring-beans",
@@ -727,10 +724,8 @@
   },
   "maven/alibaba-canal": {
     "commit": "0741ccda1eee67771dfa5d959df1ef83485cedf5",
-    "outcome": "blocked",
-    "blockers": [
-      "scripts.\"test:unit\""
-    ]
+    "outcome": "proof-failed",
+    "blockers": []
   },
   "maven/alibaba-nacos": {
     "commit": "e61ba821e025d713fc02d2020a338d4ce4251912",
@@ -738,7 +733,6 @@
     "blockers": [
       "\"main\"",
       "\"overrides\"",
-      ".npmrc",
       "scripts.\"build\"",
       "scripts.\"min-release-age\"",
       "test/package.json"
@@ -773,7 +767,6 @@
       "\"main\"",
       "\"peerDependencies\"",
       "\"publishConfig\"",
-      ".gitignore",
       "builds/default/package.json",
       "builds/query-param-deep-object/package.json",
       "builds/query-param-form-dot/package.json",
@@ -786,7 +779,6 @@
       "dependencies.\"@openapitools/typescript-node-encode-decode\"",
       "dependencies.\"@swagger/typescript-fetch-petstore\"",
       "dependencies.\"ts-petstore-client\"",
-      "engines.npm",
       "package.json",
       "scripts.\"browserify\"",
       "scripts.\"build\"",
@@ -859,7 +851,6 @@
     "commit": "8ed19247bef145e3cc41b24a02dd1fe6d9b5e681",
     "outcome": "blocked",
     "blockers": [
-      ".npmrc",
       "packages/eslint-config-airbnb-base/package.json",
       "packages/eslint-config-airbnb/package.json",
       "scripts.\"install:config\"",
@@ -1400,7 +1391,6 @@
       "\"overrides\"",
       "\"packageManager\"",
       "\"publishConfig\"",
-      ".npmrc",
       ".nvmrc",
       "engines.node",
       "scripts.\"compile:termux\"",
@@ -1475,7 +1465,6 @@
       "devDependencies.\"prettier\"",
       "devDependencies.\"stylelint\"",
       "devDependencies.\"yaml\"",
-      "engines.pnpm",
       "packages/@n8n/agents/package.json",
       "packages/@n8n/ai-node-sdk/package.json",
       "packages/@n8n/ai-utilities/package.json",
@@ -1614,7 +1603,6 @@
     "blockers": [
       "\"packageManager\"",
       "\"workspaces\"",
-      ".npmrc",
       ".nvmrc",
       "apps/v4/package.json",
       "packages/helpers/package.json",
@@ -1733,7 +1721,6 @@
     "outcome": "blocked",
     "blockers": [
       "\"main\"",
-      ".npmrc",
       ".nvmrc",
       "scripts.\"coverage\"",
       "scripts.\"prepare\""
@@ -1753,7 +1740,6 @@
       ".github/actions/validate-docs-links/package.json",
       ".github/package.json",
       ".node-version",
-      ".npmrc",
       "apps/bundle-analyzer/package.json",
       "bench/app-router-server/package.json",
       "bench/fuzzponent/package.json",
