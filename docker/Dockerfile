@@ -25,8 +25,8 @@ ENV CORPUS_JDKS=17=/usr/lib/jvm/java-17-openjdk-amd64,21=/usr/lib/jvm/temurin-21
 ENV COREPACK_ENABLE_DOWNLOAD_PROMPT=0
 RUN corepack enable pnpm yarn
 
-ARG DAUKLE_VERSION=0.22.0
-ARG DAUKLE_SHA256=8e7d74637a8b9508fecf646a043d50506dda82f836abf9456da4d3bfa3470ae4
+ARG DAUKLE_VERSION=0.23.0
+ARG DAUKLE_SHA256=edc6fe5e52b1718436a20b704f31723503526a224e7cbe738d080d51c4c6c88e
 RUN curl -fsSL -o /usr/local/bin/daukle \
         "https://github.com/daukle/daukle/releases/download/${DAUKLE_VERSION}/daukle-linux-x86_64" \
     && echo "${DAUKLE_SHA256}  /usr/local/bin/daukle" | sha256sum -c - \
