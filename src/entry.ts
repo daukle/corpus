@@ -5,7 +5,7 @@ import { REFERENCE_BUILDS, type ReferenceBuild, type Shipped, type Side } from "
 import { compareFiles, comparisonKindOf, memberKey } from "./compare.ts";
 import type { EcosystemName } from "./ecosystems.ts";
 import { availableJdks, failedOnJdk } from "./jdk.ts";
-import { migratedCounterparts, type MigrateReport } from "./migrated.ts";
+import { migratedCounterparts, type Counterpart, type MigrateReport } from "./migrated.ts";
 import { capture, run, stopJvmsUnder, type Finished } from "./process.ts";
 import { loadReference, saveReference, type Reference } from "./reference.ts";
 
@@ -149,16 +149,17 @@ function sampleOf(members: Set<string>): string[] {
 }
 
 function compareShipped(
-  settings: Settings, reference: Shipped[], counterparts: Map<string, string>, unstable: Map<string, Set<string>>,
+  settings: Settings, reference: Shipped[], counterparts: Map<string, Counterpart>, unstable: Map<string, Set<string>>,
 ): ShippedResult[] {
   return reference.map((file) => {
     const counterpart = counterparts.get(file.key) ?? null;
     const ignored = unstable.get(file.key) ?? new Set<string>();
     const result: ShippedResult = {
-      key: file.key, unstable: ignored.size, unstableSample: sampleOf(ignored), counterpart, differing: [],
+      key: file.key, unstable: ignored.size, unstableSample: sampleOf(ignored), counterpart: counterpart?.path ?? null,
+      differing: [],
     };
     if (counterpart === null) return result;
-    const comparison = compareFiles(settings.daukle, file.path, counterpart, comparisonKindOf(file.key));
+    const comparison = compareFiles(settings.daukle, file.path, counterpart.path, counterpart.as);
     result.differing = comparison.readable
       ? comparison.differences.map(memberKey).filter((member) => !ignored.has(member))
       : [comparison.error];
