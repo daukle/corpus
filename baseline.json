@@ -17,11 +17,8 @@
   },
   "cmake/ggml-org-whisper.cpp": {
     "commit": "d1be6fde11ac6e0407606b4e42fe72d34add8037",
-    "outcome": "blocked",
-    "blockers": [
-      "\"files\"",
-      "\"main\""
-    ]
+    "outcome": "proof-only",
+    "blockers": []
   },
   "cmake/google-googletest": {
     "commit": "063de7e9578f82b369302001269680b4b1553359",
@@ -731,7 +728,6 @@
     "commit": "e61ba821e025d713fc02d2020a338d4ce4251912",
     "outcome": "blocked",
     "blockers": [
-      "\"main\"",
       "\"overrides\"",
       "scripts.\"build\"",
       "scripts.\"min-release-age\"",
@@ -763,8 +759,6 @@
     "outcome": "blocked",
     "blockers": [
       "\"exports\"",
-      "\"files\"",
-      "\"main\"",
       "\"peerDependencies\"",
       "\"publishConfig\"",
       "builds/default/package.json",
@@ -779,10 +773,12 @@
       "dependencies.\"@openapitools/typescript-node-encode-decode\"",
       "dependencies.\"@swagger/typescript-fetch-petstore\"",
       "dependencies.\"ts-petstore-client\"",
+      "package-lock.json",
       "package.json",
       "scripts.\"browserify\"",
       "scripts.\"build\"",
       "scripts.\"build:clean\"",
+      "scripts.\"build:lib\"",
       "scripts.\"lint\"",
       "scripts.\"postinstall\"",
       "scripts.\"preinstall\"",
@@ -820,8 +816,6 @@
     "blockers": [
       "\"bin\"",
       "\"exports\"",
-      "\"files\"",
-      "\"main\"",
       "\"overrides\"",
       "\"packageManager\"",
       "\"publishConfig\"",
@@ -1369,7 +1363,6 @@
     "outcome": "blocked",
     "blockers": [
       "\"exports\"",
-      "\"files\"",
       "\"publishConfig\"",
       "pi-extension/package.json",
       "scripts.\"test\""
@@ -1385,7 +1378,6 @@
     "outcome": "blocked",
     "blockers": [
       "\"bin\"",
-      "\"files\"",
       "\"imports\"",
       "\"optionalDependencies\"",
       "\"overrides\"",
@@ -1720,7 +1712,6 @@
     "commit": "85293e3e2b88f4d2ce330d956b139cf628aa1e82",
     "outcome": "blocked",
     "blockers": [
-      "\"main\"",
       ".nvmrc",
       "scripts.\"coverage\"",
       "scripts.\"prepare\""
@@ -2442,8 +2433,6 @@
     "outcome": "blocked",
     "blockers": [
       "\"exports\"",
-      "\"files\"",
-      "\"main\"",
       "\"packageManager\"",
       "compiler-sfc/package.json",
       "dependencies.\"@vue/compiler-sfc\"",
