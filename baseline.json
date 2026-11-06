@@ -8,7 +8,6 @@
     "commit": "8642541b255bfb5dc39cd351a178be09013a55d6",
     "outcome": "blocked",
     "blockers": [
-      "\"overrides\"",
       "scripts.\"format:files\"",
       "scripts.\"prepare\"",
       "src/lib/vendors/package.json"
@@ -727,7 +726,6 @@
     "commit": "e61ba821e025d713fc02d2020a338d4ce4251912",
     "outcome": "blocked",
     "blockers": [
-      "\"overrides\"",
       "scripts.\"build\"",
       "scripts.\"min-release-age\"",
       "test/package.json"
@@ -814,7 +812,6 @@
     "blockers": [
       "\"bin\"",
       "\"exports\"",
-      "\"overrides\"",
       "\"packageManager\"",
       "\"publishConfig\"",
       ".opencode/package.json",
@@ -1378,7 +1375,6 @@
       "\"bin\"",
       "\"imports\"",
       "\"optionalDependencies\"",
-      "\"overrides\"",
       "\"packageManager\"",
       "\"publishConfig\"",
       ".nvmrc",
