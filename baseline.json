@@ -1685,13 +1685,6 @@
     "commit": "992dae31eade2a34ba8dbbbcf5ed9de5511325ec",
     "outcome": "blocked",
     "blockers": [
-      "\"packageManager\"",
-      "pnpm-lock.yaml",
-      "scripts.\"build\"",
-      "scripts.\"build:clean\"",
-      "scripts.\"dev\"",
-      "scripts.\"docs:build:clean\"",
-      "scripts.\"lint\"",
       "scripts.\"update\""
     ]
   },
