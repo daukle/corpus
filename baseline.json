@@ -11,7 +11,6 @@
       "\"overrides\"",
       "scripts.\"format:files\"",
       "scripts.\"prepare\"",
-      "scripts.\"test\"",
       "src/lib/vendors/package.json"
     ]
   },
@@ -782,7 +781,6 @@
       "scripts.\"lint\"",
       "scripts.\"postinstall\"",
       "scripts.\"preinstall\"",
-      "scripts.\"prepare\"",
       "scripts.\"prepublish\"",
       "scripts.\"prestart\"",
       "scripts.\"prestart:prod\"",
@@ -1386,7 +1384,6 @@
       ".nvmrc",
       "engines.node",
       "scripts.\"compile:termux\"",
-      "scripts.\"docs:check\"",
       "scripts.\"prebuild\"",
       "scripts.\"precheck\"",
       "scripts.\"precheck:changed\"",
@@ -1399,7 +1396,6 @@
       "scripts.\"predocs:build\"",
       "scripts.\"predocs:dev\"",
       "scripts.\"prepack\"",
-      "scripts.\"prepare\"",
       "scripts.\"prepublishOnly\"",
       "scripts.\"pretest:acceptance\"",
       "scripts.\"pretest:boundary\"",
@@ -1411,7 +1407,6 @@
       "scripts.\"pretest:mutation:reverse-tools\"",
       "scripts.\"pretest:verbose\"",
       "scripts.\"pretest:watch:all\"",
-      "scripts.\"test:ci\"",
       "scripts/verify-tools/skills/package.json",
       "tests/conformance/readiness/electron/package.json",
       "tests/conformance/readiness/javascript-cli/package.json",
@@ -1573,7 +1568,6 @@
       "scripts.\"lint:ci\"",
       "scripts.\"optimize-svg\"",
       "scripts.\"preinstall\"",
-      "scripts.\"prepare\"",
       "scripts.\"seed:preference\"",
       "scripts.\"seed:test\"",
       "scripts.\"stop:computer-use\"",
@@ -1704,18 +1698,13 @@
       "scripts.\"dev\"",
       "scripts.\"docs:build:clean\"",
       "scripts.\"lint\"",
-      "scripts.\"prepare\"",
       "scripts.\"update\""
     ]
   },
   "npm/trekhleb-javascript-algorithms": {
     "commit": "85293e3e2b88f4d2ce330d956b139cf628aa1e82",
-    "outcome": "blocked",
-    "blockers": [
-      ".nvmrc",
-      "scripts.\"coverage\"",
-      "scripts.\"prepare\""
-    ]
+    "outcome": "proof-only",
+    "blockers": []
   },
   "npm/vercel-next.js": {
     "commit": "b175f52b05a5f6c6c39ca72565ea178542be323b",
@@ -2254,7 +2243,6 @@
       "scripts.\"next\"",
       "scripts.\"next-no-sourcemaps\"",
       "scripts.\"postinstall\"",
-      "scripts.\"prepare\"",
       "scripts.\"types\"",
       "scripts.\"types-and-precompiled\"",
       "scripts.\"version\"",
@@ -2440,9 +2428,7 @@
       "packages/server-renderer/package.json",
       "packages/template-compiler/package.json",
       "pnpm-lock.yaml",
-      "scripts.\"build:ssr\"",
       "scripts.\"format\"",
-      "scripts.\"test:e2e\"",
       "test/transition/package.json"
     ]
   }
