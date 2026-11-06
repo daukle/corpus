@@ -726,7 +726,8 @@
     "blockers": [
       "scripts.\"build\"",
       "scripts.\"min-release-age\"",
-      "test/package.json"
+      "scripts.\"paralleltest\"",
+      "scripts.\"test\""
     ]
   },
   "maven/apache-dubbo": {
@@ -811,26 +812,14 @@
       "\"bin\"",
       "\"exports\"",
       "\"packageManager\"",
+      "\"peerDependencies\"",
       "\"publishConfig\"",
-      ".opencode/package.json",
-      "docker/context-profiles/complex-eval/cases/incident-triage/files/package.json",
-      "docker/context-profiles/complex-eval/cases/sentinel-api/files/package.json",
-      "docker/context-profiles/complex-eval/cases/webhook-relay/files/package.json",
-      "docker/context-profiles/complex-eval/cases2/event-stats-api/files/package.json",
-      "docker/context-profiles/complex-eval/cases2/forge-cli/files/package.json",
-      "docker/context-profiles/complex-eval/cases2/keccak-selector/files/package.json",
-      "docker/context-profiles/complex-eval/cases3/chained-tickets/files/package.json",
-      "docker/context-profiles/complex-eval/cases3/idempotent-webhooks/files/package.json",
-      "docker/context-profiles/complex-eval/cases3/production-ready/files/package.json",
-      "docker/context-profiles/complex-eval/cases4/chained-tickets/files/package.json",
-      "docker/context-profiles/complex-eval/cases4/idempotent-webhooks/files/package.json",
-      "docker/context-profiles/complex-eval/cases4/production-ready/files/package.json",
-      "docker/context-profiles/complex-eval/cases4/recurring-incident/files/package.json",
-      "pi/core/package.json",
       "scripts.\"coverage\"",
+      "scripts.\"orchestrate:worker\"",
       "scripts.\"prepack\"",
+      "scripts.\"prepublishOnly\"",
+      "scripts.\"test\"",
       "scripts.\"welcome\"",
-      "tests/fixtures/docker-plugin-project/package.json",
       "yarn.lock"
     ]
   },
@@ -1357,7 +1346,6 @@
     "blockers": [
       "\"exports\"",
       "\"publishConfig\"",
-      "pi-extension/package.json",
       "scripts.\"test\""
     ]
   },
@@ -1371,13 +1359,22 @@
     "outcome": "blocked",
     "blockers": [
       "\"bin\"",
+      "\"cpu\"",
       "\"imports\"",
       "\"optionalDependencies\"",
+      "\"os\"",
       "\"packageManager\"",
       "\"publishConfig\"",
       ".nvmrc",
+      "dependencies.\"fumadocs-ui\"",
+      "devDependencies.\"typescript-termux\"",
+      "devDependencies.\"typescript6\"",
       "engines.node",
+      "pnpm-workspace.yaml",
+      "scripts.\"build\"",
       "scripts.\"compile:termux\"",
+      "scripts.\"lint\"",
+      "scripts.\"lint:fix\"",
       "scripts.\"prebuild\"",
       "scripts.\"precheck\"",
       "scripts.\"precheck:changed\"",
@@ -1400,35 +1397,7 @@
       "scripts.\"pretest:mcp\"",
       "scripts.\"pretest:mutation:reverse-tools\"",
       "scripts.\"pretest:verbose\"",
-      "scripts.\"pretest:watch:all\"",
-      "scripts/verify-tools/skills/package.json",
-      "tests/conformance/readiness/electron/package.json",
-      "tests/conformance/readiness/javascript-cli/package.json",
-      "third_party/wakaru/crates/core/tests/bundles/closure-module-manager-gen/package.json",
-      "third_party/wakaru/crates/core/tests/bundles/cocos-creator-gen/package.json",
-      "third_party/wakaru/crates/core/tests/bundles/esbuild-gen/package.json",
-      "third_party/wakaru/crates/core/tests/bundles/metro-gen/package.json",
-      "third_party/wakaru/crates/core/tests/bundles/rollup-gen/package.json",
-      "third_party/wakaru/crates/core/tests/bundles/systemjs-gen/package.json",
-      "third_party/wakaru/crates/core/tests/bundles/vite-gen/package.json",
-      "third_party/wakaru/crates/core/tests/bundles/webpack-gen/package.json",
-      "third_party/wakaru/docs-site/examples/shop-demo/package.json",
-      "third_party/wakaru/docs-site/package.json",
-      "third_party/wakaru/npm/alias/package.json",
-      "third_party/wakaru/npm/package.json",
-      "third_party/wakaru/npm/platforms/cli-darwin-arm64/package.json",
-      "third_party/wakaru/npm/platforms/cli-linux-arm64/package.json",
-      "third_party/wakaru/npm/platforms/cli-linux-x64/package.json",
-      "third_party/wakaru/npm/platforms/cli-win32-arm64/package.json",
-      "third_party/wakaru/npm/platforms/cli-win32-x64/package.json",
-      "third_party/wakaru/playground/package.json",
-      "third_party/wakaru/scripts/repro/closure-compiler-matrix/toolchains/20240317.0.0/package.json",
-      "third_party/wakaru/scripts/repro/closure-compiler-matrix/toolchains/20250226.0.0/package.json",
-      "third_party/wakaru/scripts/repro/closure-compiler-matrix/toolchains/20260629.0.0/package.json",
-      "third_party/wakaru/testcases/browserify/package.json",
-      "third_party/wakaru/testcases/webpack4/package.json",
-      "third_party/wakaru/testcases/webpack5/package.json",
-      "website/public/examples/notes-electron/package.json"
+      "scripts.\"pretest:watch:all\""
     ]
   },
   "npm/n8n-io-n8n": {
@@ -2380,13 +2349,10 @@
     "outcome": "blocked",
     "blockers": [
       "\"exports\"",
-      "\"packageManager\"",
-      "compiler-sfc/package.json",
+      "\"optionalDependencies\"",
       "dependencies.\"@vue/compiler-sfc\"",
-      "packages/compiler-sfc/package.json",
-      "packages/server-renderer/package.json",
-      "packages/template-compiler/package.json",
-      "pnpm-lock.yaml",
+      "devDependencies.\"vue\"",
+      "pnpm-workspace.yaml",
       "scripts.\"format\""
     ]
   }
