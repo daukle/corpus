@@ -286,7 +286,7 @@ export async function runEntry(entry: Entry, settings: Settings): Promise<EntryR
   if (report.proof.failure !== undefined) result.proofFailure = report.proof.failure;
   if (report.outcome !== "migrated") return result;
 
-  const counterparts = migratedCounterparts(entry.ecosystem, report, join(entryWork, SIDES.migrated), reference);
+  const counterparts = migratedCounterparts(report, join(entryWork, SIDES.migrated), reference);
   result.shipped = compareShipped(settings, reference, counterparts, unstable);
   const covered = result.shipped.every((file) => file.counterpart !== null && file.differing.length === 0);
   if (!covered) result.outcome = "proof-only";

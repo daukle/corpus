@@ -1,7 +1,6 @@
 import { basename, join } from "node:path";
 
 import type { Shipped } from "./builds.ts";
-import type { EcosystemName } from "./ecosystems.ts";
 
 /** The parts of daukle migrate's --report the harness reads. */
 export interface MigrateReport {
@@ -14,15 +13,15 @@ export interface MigrateReport {
 
 /**
  * What the migrated project built that answers each shipped file of the original, by the file's
- * name. A name two shipped files share cannot be told apart, so neither is matched.
- * @implNote only daukle/gradle builds a shipped artifact today: its proof task makes every jar and
- * the report names where. daukle/node has no task that packs a tarball, so npm matches nothing.
+ * name, among the files the report says its proof compared. A name two shipped files share cannot
+ * be told apart, so neither is matched.
+ * @implNote it reads the report alone and names no plugin, so a plugin that starts shipping an
+ * artifact is compared without a change here.
  */
 export function migratedCounterparts(
-  ecosystem: EcosystemName, report: MigrateReport, migratedDir: string, reference: Shipped[],
+  report: MigrateReport, migratedDir: string, reference: Shipped[],
 ): Map<string, string> {
   const counterparts = new Map<string, string>();
-  if (ecosystem !== "gradle") return counterparts;
   const byName = new Map<string, string[]>();
   for (const comparison of report.proof.compared) {
     const name = basename(comparison.new);
