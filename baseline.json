@@ -9,8 +9,7 @@
     "outcome": "blocked",
     "blockers": [
       "scripts.\"format:files\"",
-      "scripts.\"prepare\"",
-      "src/lib/vendors/package.json"
+      "scripts.\"prepare\""
     ]
   },
   "cmake/ggml-org-whisper.cpp": {
@@ -2424,8 +2423,7 @@
       "packages/server-renderer/package.json",
       "packages/template-compiler/package.json",
       "pnpm-lock.yaml",
-      "scripts.\"format\"",
-      "test/transition/package.json"
+      "scripts.\"format\""
     ]
   }
 }
