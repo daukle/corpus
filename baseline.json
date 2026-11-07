@@ -768,7 +768,6 @@
       "scripts.\"build\"",
       "scripts.\"build:clean\"",
       "scripts.\"build:lib\"",
-      "scripts.\"lint\"",
       "scripts.\"postinstall\"",
       "scripts.\"preinstall\"",
       "scripts.\"prepublish\"",
@@ -2162,8 +2161,7 @@
       "packages/compiler-sfc/package.json",
       "packages/server-renderer/package.json",
       "packages/template-compiler/package.json",
-      "pnpm-workspace.yaml",
-      "scripts.\"format\""
+      "pnpm-workspace.yaml"
     ]
   }
 }
