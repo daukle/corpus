@@ -1318,10 +1318,8 @@
   },
   "npm/dietrichgebert-ponytail": {
     "commit": "7801d061243d7b753bad0e0b3c057cd250b11755",
-    "outcome": "blocked",
-    "blockers": [
-      "scripts.\"test\""
-    ]
+    "outcome": "same",
+    "blockers": []
   },
   "npm/freecodecamp-freecodecamp": {
     "commit": "124bba5f531aae30f22d679a49923b81634b7f69",
