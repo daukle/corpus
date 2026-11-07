@@ -753,7 +753,6 @@
     "outcome": "blocked",
     "blockers": [
       "\"peerDependencies\"",
-      "\"publishConfig\"",
       "dependencies.\"@openapitools/typescript-axios-echo-api\"",
       "dependencies.\"@openapitools/typescript-axios-petstore\"",
       "dependencies.\"@openapitools/typescript-encode-decode\"",
@@ -804,7 +803,6 @@
       "\"bin\"",
       "\"packageManager\"",
       "\"peerDependencies\"",
-      "\"publishConfig\"",
       "scripts.\"coverage\"",
       "scripts.\"orchestrate:worker\"",
       "scripts.\"prepack\"",
@@ -1329,7 +1327,6 @@
     "commit": "7801d061243d7b753bad0e0b3c057cd250b11755",
     "outcome": "blocked",
     "blockers": [
-      "\"publishConfig\"",
       "scripts.\"test\""
     ]
   },
@@ -1348,7 +1345,6 @@
       "\"optionalDependencies\"",
       "\"os\"",
       "\"packageManager\"",
-      "\"publishConfig\"",
       ".nvmrc",
       "dependencies.\"fumadocs-ui\"",
       "devDependencies.\"typescript-termux\"",
