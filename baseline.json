@@ -715,8 +715,10 @@
   },
   "maven/alibaba-canal": {
     "commit": "0741ccda1eee67771dfa5d959df1ef83485cedf5",
-    "outcome": "proof-failed",
-    "blockers": []
+    "outcome": "blocked",
+    "blockers": [
+      "frontend-maven-plugin"
+    ]
   },
   "maven/alibaba-nacos": {
     "commit": "e61ba821e025d713fc02d2020a338d4ce4251912",
