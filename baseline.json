@@ -752,7 +752,6 @@
     "commit": "b05edef29e730891d2af9817964d16b66a9a66c5",
     "outcome": "blocked",
     "blockers": [
-      "\"exports\"",
       "\"peerDependencies\"",
       "\"publishConfig\"",
       "dependencies.\"@openapitools/typescript-axios-echo-api\"",
@@ -803,7 +802,6 @@
     "outcome": "blocked",
     "blockers": [
       "\"bin\"",
-      "\"exports\"",
       "\"packageManager\"",
       "\"peerDependencies\"",
       "\"publishConfig\"",
@@ -820,7 +818,6 @@
     "commit": "8ed19247bef145e3cc41b24a02dd1fe6d9b5e681",
     "outcome": "blocked",
     "blockers": [
-      "\"exports\"",
       "\"peerDependencies\"",
       "scripts.\"install:config\"",
       "scripts.\"install:config:base\"",
@@ -1332,7 +1329,6 @@
     "commit": "7801d061243d7b753bad0e0b3c057cd250b11755",
     "outcome": "blocked",
     "blockers": [
-      "\"exports\"",
       "\"publishConfig\"",
       "scripts.\"test\""
     ]
@@ -2175,7 +2171,6 @@
     "commit": "13f4e7dc03e2caed900ac70ff8b8fe58dda45663",
     "outcome": "blocked",
     "blockers": [
-      "\"exports\"",
       "dependencies.\"@vue/compiler-sfc\"",
       "packages/compiler-sfc/package.json",
       "packages/server-renderer/package.json",
