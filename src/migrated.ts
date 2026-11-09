@@ -18,6 +18,10 @@ export interface Counterpart {
   as: ComparisonKind;
 }
 
+interface Compared extends Counterpart {
+  instance: string;
+}
+
 /**
  * What the migrated project built that answers each shipped file of the original, by the file's
  * name, among the files the report says its proof compared. A name two shipped files share cannot
@@ -30,17 +34,31 @@ export function migratedCounterparts(
   report: MigrateReport, migratedDir: string, reference: Shipped[],
 ): Map<string, Counterpart> {
   const counterparts = new Map<string, Counterpart>();
-  const byName = new Map<string, Counterpart[]>();
+  const byName = new Map<string, Compared[]>();
   for (const comparison of report.proof.compared) {
     const name = basename(comparison.new);
-    byName.set(name, [...(byName.get(name) ?? []), { path: join(migratedDir, comparison.new), as: comparison.as }]);
+    const counterpart = { path: join(migratedDir, comparison.new), as: comparison.as, instance: comparison.instance };
+    byName.set(name, [...(byName.get(name) ?? []), counterpart]);
   }
   const referenceNames = reference.map((file) => basename(file.key));
+  const rootInstance = report.detected.find((detected) => detected.dir === "")?.plugin;
   for (const file of reference) {
     const name = basename(file.key);
-    const candidates = byName.get(name) ?? [];
     const shared = referenceNames.filter((other) => other === name).length > 1;
-    if (candidates.length === 1 && !shared) counterparts.set(file.key, candidates[0]);
+    const candidate = shared ? undefined : answerOf(file.key, byName.get(name) ?? [], rootInstance);
+    if (candidate !== undefined) counterparts.set(file.key, { path: candidate.path, as: candidate.as });
   }
   return counterparts;
+}
+
+/**
+ * The one candidate answering a shipped file, or undefined when it cannot be told apart.
+ * @implNote a key with no directory was shipped from the project root, so among several instances
+ * producing that name, as a workspace whose every package packs does, the root's answers it.
+ */
+function answerOf(key: string, candidates: Compared[], rootInstance: string | undefined): Compared | undefined {
+  if (candidates.length === 1) return candidates[0];
+  if (key.includes("/")) return undefined;
+  const atRoot = candidates.filter((candidate) => candidate.instance === rootInstance);
+  return atRoot.length === 1 ? atRoot[0] : undefined;
 }
