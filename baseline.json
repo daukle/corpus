@@ -1593,8 +1593,7 @@
     "commit": "13f4e7dc03e2caed900ac70ff8b8fe58dda45663",
     "outcome": "blocked",
     "blockers": [
-      "\"optionalDependencies\"",
-      "scripts.\"dev:compiler\""
+      "\"optionalDependencies\""
     ]
   }
 }
