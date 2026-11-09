@@ -1577,7 +1577,7 @@
   },
   "npm/vuejs-vue": {
     "commit": "13f4e7dc03e2caed900ac70ff8b8fe58dda45663",
-    "outcome": "proof-only",
+    "outcome": "same",
     "blockers": []
   }
 }
