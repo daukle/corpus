@@ -177,8 +177,6 @@
     "commit": "4f9f661976bb2f989317035e05d217854108dcc5",
     "outcome": "blocked",
     "blockers": [
-      "\"peerDependencies\"",
-      "\"peerDependenciesMeta\"",
       ":thymeleaf-spring6:3.1.3.RELEASE",
       ":thymeleaf:3.1.3.RELEASE",
       ":ui",
@@ -791,7 +789,6 @@
     "blockers": [
       "\"bin\"",
       "\"packageManager\"",
-      "\"peerDependencies\"",
       "scripts.\"coverage\"",
       "scripts.\"orchestrate:worker\"",
       "scripts.\"prepack\"",
@@ -804,7 +801,6 @@
     "commit": "8ed19247bef145e3cc41b24a02dd1fe6d9b5e681",
     "outcome": "blocked",
     "blockers": [
-      "\"peerDependencies\"",
       "scripts.\"install:config\"",
       "scripts.\"install:config:base\"",
       "scripts.\"link:eslint\"",
@@ -831,10 +827,7 @@
     "blockers": [
       "\"bin\"",
       "\"cpu\"",
-      "\"optionalDependencies\"",
       "\"os\"",
-      "\"peerDependencies\"",
-      "\"peerDependenciesMeta\"",
       "devDependencies.\"xlsx\"",
       "patchedDependencies",
       "scripts",
@@ -874,7 +867,6 @@
       "\"bin\"",
       "\"cpu\"",
       "\"imports\"",
-      "\"optionalDependencies\"",
       "\"os\"",
       "\"packageManager\"",
       ".nvmrc",
@@ -915,7 +907,6 @@
     "outcome": "blocked",
     "blockers": [
       "\"bin\"",
-      "\"peerDependencies\"",
       "\"version\"",
       ".github/scripts/package.json",
       "devDependencies.\"wa-sqlite\"",
@@ -988,8 +979,6 @@
     "outcome": "blocked",
     "blockers": [
       "\"bin\"",
-      "\"peerDependencies\"",
-      "\"peerDependenciesMeta\"",
       ".nvmrc",
       "packages/tests/fixtures/next-app-imports/package.json",
       "packages/tests/fixtures/next-app-init/package.json",
@@ -1083,9 +1072,6 @@
     "outcome": "blocked",
     "blockers": [
       "\"bin\"",
-      "\"optionalDependencies\"",
-      "\"peerDependencies\"",
-      "\"peerDependenciesMeta\"",
       ".github/actions/needs-triage/package.json",
       ".github/actions/next-integration-stat/package.json",
       ".github/actions/pr-auto-label/package.json",
@@ -1591,9 +1577,7 @@
   },
   "npm/vuejs-vue": {
     "commit": "13f4e7dc03e2caed900ac70ff8b8fe58dda45663",
-    "outcome": "blocked",
-    "blockers": [
-      "\"optionalDependencies\""
-    ]
+    "outcome": "proof-failed",
+    "blockers": []
   }
 }
