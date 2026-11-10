@@ -784,7 +784,6 @@
     "commit": "c05b2d6614f62f6db0047669aa4eefb223d478f9",
     "outcome": "blocked",
     "blockers": [
-      "\"bin\"",
       "\"packageManager\"",
       "scripts.\"coverage\"",
       "scripts.\"orchestrate:worker\"",
@@ -822,7 +821,6 @@
     "commit": "ce7073d51254c26cd63b22a60835b8f948deb447",
     "outcome": "blocked",
     "blockers": [
-      "\"bin\"",
       "\"cpu\"",
       "\"os\"",
       "devDependencies.\"xlsx\"",
@@ -860,7 +858,6 @@
     "commit": "160d821ac9a0310afcb8d1fc427862dd6508add5",
     "outcome": "blocked",
     "blockers": [
-      "\"bin\"",
       "\"cpu\"",
       "\"imports\"",
       "\"os\"",
@@ -902,7 +899,6 @@
     "commit": "01cb29d88764465197742803801c62eff1f71516",
     "outcome": "blocked",
     "blockers": [
-      "\"bin\"",
       "\"version\"",
       ".github/scripts/package.json",
       "dependencies.\"zod-from-json-schema-v3\"",
@@ -1000,7 +996,6 @@
     "commit": "96da9cc7f1aa10580a3741664e2a77c721206c00",
     "outcome": "blocked",
     "blockers": [
-      "\"bin\"",
       ".nvmrc",
       "packages/tests/fixtures/next-app-imports/package.json",
       "packages/tests/fixtures/next-app-init/package.json",
@@ -1093,7 +1088,6 @@
     "commit": "b175f52b05a5f6c6c39ca72565ea178542be323b",
     "outcome": "blocked",
     "blockers": [
-      "\"bin\"",
       ".github/actions/needs-triage/package.json",
       ".github/actions/next-integration-stat/package.json",
       ".github/actions/pr-auto-label/package.json",
